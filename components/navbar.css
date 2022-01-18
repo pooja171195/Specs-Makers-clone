@@ -1,0 +1,674 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+.fixed{
+    position: fixed;
+}
+.allignitcen{
+    align-items: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-style: no;
+}
+.backwhite{
+    background-color: white;
+}
+.bl1{
+    background-color: #231F20;
+}
+.blue1{
+    background-color: #0E53A1;
+}
+.block{
+    display: block;
+}
+.borbot2p{
+    border-bottom: 2px solid gray;
+}
+.bortrans{
+    border: transparent;
+}
+.backtrans{
+    background-color: transparent;
+}
+.bordergrad:hover{
+    border: transparent;
+    border-image: linear-gradient(to right,rgb(218, 204, 8), red, blue, cyan) 10;
+    border-bottom: 4px solid red;
+}
+#cartitem{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    margin: -5px -28px;
+}
+#cart{
+    margin-right: 30px;
+}
+.colwhite{
+    color: white;
+}
+.colblack{
+    color: black;
+}
+.fontw8{
+    font-weight: 800;
+}
+.fontw6{
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+}
+.fon15{
+    font-size: 15px;
+}
+.fab{
+font-size: 25px;
+margin-top: -5px;
+}
+.far{
+    font-size: 25px;
+    margin-top: -5px;
+}
+.height63p{
+    height: 63px;
+}   
+.height22p{
+    height: 22px;
+}
+.height53p{
+    height: 53px;
+}
+.jusspacebet{
+    justify-content: space-between;
+}
+.left0{
+    left: 0;
+}
+.mar10p{
+    margin-top: 10px;
+}
+.marauto{
+    margin: auto;
+}
+
+.mar23p10{
+    margin: 23px 10px;
+}
+#magnifying-glass {
+margin: -5px 10px;
+font-size: 10em;
+display: inline-block;
+width: 15px;
+box-sizing: content-box;
+height: 15px;
+border: 2px solid white;
+position: relative;
+border-radius: 50%;
+}
+#magnifying-glass:before {
+content: "";
+display: inline-block;
+position :absolute;      
+right: -10px;
+bottom: -5px;
+border-width: 0;
+background: white;
+width: 12px;
+height: 2px;
+transform: rotate(45deg);
+}
+.marl5p{
+    margin-left: 10px;
+}
+.mar15p{
+    margin: 15px;
+}
+#menucol3 button{
+    height: 53px;
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: transparent;
+    background: transparent;
+}
+#menucol3 button:hover{
+    border-image: linear-gradient(to right,rgb(218, 204, 8), red, blue, cyan) 10;
+    border-bottom: 4px solid red;
+}
+.point{
+cursor: pointer;
+}
+.padlr10p{
+    padding: 0 10px;
+}
+.top0{
+    top: 0;
+}
+.textal{
+    text-align: center;
+}
+.width100{
+    width: 100%;
+}
+.width90{
+    width: 90%;
+}
+
+#chevron {
+    margin: 5px 10px;
+position: relative;
+text-align: center;
+/* padding: 12px; */
+margin-bottom: 6px;
+height: 1.5px;
+width: 15px;
+}
+#chevron::before {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 50%;
+background: black;
+transform: skew(0deg, -35deg);
+}
+#chevron::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 51%;
+background: black;
+transform: skew(0deg, 35deg);
+}
+#menu767{
+display: none;
+}
+#line{
+    height: 2px;
+    border-radius: 1px;
+    width: 25px;
+    background: white;
+    margin-top: 8px;
+}#threeline{
+    padding:12px;
+}
+.mart3{
+margin-top: 3%;
+}
+#glass1{
+display: none;
+position: fixed;
+z-index: 1;
+/* padding-top: 100px; */
+left: 0;
+top: 118px;
+width: 100%;
+height: 80%;
+/* background-color: black; */
+/* overflow: auto; */
+
+}
+#computerglass{
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 118px;
+width: 100%;
+height: 100%;
+}
+#Eyeglasses{
+display: flex;
+/* display: flex; */
+/* justify-content: space-between; */
+margin: 0px 5%;
+height: 603px;
+width: 1075px;
+border: transparent;
+box-shadow: 1px 0px 5px gray;
+background-color: white;
+}
+#computerglass>div{
+margin: 0px 14.6%;
+height: 510px;
+}
+#Eyeglasses>div{
+margin: 40px;
+}
+#Eyeglasses>div>div{
+margin-right: 50px;
+}
+#computerglass>div>div{
+margin-right: 10px;
+}
+#Eyeglasses>div>div>div{
+margin-bottom: 40px;
+}
+#Eyeglasses>div>div>div>div{
+margin-bottom: 8px;
+font-size: 14px;
+}
+#Eyeglasses>div>div>div>div:hover{
+color: rgb(252, 73, 2);
+cursor: pointer;
+}
+#Eyeglasses>div>div>div>div:nth-child(1){
+font-size: 15px;
+font-weight: bold;
+}
+.mar7p{
+margin: 7px;
+}
+#main_account{
+ display: none;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ /* background-color: black; */
+}
+#acc-wrap{
+width: 90%;
+/* border: 1px solid blue; */
+margin: auto;
+display: flex;
+margin-top: 34px;
+filter: drop-shadow(-1px 6px 3px gray);
+justify-content: end;
+
+}
+#acc-wrap2{
+width: 90%;
+/* border: 1px solid blue; */
+margin: auto;
+display: flex;
+margin-top: -380px;
+justify-content: end;
+
+}
+
+#acc2{
+position: relative;
+height: 376px;
+width: 320px;
+margin-right: 124px;
+background-color: white;
+}
+#log2 > div{
+margin-bottom: 10px;
+font-size: 12px;
+}
+#acc2 a{
+color: red;
+font-size: 11px;
+}
+#acc2 a:hover{
+color: black;
+cursor: pointer;
+}
+#acc2 input{
+width: 270px;
+height: 48px;
+margin-bottom: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+#acc2 button{
+width: 278px;
+height: 48px;
+margin-bottom: 20px;
+cursor: pointer;
+color: white;
+background-color: black;
+border: black;
+border-radius: 3px;
+}
+#acc{
+height: 404px;
+width: 320px;
+margin-right: 124px;
+background-color: white;;
+/* box-shadow: 1px 0px 5px gray; */
+clip-path : polygon(
+    0% 5.5%,
+    0.5% 5%,
+    0 5%,
+    85% 5%,
+    90% 0,
+    95% 5%,
+    99.5% 5%,
+    100% 5.5%,
+    100% 99.5%,
+    99.5% 100%,
+    0.5% 100%,
+    0 99.5%
+);
+}
+#log1{
+    font-size: 20px;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.colblack{
+    color: black;
+}
+.fas{
+    margin: 2px 10px;
+}
+#dsearch{
+    display: none;
+    border-bottom: 1px solid white;
+
+}
+#dsearch input{
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+}
+#span {
+position: relative;
+margin: 10px;
+height: 30px; 
+width: 30px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#span::before,
+#span::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px; /* cross thickness */
+    background-color: white;
+}
+
+#span::before {
+    transform: rotate(45deg);
+}
+
+#span::after {
+    transform: rotate(-45deg);
+}
+#resmenu{
+    display: none;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    margin-left: -100%;
+    width: 100%;
+    background-color: #231F20;
+    transition: all 1s;
+}
+#resmenu_content>div{
+    display: flex;
+    justify-content: space-between;
+}
+#line2{
+   width: 100%;
+   height: 60px;
+   background-color: white;
+}
+#line2>div{
+   margin: 10px;
+}
+#line2>div>div{
+    margin: 10px;
+}
+#line2 input{
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+}
+
+#line2 button{
+    margin-top: -10px;
+    height: 60px;
+    width: 80px;
+    background-color: transparent;
+    border: transparent;
+    border-left: 1px solid rgba(128, 128, 128, 0.678);
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+#menupro{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#menupro>div{
+    display: flex;
+     background-color: white;
+     height: 90px;
+     margin: 15px 0px;
+     justify-content: space-between;
+}
+#menupro>div>div{
+    margin: 35px;
+    cursor: pointer;
+}
+#menupro img{
+    margin-top: -20px;
+    height: 70px;
+}
+#logsign>div{
+    padding: 0px 10px;
+
+}
+#logsign>div:nth-child(1){
+    /* margin-right: 10px; */
+    border-right: 2px solid black;
+}
+#black{
+    color: black;
+}
+@media only screen and (min-width:1025px) and (max-width:1230px) {
+#menucol3 button{
+    font-size: 12px;
+    padding: 0 7px;
+}
+#chevron{
+    margin: 7px 5px;
+    width: 10px;
+}
+div a{
+    color: white;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+}
+@media only screen and (min-width:767px) and (max-width:1024px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+    height: 66px;
+}
+#main_account{
+    display: none;
+}
+#resmenu{
+    display: block;
+
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+}
+.width95{
+width: 95%;
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+     height: 62px;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+}
+@media only screen and (min-width:412px) and (max-width:480px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+     height: 55px;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+}
+@media only screen and (min-width:390px) and (max-width:412px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+     height: 53px;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+#menupro img{
+    margin-top: -20px;
+    height: 200%;
+}
+#menupro>div>div{
+    font-size: 13px;
+}
+}
+@media only screen and (min-width:360px) and (max-width:390px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+     height: 52px;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+#menupro img{
+    margin-top: -20px;
+    height: 200%;
+}
+#menupro>div>div{
+    font-size: 12px;
+}
+}
+@media only screen and (min-width:0px) and (max-width:360px){
+#menu3{
+    display: none;
+}
+#menu2{
+    display: none;
+}
+#menu767{
+    display: block;
+}
+.height767{
+     height: 50px;
+}
+#img767{
+    width: 100%;
+    margin-top: 0%;
+}
+#resmenu{
+    display: block;
+}
+#magnifying-glass:before{
+    background-color: black;
+}
+#magnifying-glass{
+   border: 2px solid black;
+}
+#menupro img{
+    margin-top: -20px;
+    height: 100%;
+}
+#menupro>div>div{
+    font-size: 9px;
+}
+}
