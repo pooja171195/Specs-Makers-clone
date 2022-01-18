@@ -1,0 +1,159 @@
+#main{
+    margin-top: 150px;
+}
+#text_div{
+    margin-top: 70px;
+    text-align: center;
+}
+#text_div h1{
+    line-height: 10px;
+}
+#text_div p{
+    line-height: 1.5;
+  font-size: 19px;
+  font-family: 'Neue Montreal';
+    color: #808080;
+}
+#images{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#images .img:nth-child(1) img{
+  height: 180px;
+  width: 180px;
+  margin-left: 100px;
+
+}
+#images .img:nth-child(2) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 150px;
+   
+  }
+  #images .img:nth-child(3) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 150px;
+    
+  }
+  #images .img:nth-child(4) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 180px;
+  }
+  .img{
+      text-align: center;
+  }
+  .img h3{
+      margin-left: 80px;
+  }
+  #blue_box{
+    margin-top: 40px;
+      height: 650px;
+      width: 100%;
+      background-color: #D1ECF9;
+      text-align: center;
+  }
+  #blue_box h2{
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #blue_box img{
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  #text_div2{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .text{
+    display: flex;
+   margin-left: 250px;
+  }
+  .text p{
+    padding-left: 30px;
+  }
+  #blue_box2{
+    width: 100%;
+    height: 180vh;
+    background-color: #D1ECF9;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #icon{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  #icon div{
+    text-align: center;
+    margin-left: 80px;
+  }
+  #icon div img{
+    width: 130px;
+    height: 130px;
+  }
+  #icon div p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #threeimg{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  #threeimg img{
+    width: 450px;
+    height: 250px;
+    padding-left: 30px;
+    
+  }
+  #black_box{
+    margin-top: 80px;
+    margin-left: 160px;
+    height: 90px;
+    width: 80%;
+    background-color: #231F20;
+    text-align: center;
+    color: white;
+    line-height: 10px;
+   padding: 20px;
+  }
+  #input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  #input input {
+    width: 60%;
+    height: 45px;
+    border:grey solid 0.1px;
+    border-radius: 15px;
+    margin-left: 300px;
+    font-size:medium;
+    padding-left: 30px;
+    
+  }
+  #input p{
+    text-align:left;
+    margin-left: 310px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  #input button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+     font-size: large;
+     
+     margin-left: 680px;
+  }
+  #footer{
+   margin-top: -140px;
+  }
