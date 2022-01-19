@@ -27,6 +27,7 @@
            background-color: white;
             display: flex;
             position: fixed;
+            border: 1px solid black;
            
            
         }
@@ -64,7 +65,7 @@
       #container{
           border: 1px solid rgb(254,234,207);
           width: 100%;
-          height: 700px;
+          height: 720px;
           margin-top: 5%;
           background-color:rgb(254,234,207);
           display: flex;
@@ -82,13 +83,108 @@
       }
       #form{
           height: 400px;
-          width: 50%;
+          width: 40%;
           margin: 1%;
-          border: tomato 1px solid;
+          
           text-align: center;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-style: unset;
       }
+      #form>h3{
+        width: 90%;
+        margin-left: 5%;
+        
+      }
+     
+      .details{
+           margin: auto;
+           width: 90%;
+           height: 100px;
+           display: grid;
+       }
+       .details>input{
+           margin-top: 20px;
+           background-color: rgb(254,248,224);
+           border: rgb(254,248,224) 1px solid;
+           width: 100%;
+           height: 45px;
+           margin-left: 0px;
+       }
+       .details>h4{
+       margin-bottom: 20px;
+        
+      }
+      .details> button{
+           width:100%;
+           margin: auto;
+           background-color: rgb(0,69,140);
+           margin-top: 25px;
+           font-size: large;
+           color: white;
+       }
+       #icon{
+           height: 300px;
+           width: 100%;
+           border: 1px solid white;
+           background-color: white;
+           display: flex;
+       }
+       #icon>#box{
+           width: 90%;
+           margin-left: 5%;
+           border: 5px solid rgb(254,234,207);
+           height: 200px;
+           margin-top: 50px;
+          display: inline-flex;
+       }
+       #icon>#box>div{
+           width: 15%;
+           height: 160px;
+           margin-top: 1%;
+           margin-left: 4%;
+           text-align: center;
+           margin-bottom: 3%;
+           color: gray;
+       }
+       #h{
+           display: flex;
+       }
+       #eye{
+           width: 100%;
+           height: 280px;
+           border: white 1px solid;
+           display: flex;
+           text-align: center;
+          
+           
+       }
+       #eye>div{
+           margin-left: 5%;
+           width: 90%;
+       }
+       #eye>div>h1{
+           display: grid;
+           margin-top: 60px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           margin-bottom: 30px;
+           
+       }
+       #eye>div>div{
+           top: 5px;
+       }
+       #eye>div>div>p{
+           
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: small;
+           text-align: center;
+           width: 100%; 
+       }
+       #home{
+           width: 100%;
+           border: 1px solid blue;
+           height: 400px;
+           background-color: gray;
+       }
     </style>
     <body>
        <div id ="main">
@@ -106,20 +202,64 @@
                 <a href="../products/lensmaker.html"><button>LENSMAKERS</button></a>   
                   
             </div>    
-        
+      <div id="h"><hr></div>  
         <div id="container">
             <div id="image-roll">
                 <img src="http://specsmakers.mloyalretail.com/eyecheckup/img/banner1.jpg" alt="">
             </div>
             <div id="form">
-                <h2 style="margin-top: 0px;">Get Free Eye Test At Home And Extra Rs.500 Off On Your Eyeglasses Purchase At Home</h2>
+                <h3 >Get Free Eye Test At Home And Extra Rs.500 Off On Your Eyeglasses Purchase At Home</h3>
            
-           
+           <div class="details">
+            <input  class='name' type="text " placeholder='Name'>
+            
+            <input class="mobile" type="number" placeholder="Mobile No">
+            <input class="add" type="text " placeholder='Address' >
+            <input class="pin" type="password" placeholder="Pincode">
+            <input class="city" type="list" placeholder="---City Name--">
+            <input class="day" type="list" placeholder="Day">
+            <input class="time" type="list" placeholder="Time Slot">
+            <button class='bttn'>SUBMIT</button>
+            <h4 >Available only in Chennai</h4>
+           </div>
             </div>
+            
 
         </div>
-    
-       </div> 
+        <div id="icon">
+<div id="box">
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/1.png" alt="">
+    <h3>Vaccinated Staff</h3>
+</div><div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/2.png" alt="">
+    <h3>Safe and Sanitised frames</h3>
+</div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/3.png" alt="">
+    <h3>100% accurate lenses with robotic fitting</h3>
+</div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/4.png" alt="">
+    <h3>1 year unconditional warranty</h3>
+</div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/5.png" alt="">
+    <h3>Choose from 100+ styles at your home</h3>
+</div>
+</div>
+
+</div>
+        <div id="eye">
+<div>
+    <h1>Home Eye Check-up</h1>
+    <div>
+<p>Now book a comprehensive Eye test & get your eyes tested by a certified Specsmakers Optician, at the comfort of your home. We ensure a detailed</p>
+<p> and a proper eye checkup is done & the time for each Eye test can vary from 20-30 mins, depending on the kind of power and requirements.Home </p>
+<p>Eye Check-up</p>
+</div>
+</div>
+</div>
+<div id="home">
+
+
+</div>
+</div> 
     </body>
     </html>
 </body>
