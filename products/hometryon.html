@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
     <title>Specsmakers </title>
-    <link rel="stylesheet" href="./style/index.css">
+   
     </head>
     <style>
         body{
@@ -73,14 +73,16 @@
       #image-roll{
           height: 500px;
           width: 60%;
-          
+         
           margin-top: 100px;
        
       }
-      #image-roll>img{
+      #image-roll>.photo{
         height: 500px;
           width: 100%;
-      }
+  display: none;
+  
+}
       #form{
           height: 400px;
           width: 40%;
@@ -109,6 +111,16 @@
            width: 100%;
            height: 45px;
            margin-left: 0px;
+           font-size: large;
+       }
+       .details>select{
+           margin-top: 20px;
+           background-color: rgb(254,248,224);
+           border: rgb(254,248,224) 1px solid;
+           width: 100%;
+           height: 45px;
+           margin-left: 0px;
+          font-size: large;
        }
        .details>h4{
        margin-bottom: 20px;
@@ -210,19 +222,141 @@
            width: 100%; 
        }
        #home {
-	height:500px;
+	height:450px;
     width: 100%;
-	border:1px solid black;
+	
 	padding:10px;
-	background: rgb(156, 155, 155) linear-gradient(to bottom, white, rgb(136, 136, 136));
+	background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+    display: flex;
 	}
+    #home>div{
+width: 50%;
+
+
+    }
+    #home>div>div{
+        display: flex;
+        
+    }
+    #home>div>div>p {
+        margin: 0px;
+       margin-top: 2%;
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-right: 5%;
+        font-weight: bold;
+    }
+    #H{
+        text-align: center;
+        margin: 5%;
+        margin-top: 5%;
+       
+    }
+    #H>h1{
+        margin-top: 15%;
+    }
     #home1 {
-	height:300px;
+	height:450px;
     width: 100%;
-	border:1px solid black;
+
 	padding:10px;
-	background: rgb(156, 155, 155) linear-gradient(to bottom, white, rgb(136, 136, 136));
+	background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 	}
+    #home1>div>h1{
+        display: flex;
+        margin-left: 27%;
+       
+    }
+    #home1>div>div{
+           width: 22%;
+           height: 160px;
+           margin-top: 1%;
+          margin-left: 1%;
+           text-align: center;
+           margin-bottom: 3%;
+           color: gray;
+           display: inline-block;
+           align-items: center;
+       }
+       #Safe{
+           width: 100%;
+           height: 200px;
+           border: white 1px solid;
+           display: flex;
+           text-align: center;
+          
+           
+       }
+       #Safe>div{
+           margin-left: 5%;
+           width: 90%;
+       }
+       #Safe>div>h1{
+           display: grid;
+           margin-top: 60px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           margin-bottom: 30px;
+           
+       }
+       #Safe>div>div{
+           top: 5px;
+       }
+       #Safe>div>div>p{
+           
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: small;
+           text-align: center;
+           width: 100%; 
+       }
+       #FAQs{
+           width: 100%;
+           height: 200px;
+           border: white 1px solid;
+           display: flex;
+           text-align: center;
+          
+           
+       }
+       #FAQs>div{
+           margin-left: 5%;
+           width: 90%;
+          
+       }
+       #FAQs>div>h1{
+           display: grid;
+           margin-top: 60px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           margin-bottom: 20px;
+           
+       }
+       #FAQs>div>div>h3{
+           display: grid;
+           margin-top: 60px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           margin-bottom: 5px;
+           
+       }
+      
+       #FAQs>div>div>div>p{
+           
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: small;
+           text-align: center;
+           width: 100%;
+           margin-top: 0px;
+           
+       }
+       #footer{
+        width: 100%;
+           height: 200px;
+           border: red 1px solid;
+           display: inline-flex;
+           text-align: center;
+          
+       } 
     </style>
     <body>
        <div id ="main">
@@ -243,7 +377,8 @@
       <div id="h"><hr></div>  
         <div id="container">
             <div id="image-roll">
-                <img src="http://specsmakers.mloyalretail.com/eyecheckup/img/banner1.jpg" alt="">
+                <img class='photo'  src="http://specsmakers.mloyalretail.com/eyecheckup/img/banner1.jpg" alt="Image 1" >
+                <img class='photo'  src="http://specsmakers.mloyalretail.com/eyecheckup/img/banner.jpg" alt="Image 2" >
             </div>
             <div id="form">
                 <h3 >Get Free Eye Test At Home And Extra Rs.500 Off On Your Eyeglasses Purchase At Home</h3>
@@ -254,10 +389,32 @@
             <input class="mobile" type="number" placeholder="Mobile No">
             <input class="add" type="text " placeholder='Address' >
             <input class="pin" type="password" placeholder="Pincode">
-            <input class="city" type="list" placeholder="---City Name--">
-            <input class="day" type="list" placeholder="Day">
-            <input class="time" type="list" placeholder="Time Slot">
-            <button class='bttn'>SUBMIT</button>
+            <select class="city" name="city" >
+                <option value="volvo">---City Name---</option>
+                <option value="saab">Channai</option>
+            
+              </select>
+              <select class="day" name="days" >
+                <option value="">Day</option>
+                <option value="">Monday</option>
+                <option value="">Tuesday</option>
+                <option value="">Wednesday</option>
+                <option value="">Thursday</option>
+                <option value="">Friday</option>
+                <option value="">Saturday</option>
+                <option value="">Sunday</option>
+              </select>
+              <select class="time" name="times" >
+                <option value="">TimeSlot</option>
+                <option value="">10-11 AM</option>
+                <option value="">11 AM-12 PM</option>
+                <option value="">12-01 PM</option>
+                <option value="">01-02 PM</option>
+                <option value="">02-03 PM</option>
+                <option value="">03-04 PM</option>
+                <option value="">04-05 PM</option>
+              </select>
+            <button class='btn'>SUBMIT</button>
             <h4 >Available only in Chennai</h4>
            </div>
             </div>
@@ -294,8 +451,17 @@
 </div>
 </div>
 <div id="home">
-
-
+<div id="H"><h1>HOW HOME EYE CHECK-UP WORKS?</h1></div>
+<div id="I">
+     <div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/2_1.png" alt="">
+        <p>1. Book a Home Eye Check-up and choose your time slot</p></div>
+     <div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/2_2.png" alt="">
+    <p>2.Specsmakers Expert Optician will visit your home with certified & fully sanitised eye testing equipment to check your power</p></div>
+     <div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/2_3.png" alt="">
+    <p>3. Get your eye test done and you will receive your presciption card for your eyes test with complete details of your eye power and any other eye ailment.</p></div>
+     <div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/2_4.png" alt="">
+    <p>4. Try our frames and order eyeglasses on spot get them home delivered in 2-3 working days</p></div>
+</div>
 </div>
 <div id="eye1">
     <div>
@@ -308,11 +474,85 @@
     </div>
     </div>
     <div id="home1">
-
-
+<div><h1>HOW HOME TRY-ON WORKS?</h1></div>
+<div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/1_1.png" alt="">
+    <h4>Book Home Try-On and choose your time slot</h4>
+</div><div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/1_2.png" alt="">
+    <h4>Specsmakers Eyewear expert will visit your home with 150 best-selling Frames</h4>
+</div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/1_3.png" alt="">
+    <h4>Try frames of many styles and shapes pick your favourites</h4>
+</div>
+<div><img src="http://specsmakers.mloyalretail.com/eyecheckup/img/1_4.png" alt="">
+    <h4>Order Eyeglasses on the spot and get them home deliverd in 2-3 working days</h4>
+</div>
     </div>
 </div> 
-    </body>
-    </html>
+<div id="Safe">
+    <div>
+        <h1>Safe & Clean</h1>
+        <div>
+    <p>All our equipment is fully sanitised before every visit. All our Eyecare experts wear masks, gloves & sanitise frames before you try them. We follow all</p>
+    <p> necessary safety precautions to ensure a safe and clean Home Eye Check-up and Home Try-On experience for you.</p>
+    </div>
+    </div>
+    </div>
+    <div id="FAQs">
+        <div>
+            <h1>FAQs</h1>
+           
+                <div>
+                    <h3>1. When will the Eyecare expert reach me?</h3>
+                    <div>
+        <p>Please note that our Expert will reach you sometime in this 1 hour window depending on his other appointments. The complete process takes</p>
+        <p> between 20 to 30 mins.</p>
+        </div>
+        </div>
+        <div>
+            <h3>2. Is there any additional charge for more than one eye test ?</h3>
+            <div>
+<p>No, there are no additional charges for eye tests & home try-on.</p>
+
+</div>
+</div>
+<div>
+    <h3>3. What if EyeCare expert doesn't arrive on scheduled time ?</h3>
+    <div>
+<p>Please inform us on our customer care number and we will reschedule the appointment based on your preferable time</p>
+
+</div>
+</div>
+<div>
+    <h3>4. Do I get any special discounts on multiple bookings ?</h3>
+    <div>
+<p>Yes, we offer special discounts on multiple bookings and our Eyecare expert would guide you accordingly</p>
+
+</div>
+</div>
+<div>
+    <h3>5. Can I request for certain shapes or styles for Home Try-On based on my preferences ?</h3>
+    <div>
+<p>Yes, you can let us know your preferences and our eyecare expert can customise the frames they carry for your Home Try-On as per your requirements.</p>
+
+</div>
+</div>
+<div>
+    <h3>6. How can I reschedule or cancel my booking ?</h3>
+    <div>
+<p>You can reschedule or cancel your booking by calling our customer support team atleast one hour prior to your time slot.</p>
+
+</div>
+
+</div>
+</div>
+</div>
+<div id="footer">
+    <div id="log"></div><div id="link"></div>
+</div>
+</div>
 </body>
 </html>
+<script src="../products/hometryon.js">
+ 
+    </script>
