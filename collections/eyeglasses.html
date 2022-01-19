@@ -7,9 +7,46 @@
     <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
     <title>Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | – Specsmakers Opticians PVT. LTD.</title>
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="/components/navbar.css">
+    <link rel="stylesheet" href="/components/footbar.css">
+    <link rel="stylesheet" href="../components/products.css">
 </head>
 <body>
-    
+  <div id="this_nav"></div>
+  <div id="top-img"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/Sunglasses_men_collection_banner_3000x.jpg?v=16410189973000w" alt=""></div>
+  <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1641019023-Mega---sunglass.jpg" alt=""></div>
+
+  <div id="body">
+      <div id="p1"><a href="../index.html">Home </a> / Buy 1 Get1 Free. Use: BZBOGO</div>
+      <div id="products">
+        <div id="left">
+            <div id="showfilters"></div>
+        </div>
+        <div id="right">
+          <div id="rnav">
+            <div>BUY 1 GET 1 FREE. USE:BZBOGO</div>
+            <div id="totalprod"></div>
+            <div>
+              <div>SORT BY</div>
+              <div>Featured <div id="chevron"></div></div>
+            </div>
+          </div>
+          <div id="dispro"></div>
+        </div>
+      </div>
+  </div>
+  <div id="foot"></div>
 </body>
 </html>
+
+<script type="module">
+     import navbar from '/components/navbar.js'
+     document.getElementById("this_nav").innerHTML=navbar();
+
+     import footbar from '/components/footbar.js'
+     document.getElementById('foot').innerHTML=footbar();
+</script>
+<script src="/components/navbar-2.js"></script>
+<script src="../api/eyeglass.js">
+
+</script>

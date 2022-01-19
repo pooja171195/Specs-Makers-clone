@@ -1,5 +1,5 @@
 @media only screen and (min-width:767px){
-    #firstimg767{
+    #firstimage{
         display: none;
     }
     #firstimg img{
@@ -140,18 +140,24 @@
     #firstimg{
         margin-top: 120px;
     }
+    #firstimage{
+        display: none;
+    }
  
 }
 @media only screen and (min-width:767px) and (max-width:1025px){
     #firstimg{
         margin-top: 70px;
     }
+    #firstimage{
+        display: none;
+    }
 }
 @media only screen and (min-width:0px) and (max-width:767px){
     #firstimg{
         display: none;
     }
-    #firstimg767{
+    #firstimage{
         display: block;
         margin-top: 70px;
         width: 95%;

@@ -2,7 +2,7 @@ function navbar (){
     return ` <div class=" fixed width100 top0 left0">
     <div id="menu2" class="width100 height63p colwhite bl1  ">
         <div class="width90 flex marauto jusspacebet">
-            <a href="./"><div class="mar7p point"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
+            <a href="../index.html"><div class="mar7p point"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
             <div class="flex fon15">
                 <div id="dsearch" class="mar23p10 flex point">
                     <i class="fas fa-search"></i>
@@ -19,13 +19,13 @@ function navbar (){
           <div id="menucol3" class="flex">
             <button class="flex allignitcen bord " id="eyeGlass" onclick="eye()" onmouseover="eyeGlass()">Eyeglasses <div id="chevron"></div></button>
             <button class=" flex allignitcen" id="compglass" onclick="com_glass()" onmouseover="compGlass()">Computer Glasses <div id="chevron"></div></button>
-            <a href="./collections/sunglass.html"><button>Sunglasses</button></a>
-            <a href="./collections/contact-lenses.html"><button>Contact Lenses</button></a>
-            <a href="./collections/accesories.html"><button>Accessories</button></a>
-            <a href="./products/hometryon.html"><button>Home Try-On</button></a>
-            <a href="./pages/stoe-locator.html"><button>Store Locator</button></a>
-            <a href="./pages/franchisee.html"><button>Franchise</button></a>
-            <a href="./products/lensmaker.html"><button>Lensmakers  </button></a>
+            <a href="../collections/sunglass.html"><button>Sunglasses</button></a>
+            <a href="../collections/contact-lenses.html"><button>Contact Lenses</button></a>
+            <a href="../collections/accesories.html"><button>Accessories</button></a>
+            <a href="../products/hometryon.html"><button>Home Try-On</button></a>
+            <a href="../pages/stoe-locator.html"><button>Store Locator</button></a>
+            <a href="../pages/franchisee.html"><button>Franchise</button></a>
+            <a href="../products/lensmaker.html"><button>Lensmakers  </button></a>
           </div>
           <div>
             <img class="mar15p point" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/3Dlogo_large.png?v=1608103908" alt="">
