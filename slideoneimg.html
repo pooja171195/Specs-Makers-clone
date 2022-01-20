@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slide {
+    position: absolute;
+    left: -100px;
+    width: 99%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+.wrapper:hover #slide {
+    transition: 1s;
+    left: 0;
+}
+      
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <img id="slide" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Mega-Blue-zero_1500x.jpg?v=1641018037" alt="">
+        <img class="slide" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Clip-on_1500x.jpg?v=1641017925" alt=""> -->
+        <img id="slide" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/SM_Website_Refresh_banner_1_3000x.jpg?v=16410198083000w" alt="">
+    </div>
+</body>
+</html>
