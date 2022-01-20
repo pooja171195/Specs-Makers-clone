@@ -11,10 +11,23 @@ var pin=document.querySelector('.pin').value
 var city=document.querySelector('.city').value
 var day=document.querySelector('.day').value
 var time=document.querySelector('.time').value
-if(name.length==0 || add.length==0 || mobile.length==0 || pin.length==0 || city.length==0 || day.length==0 || time.length==0){
-    alert('fill credentials')
+if(name.length==0 ){
+    alert('Enter your name')
+    
+}
+else if(mobile.length==0 ){
+  alert('Enter your mobile no.')
+}
+else if( add.length==0 ){
+  alert('Enter your address')
 }
 
+else if( pin.length==0 ){
+  alert('Enter your pincode')
+}
+else if(name.length!=0 && mobile.length!=0 &&add.length!=0 && pin.length!=0){
+  alert("Register Successfully!!")
+}
 var obj={
     name:name,
     mobile:mobile,
@@ -27,8 +40,19 @@ var obj={
 user.push(obj)
 localStorage.setItem("userData", JSON.stringify(user));
 console.log(user)
-// alert("Register Successfully!!")
+ 
+
 }
+  
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+
 var myIndex = 0;
 carousel();
 
