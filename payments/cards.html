@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        #main{
+            display:flex;
+            width:60%;
+            margin: auto;
+            border: solid red 1px;
+            height:900px;
+        }
+        #main>#icon{
+           
+            width:40%;
+            border : blue solid 1px;
+        }
+        #icon>div{
+            margin:30px;
+            display:flex;
+            justify-content: space-between;
+
+        }
+        #img>a{
+            display:flex;
+        }
+        #img>a>img{
+            height:30px;
+            width:20px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        #payment{
+            width:60%;
+            border:1px solid black;
+            margin-left: 100px;
+
+        }
+        input{
+            height:50px;
+            width:60%;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        button{
+            display: block;
+            height: 50px;
+            width:60%;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: blue;
+            color :white;
+        }
+
+      
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="icon">
+    <div>
+        <div id="img">
+            <a href="payment.html">
+            
+           <img src="https://img.icons8.com/ios-filled/2x/long-arrow-left.png" alt="">
+           <h4>Back</h4>
+        </a>
+        </div>
+        <div>
+            <p>Specsmakers</p>
+        </div>
+    </div>
+    <div>
+            <h1>Enter new card </h1>
+    </div>
+    <div>
+         <h4>Total payable Amount</h4>
+         <h4>2999</h4>
+    </div>
+    </div>
+    <div id="payment">
+      <h1>Cards(Credit/Debit)</h1>
+
+      <h2>New Card</h2>
+      <input type="number" placeholder="Enter card Number"  id="new">
+        <h2>Expairy</h2>
+      <input type="text">
+      <h2>CVV?</h2>
+      <input type="text">
+      <h2>Name on card</h2>
+      <input type="text">
+       <button>Proceed</button> 
+ 
+    
+    </div>
+ </div>
+</body>
+</html>

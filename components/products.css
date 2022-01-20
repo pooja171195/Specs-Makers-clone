@@ -2,7 +2,7 @@ a{
     color: black;
 }
 #body{
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 #p1{
@@ -10,7 +10,10 @@ a{
     font-weight: 600;
 }
 
+
+
 @media only screen and (min-width:767px){
+   
     #restop-img{
         display: none;
     }
@@ -25,28 +28,90 @@ a{
        display: flex;
    }
    #left{
-    position:relative;
-    width: 212px;
-    height: 1200px;
-    border: 1px solid red;
-    /* height: 40px; */
+    margin-top: 20px;
+    position:sticky;
+    width: 20%;
+    top: 120px;
+    /* border: 1px solid red;
+    background-color: blue; */
+    height: 600px;
+    overflow: scroll;
     }
+    ::-webkit-scrollbar{
+        width: 6px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(128, 128, 128, 0.568);
+        border-radius: 10px;
+    }
+    #showfilters>div{
+        border: 1px solid rgba(128, 128, 128, 0.308);
+        margin-bottom: 20px;
+        /* height: 182px;
+        overflow: scroll; */
+    }
+    #showfilters>div>div:nth-child(2){
+        height: 140px;
+        overflow: scroll;
+        margin-bottom: -17px;
+
+    }
+    #showfilters>div>div:nth-child(2)::-webkit-scrollbar{
+        width: 4px;
+    }
+    #showfilters>div>div:nth-child(1),
+    #showfilters>div>div:nth-child(2)>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    #showfilters>div>div:nth-child(1),
+    #showfilters>div>div:nth-child(2)>div{
+        border-bottom:1px solid rgba(128, 128, 128, 0.521) ;
+    }
+    #showfilters>div>div:nth-child(2)>div{
+        height: 45px;
+        cursor: pointer;
+    }
+    #showfilters>div>div:nth-child(1)>div:nth-child(1){
+        font-size: 16px;
+        font-weight: 500;
+        color: #666666;
+        margin: 10px;
+    }
+    #showfilters>div>div:nth-child(1)>div:nth-child(2){
+        margin-top: 5px;
+    }
+    #showfilters>div>div:nth-child(2)>div>div:nth-child(1){
+        font-size: 14px;
+        color: #666666;
+        margin: 15px;
+    }
+    #showfilters>div>div:nth-child(2)>div>div:nth-child(2){
+        margin-top: 10px;
+    }
+   
    #right{
-       margin: 20px;
-       width:85%;
-       height: 1200px;
-       overflow: scroll;
+       margin: 2%;
+       /* height: 2000px;
+       overflow: scroll; */
+       width: 75%;
    }
-   ::-webkit-scrollbar{
+   /* ::-webkit-scrollbar{
        display: none;
+   } */
+   #totalprod{
+       font-size: 12px;
    }
    #dispro{
        margin-top: 80px;
        width: 100%;
        /* border: 1px solid blue; */
        display: grid;
-       grid-template-columns: repeat(3, 31%);
-       grid-gap:70px 3.5% ;
+       /* grid-template-columns: repeat(3, 31%); */
+       
+   }
+   #dispro>div{
+       cursor: pointer;
    }
    #dispro img:nth-child(1){
        width: 100%;
@@ -116,9 +181,22 @@ a{
     #top-img{
         margin-top: 120px;
     }
+    #dispro{
+        grid-template-columns: repeat(3, 31%);
+        grid-gap:70px 3.5% ;
+    }
 }
 @media only screen and (min-width:767px) and (max-width:1025px){
-    
+    #left{
+        width: 30%;
+    }
+    #right{
+        width: 70%;
+    }
+    #dispro{
+        grid-template-columns: repeat(2, 46.5%);
+        grid-gap:70px 7% ;
+    }
 }
 @media only screen and (min-width:0px) and (max-width:767px){
     #top-img{
