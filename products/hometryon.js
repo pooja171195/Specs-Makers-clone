@@ -11,7 +11,7 @@ var pin=document.querySelector('.pin').value
 var city=document.querySelector('.city').value
 var day=document.querySelector('.day').value
 var time=document.querySelector('.time').value
-if(name.length==0 || add.length==0 || mobile.length==0 || pin.length==0 ||city.length==0 ||day.length==0 || time.length==0){
+if(name.length==0 || add.length==0 || mobile.length==0 || pin.length==0 || city.length==0 || day.length==0 || time.length==0){
     alert('fill credentials')
 }
 
