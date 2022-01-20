@@ -73,44 +73,44 @@ function navbar (){
         </div>
         <div>
             <div class="flex">
-                <div><a id="black" href="./collections/eyeglasses.html">Eyeglasses</a></div>
+                <div><a id="black" href="../collections/eyeglasses.html">Eyeglasses</a></div>
                 <div id="chevron"></div>
             </div>
             <div><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_f04b0118-b1e6-4a12-89f3-36b6cce334f8_360x.jpg?v=1641367173" alt=""></div>
         </div>
         <div>
             <div class="flex">
-                <div><a id="black" href="./collections/computer_glasses.html">Computer Glasses</a></div>
+                <div><a id="black" href="../collections/computer_glasses.html">Computer Glasses</a></div>
                 <div id="chevron"></div>
             </div>
             <div><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/3_8bd9586f-2d63-4b61-b944-80fdfde0e2bb_360x.jpg?v=1609503279" alt=""></div>
         </div>
         <div>
-            <div><a id="black" href="./collections/sunglass.html">Sunglasses</a></div>
+            <div><a id="black" href="../collections/sunglass.html">Sunglasses</a></div>
             <div><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/P6045-3_28426c17-6bf9-4598-b87f-fffbd9db5f46_360x.jpg?v=1604041970" alt=""></div>
         </div>
         <div>
-            <div><a id="black" href="./collections/contact-lenses.html">Contact Lenses</a></div>
+            <div><a id="black" href="../collections/contact-lenses.html">Contact Lenses</a></div>
             <div><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Toric-Lens-01_f950278e-e4f1-4fbe-9574-cd4288a265f9_360x.jpg?v=1596562599" alt=""></div>
         </div>
         <div>
-            <div><a id="black" href="./collections/accesories.html">Accessories</a></div>
+            <div><a id="black" href="../collections/accesories.html">Accessories</a></div>
             <div></div>
         </div>
         <div>
-            <div><a id="black" href="./products/hometryon.html">Home Try-On</a></div>
+            <div><a id="black" href="../products/hometryon.html">Home Try-On</a></div>
             <div></div>
         </div>
         <div>
-            <div><a id="black" href="./pages/stoe-locator.html">Store Locator</a></div>
+            <div><a id="black" href="../pages/stoe-locator.html">Store Locator</a></div>
             <div></div>
         </div>
         <div>
-            <div><a id="black" href="./pages/franchisee.html">Franchise</a></div>
+            <div><a id="black" href="../pages/franchisee.html">Franchise</a></div>
             <div></div>
         </div>
         <div>
-            <div><a id="black" href="./products/lensmaker.html">Lensmakers</a></div>
+            <div><a id="black" href="../products/lensmaker.html">Lensmakers</a></div>
             <div></div>
         </div>
     </div>
