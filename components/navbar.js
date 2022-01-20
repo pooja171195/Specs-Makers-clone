@@ -10,7 +10,7 @@ function navbar (){
                 </div>
                 <div class="mar23p10 flex point" onclick="open_search()">SEARCH <div id="magnifying-glass"></div></div>
                 <div class="mar23p10 flex point" id="myaccount" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
-                <a href="./cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+                <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
             </div>
         </div>
     </div>
