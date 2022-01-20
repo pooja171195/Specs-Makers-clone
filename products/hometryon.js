@@ -25,7 +25,7 @@ else if( add.length==0 ){
 else if( pin.length==0 ){
   alert('Enter your pincode')
 }
-else if(name.length!=0 && mobile.length!=0 &&add.length!=0 && pin.length!=0){
+ if(name.length!=0 && mobile.length!=0 &&add.length!=0 && pin.length!=0){
   alert("Register Successfully!!")
 }
 var obj={
