@@ -25,7 +25,7 @@
   <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1641018947-Mega---BluZero.jpg" alt=""></div>
 
   <div id="body">
-      <div id="p1"><a href="../index.html">Home </a> / Buy 1 Get1 Free. Use: BZBOGO</div>
+      <div id="p1"><a href="../index.html">Home / </a> <p>Buy 1 Get1 Free. Use: BZBOGO</p></div>
       <div id="products">
         <div id="left">
             <div id="showfilters">
@@ -250,19 +250,19 @@
         </div>
         <div id="right">
           <div id="rnav">
-            <div>BUY 1 GET 1 FREE. USE:BZBOGO</div>
+            <div id="buy1">BUY 1 GET 1 FREE. USE:BZBOGO</div>
             <div id="totalprod"></div>
-            <div id="sortby">
-              <div onclick="dissort">SORT BY</div>
+            <div  onclick="dissort()" id="sortby">
+              <div>SORT BY</div>
               <div class="flex"> <div>Featured</div><div id="chevron">
               </div></div>
             </div>
           </div>
           <div id="hidsort">
-            <div>Price, low to high</div>
-            <div>Price, high to low</div>
-            <div>Alphabetically, A-Z</div>
-            <div>Albhabetically, Z-A</div>
+            <div id="hidsortcontent">
+              <div onclick="LtH()">Price, low to high</div>
+            <div onclick="HtL()">Price, high to low</div>
+            </div>
           </div>
           <div id="dispro"></div>
         </div>

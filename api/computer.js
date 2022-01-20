@@ -53657,8 +53657,40 @@ function smalls(){
     com_pro = smallobj;
     display(com_pro)
 }
+function dissort(){
+    if(document.getElementById("hidsortcontent").style.display==="block"){
+        document.getElementById("hidsortcontent").style.display="none";
+    } else{
+        document.getElementById("hidsortcontent").style.display="block"
+    }
+}
 console.log(obj)
-
+function LtH(){
+    for(let i = 0; i < com_pro.length-1; i++) {
+        for(let j = i+1; j < com_pro.length; j++){
+            if(com_pro[i].prices[0].price>com_pro[j].prices[0].price){
+                let temp = com_pro[i];
+                com_pro[i]=com_pro[j]
+                com_pro[j]=temp;
+            }
+        }
+    } 
+    document.getElementById("dispro").innerHTML="";
+    display(com_pro);
+}
+function HtL(){
+    for(let i = 0; i < com_pro.length-1; i++) {
+        for(let j = i+1; j < com_pro.length; j++){
+            if(com_pro[i].prices[0].price<com_pro[j].prices[0].price){
+                let temp = com_pro[i];
+                com_pro[i]=com_pro[j]
+                com_pro[j]=temp;
+            }
+        }
+    } 
+    document.getElementById("dispro").innerHTML="";
+    display(com_pro);
+}
   function display(com_pro){
      com_pro.forEach(function(elements){
         document.getElementById("totalprod").innerText=` Total ${com_pro.length} Products`
