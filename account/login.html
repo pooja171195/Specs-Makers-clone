@@ -150,9 +150,7 @@
           text-align: center;
 
       }
-      p{
-          text-align: center;
-      }
+     
       }
 
       @media only screen and (min-width:376px)and(max-width:768px){
@@ -249,14 +247,19 @@
    document.getElementById("check").addEventListener("click",check);
    function check(){
      let email=document.getElementById("Log_email").value;
-      let password=document.getElementById("Log_password").value; 
+      let password=document.getElementById("Log_password").value;
+      
+      if((email=="adminn")&&(password=="admin")){
 
+      }
+    else{
       for (var i in user_cred){
           if((user_cred[i].email=email)&&(user_cred[i].password==password)){
               alert("Login Successful");
               window.location.href="./poducts/tryOn.html";
           }
       }
+    }
    }
     
 </script>
