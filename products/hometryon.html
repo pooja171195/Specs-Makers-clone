@@ -351,12 +351,55 @@ width: 50%;
        }
        #footer{
         width: 100%;
-           height: 200px;
+           height: 300px;
            border: red 1px solid;
-           display: grid;
+           display: flex;
            text-align: center;
           
        } 
+       #footer>#foot-logo{
+        width: 50%;
+           height: 300px;
+           border: red 1px solid;
+           display: inline;
+           text-align: center;
+          
+       } 
+       #footer>#foot-detail{
+        width: 50%;
+           height: 300px;
+           border: red 1px solid;
+           display: inline;
+           text-align: center;
+          
+       } 
+       #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 15px;
+  color: black;
+  height:40%;
+  width:40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
     </style>
     <body>
        <div id ="main">
@@ -414,7 +457,11 @@ width: 50%;
                 <option value="03-04 PM">03-04 PM</option>
                 <option value="04-05 PM">04-05 PM</option>
               </select>
-            <button class='btn'>SUBMIT</button>
+            <button class='btn' onclick="on()">SUBMIT</button>
+            <div id="overlay" onclick="off()">
+                <div id="text"><h4>Thanks for booking Home Eye-checkup and Try-On with Specsmakers.</h4>
+                    Our executive will call you shortly for confirmation. You will receive an exclusive discount code to the registered mobile number, please share it with HTO executive to redeem the discount on your order</div>
+              </div>
             <h4 >Available only in Chennai</h4>
            </div>
             </div>
@@ -546,12 +593,14 @@ width: 50%;
 </div>
 
 </div>
-<div id="footer"></div>
+<div id="footer">
 
 <div id="foot-logo"></div>
 <div id="foot-detail"></div>
 </div>
 </div>
+</div>
+
 </div>
 </body>
 </html>
