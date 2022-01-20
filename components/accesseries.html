@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
+    <title>Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | – Specsmakers Opticians PVT. LTD.</title>
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footbar.css">
+</head>
     <style>
         #box{
             cursor: pointer;
@@ -83,9 +88,17 @@
           </div>
         </body>
         </html>
+    <script type="module">
+            import navbar from '../components/navbar.js'
+            document.getElementById("this_nav").innerHTML=navbar();
+       
+            import footbar from '../components/footbar.js'
+            document.getElementById('foot').innerHTML=footbar();
+       </script>
+       <script src="../components/navbar-2.js"></script>
    <script>
-   var product=JSON.parse(localStorage.getItem("shop"))||[];
- var object=[
+//    var product=JSON.parse(localStorage.getItem("shop"))||[];
+ var obj=[
     {
         "name": "Airvue",
         "descrption": "Airvue Monthly Disposable Contact Lenses. Submit power post placing the order.",
