@@ -292,6 +292,7 @@
      else{
        for (var i in user_cred){
            if((user_cred[i].email=email)&&(user_cred[i].password==password)){
+            localStorage.setItem("cur_user", JSON.stringify(user_cred[i]));
                alert("Login Successful");
                window.location.href="../index.html";
            }

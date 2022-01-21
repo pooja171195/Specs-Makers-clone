@@ -7,16 +7,9 @@
     <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
     <title>Computer Glasses | Buy Blue Zero Computer Glasses at great prices | Specsmakers – Specsmakers Opticians PVT. LTD.</title>
-    <script type="module">
-      import navbar from '/components/navbar.js'
-      document.getElementById("this_nav").innerHTML=navbar();
- 
-      import footbar from '/components/footbar.js'
-      document.getElementById('foot').innerHTML=footbar();
-    </script>
-    <script src="/components/navbar-2.js"></script> 
-    <link rel="stylesheet" href="/components/navbar.css">
-    <link rel="stylesheet" href="/components/footbar.css">
+  
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footbar.css">
     <link rel="stylesheet" href="../components/products.css">
 </head>
 <body>
@@ -276,7 +269,14 @@
   <div id="foot"></div>
 </body>
 </html>
+<script type="module">
+  import navbar from '../components/navbar.js'
+  document.getElementById("this_nav").innerHTML=navbar();
 
+  import footbar from '../components/footbar.js'
+  document.getElementById('foot').innerHTML=footbar();
+</script>
+<script src="../components/navbar-2.js"></script> 
 
 
 <script src="../api/computer.js">
