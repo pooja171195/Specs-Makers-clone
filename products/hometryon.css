@@ -38,7 +38,8 @@ body {
    transition: 0.15s ease-in-out;
    position: relative;
    text-transform: uppercase;
-   font-size: 12px;
+   font-size: 11px;
+   font-weight: bold;
 }
 .menu li a::after {
    content: "";
@@ -62,6 +63,7 @@ body {
    top: 50%;
    right: 20px;
    transform: translateY(-50%);
+  
 }
 .close-menu {
    top: 20px;
@@ -101,7 +103,7 @@ display: none;
 }
 #form>h3{
 width: 90%;
-margin-left: 5%;
+margin-left: 8%;
 
 }
 
@@ -110,6 +112,7 @@ margin-left: 5%;
    width: 90%;
    height: 100px;
    display: grid;
+   margin-top: 20px;
 }
 .details>input{
    margin-top: 20px;
@@ -136,6 +139,7 @@ margin-bottom: 20px;
 .details> button{
    width:100%;
    margin: auto;
+   border: 1px solid rgb(0,69,140);
    background-color: rgb(0,69,140);
    margin-top: 25px;
    height: 45px;
@@ -359,6 +363,7 @@ margin-left: 27%;
    
 }
 #footer{
+   margin-top: 4%;
 width: 100%;
    height: 300px;
    border: red 1px solid;
@@ -432,7 +437,7 @@ transform: translate(-50%,-50%);
       border: 1px solid rgb(254,234,207);
       width: 100%;
       height: 720px;
-      margin-top: 5%;
+      
       background-color:rgb(254,234,207);
       display: flex;
       margin-top: 60px;
@@ -441,7 +446,7 @@ transform: translate(-50%,-50%);
       height: 500px;
       width: 60%;
      
-      margin-top: 100px;
+      margin-top: 170px;
     
     }
     #image-roll>.photo{
@@ -487,21 +492,21 @@ transform: translate(-50%,-50%);
    }
    .menu li {margin-top: 40px;}
    .menu li a {padding: 10px;}
-   .open-menu , .close-menu {display: block; margin-top: 0px;}
+   .open-menu , .close-menu {display: block; margin-top: 0px; }
    #check:checked ~ .menu {left: 0;}
    #container{
       border: 1px solid rgb(254,234,207);
       width: 100%;
-      height: 1250px;
-      margin-top: 5%;
+      height: 1300px;
+     
       background-color:rgb(254,234,207);
       display: block;
-      margin-top: 60px;
+      
     }
     #image-roll{
       height: 500px;
       width: 100%;   
-      top: 0px; 
+      margin-top: 20px;
       display: block;
      
     }
@@ -616,6 +621,97 @@ transform: translate(-50%,-50%);
    text-align: center;
    width: 100%; 
 }
+#home {
+   height: 750px;
+   width: 100%;
+ 
+   padding:10px;
+   background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+   display: block;
+   align-items: center;
+   }
+   #home>div{
+   width: 100%;
+  
+   
+   }
+   #home>div>div{
+   display: flex;
+   margin: 5%;
+   }
+   #home>div>div>p {
+   margin: 0px;
+   margin-top: 2%;
+   text-align: left;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-right: 5%;
+   font-weight: bold;
+   }
+   #H{
+   text-align: center;
+  
+   margin-top: 5%;
+  
+   
+   }
+   #H>h1{
+   margin-top: 15%;
+   margin: 6%;
+
+   }
+   #home1 {
+      height: 1100px;
+      width: 100%;
+    text-align: center;
+      padding:10px;
+      background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+      display: block;
+      align-items: center;
+   
+   }
+   #home1>div>h1{
+      margin-top: 20%;
+      margin: 7%;
+   
+   text-align: center;
+   
+   }
+   #home1>div>div{
+      width: 100%;
+      height: 160px;
+      margin-top: 8%;
+     margin-left: 1%;
+      text-align: center;
+      margin-bottom: 3%;
+      color: gray;
+      display: block;
+      align-items: center;
+   }
+   #footer{
+      margin-top: 4%;
+   width: 100%;
+      height: 300px;
+      border: red 1px solid;
+      display: grid;
+      text-align: center;
+     
+   } 
+   #footer>#foot-logo{
+      width: 100%;
+         height: 300px;
+         border: red 1px solid;
+         display: inline;
+         text-align: center;
+        
+      } 
+      #footer>#foot-detail{
+      width: 100%;
+         height: 300px;
+         border: red 1px solid;
+         display: inline;
+         text-align: center;
+        
+      } 
 }
 
 @media(max-width: 400px){
@@ -636,20 +732,227 @@ transform: translate(-50%,-50%);
    .menu li a {padding: 10px;}
    .open-menu , .close-menu {display: block;}
    #check:checked ~ .menu {left: 0;}
-   #container{
-      display: grid;
-      width: 100%;
+  
+  #container{
+     border: 1px solid rgb(254,234,207);
+     width: 100%;
+     height: 1150px;
+     margin-top: 5%;
+     background-color:rgb(254,234,207);
+     display: block;
+     margin-top: 60px;
    }
    #image-roll{
-      width: 100%;
+     height: 300px;
+     width: 100%;   
+     top: 0px; 
+     display: block;
+    
+   }
+   #image-roll>.photo{
+   height: 300px;
+     width: 100%;
+  
+   
    }
    #form{
-      width: 100%;
+     height: 500px;
+     width: 100%;
+     margin-left: 2%;
+     margin-top: 8%;
    }
-#form>h3{
-   margin-top: 30px;
+   #form>h3{
+     
+   width: 90%;
+ 
+   }
+
+#icon{
+  height: 600px;
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  display: block;
+  margin-top: 0px;
+}
+
+#icon>#box{
+  width: 100%;
+  margin-left: 1%;
+  border: 5px solid rgb(254,234,207);
+  height: 700px;
+ 
+  align-items: center;
+ display: block;
+}
+#icon>#box>div{
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  color: gray;
+}
+#h{
+  display: block;
+}
+#eye{
+  width: 100%;
+  height: 280px;
+  border: white 1px solid;
+  display: block;
+  text-align: center;
+ margin-top: 150px;
+  
+}
+#eye>div{
+  margin-left: 5%;
+  width: 100%;
+}
+#eye>div>h1{
+  display: block;
+  margin-top: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+  
+}
+#eye>div>div{
+  top: 5px;
+  margin: 5%;
+}
+#eye>div>div>p{
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  text-align: justify;
+  margin: 5%;
+  width: 100%; 
+  margin-right: 4%;
+}
+#eye1{
+   width: 100%;
+   height: 280px;
+   border: white 1px solid;
+   display: block;
+   text-align: center;
+  margin-top: 150px;
+   
+}
+#eye1>div{
+   margin-left: 5%;
    width: 100%;
 }
+#eye1>div>h1{
+   display: block;
+   margin-top: 60px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-bottom: 30px;
+   
+}
+#eye1>div>div{
+  top: 5px;
+}
+#eye1>div>div>p{
+  
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: small;
+   text-align: justify;
+   margin: 5%;
+   width: 100%; 
+   margin-right: 4%;
+}
+#home {
+  height: 1200px;
+  width: 100%;
+
+  padding:10px;
+  background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+  display: block;
+  align-items: center;
+  }
+  #home>div{
+  width: 100%;
+  margin-top: 45%;
+ 
+  
+  }
+  #home>div>div{
+  display: flex;
+  margin-top: 8%;
+  }
+  #home>div>div>p {
+  margin: 0px;
+  
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 5%;
+  font-weight: bold;
+  }
+  #H{
+  text-align: center;
+ 
+  margin-top: 5%;
+ 
+  
+  }
+  #H>h1{
+  margin-top: 25%;
+  margin: 6%;
+
+  }
+  #home1 {
+     height: 1100px;
+     width: 100%;
+   text-align: center;
+     padding:10px;
+     background: rgb(211, 210, 210) linear-gradient(to bottom, white, rgb(211, 211, 211));
+     display: block;
+     align-items: center;
+     margin-top: 20%;
+    
+  
+  }
+  #home1>div>h1{
+     margin-top: 50%;
+     margin: 7%;
+  
+  text-align: center;
+  
+  }
+  #home1>div>div{
+     width: 100%;
+     height: 160px;
+     margin-top: 15%;
+    margin-left: 1%;
+     text-align: center;
+     margin-bottom: 3%;
+     color: gray;
+     display: block;
+     align-items: center;
+  }
+  #footer{
+     margin-top: 4%;
+  width: 100%;
+     height: 300px;
+     border: red 1px solid;
+     display: grid;
+     text-align: center;
+    
+  } 
+  #footer>#foot-logo{
+     width: 100%;
+        height: 300px;
+        border: red 1px solid;
+        display: inline;
+        text-align: center;
+       
+     } 
+     #footer>#foot-detail{
+     width: 100%;
+        height: 300px;
+        border: red 1px solid;
+        display: inline;
+        text-align: center;
+       
+     } 
 }
 
 
