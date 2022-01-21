@@ -1,147 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
-        <title>Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | – Specsmakers Opticians PVT. LTD.</title>
-        <link rel="stylesheet" href="../components/navbar.css">
-        <link rel="stylesheet" href="../components/footbar.css">
-    </head>
-        <style>
-            #box{
-                cursor: pointer;
-                font-size: 13px;
-                padding-left: 89px;
-                padding-top: 1px;
-            }
-            #head{
-                width: 65%;
-               height: 50px;
-                background-color:  #e3e5e8;
-                border-radius: 4px; 
-                margin:auto;
-                font-family: sans-serif;
-                /* color: white; */
-                display: flex;
-               
-            }
-            .box{
-                width: 25%;
-                /* color:white; */
-                margin-top: 14px;
-                margin-left: 10px;
-               /* // border: 1px solid; */
-                background-color: #e3e5e8;
-            }
-            .box2{
-                margin-top: 14px;
-                margin-left: 120px;
-                width: 40%;
-                display: flex;
-                /* border: 1px solid; */
-                justify-content: space-around;
-                background-color: #e3e5e8;
-            }
-           
-            select{
-                /* background-color: transparent; */
-                padding: 4%;
-                /* color: white; */
-                border: 0px;
-                font-size: 15px;
-                background-color: #e3e5e8;  
-            }
-            #products8{
-                margin-right: 25px;
-            }
-            
-            
-        </style>
-    </head>
-    <body>
-        <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/accessories-min_3000x.jpg?v=16123715183000w"width=100% height="300px"/>
-        <div id="box"><h4>Home / ACCESSORIES</h4</div>
-    
-            <div id="head">
-                <!-- <div class="box">ACCESSORIES</div> -->
-                <div class="box">ACCESSORIES</div>
-                <div class="box2">
-                  <div id="products8">Total 8 products</div>
-                  <div>Sort BY</div>
-                  
-                  <div >
-                      <select>
-                          <option>Best Selling</option>
-                          <option>Featured</option>
-                          <option>Price,low to high</option>
-                          <option>Price,high to low</option>
-                          <option>Alphabetically A-Z</option>
-                          <option>Alphabetically Z-A</option>
-                          <option>Date,new to told</option>
-                          <option>Date,told to new</option>
-                      </select>
-                  </div>
-              </div>
-              </div>
-            </body>
-            </html>
-        <script type="module">
-                import navbar from '../components/navbar.js'
-                document.getElementById("this_nav").innerHTML=navbar();
-           
-                import footbar from '../components/footbar.js'
-                document.getElementById('foot').innerHTML=footbar();
-           </script>
-           <script src="../components/navbar-2.js"></script>
-       <script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
+    <title>Computer Glasses | Buy Blue Zero Computer Glasses at great prices | Specsmakers – Specsmakers Opticians PVT. LTD.</title>
+  
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footbar.css">
+    <link rel="stylesheet" href="../components/products.css">
+</head>
+<body>
+  <div id="this_nav"></div>
+  <div id="botnav" class="flex jusspacebet">
+    <div onclick="showleft()">⇵ FEATURED</div>
+    <div id="midline">|</div>
+    <div onclick="showsort()"> ⇌ REFINE BY</div>
+  </div>
+  <div id="top-img"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/accessories-min_3000x.jpg?v=16123715183000w" alt=""></div>
+  <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1612371541-Accessories_homepage_Mobile.jpg" alt=""></div>
+
+  <div id="body">
+      <div id="p1" class="flex"><a href="../index.html">Home / </a> <p>Accesories</p></div>
+      <div id="products">
+        <div id="left">
+        </div>
+        <div id="right">
+          <div id="rnav">
+            <div id="buy1">ACCESORIES</div>
+            <div id="totalprod"></div>
+            <div  onclick="dissort()" id="sortby">
+              <div>SORT BY</div>
+              <div class="flex"> <div>Featured</div><div id="chevron">
+              </div></div>
+            </div>
+          </div>
+          <div id="hidsort">
+            <div id="hidsortcontent">
+              <div onclick="LtH()">Price, low to high</div>
+              <div onclick="HtL()">Price, high to low</div>
+            </div>
+          </div>
+          <div id="dispro"></div>
+        </div>
+      </div>
+  </div>
+  <div id="foot"></div>
+</body>
+</html>
+<script type="module">
+  import navbar from '../components/navbar.js'
+  document.getElementById("this_nav").innerHTML=navbar();
+
+  import footbar from '../components/footbar.js'
+  document.getElementById('foot').innerHTML=footbar();
+</script>
+<script src="../components/navbar-2.js"></script> 
+
+
+<script src="../api/accesories.js">
+
+</script>
+<script type="module">
     //    var product=JSON.parse(localStorage.getItem("shop"))||[];
-     var obj=[
-        {
-            "name": "Airvue",
-            "descrption": "Airvue Monthly Disposable Contact Lenses. Submit power post placing the order.",
-            "price": "590",
-            "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Regular-Lens-01_9793998e-dc77-447e-a227-e510031daab1_1024x.jpg?v=1596562606",
-            "price2": "990",
-            "quantity": "SKU: Monthly Disposable Contact Lenses (6 Lenses/Box)"
-        },
-        {
-            "name": "Airvue",
-            "descrption": "Airvue TORIC Monthly Disposable Contact Lenses. Submit power post placing the order.",
-            "price": "990",
-            "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Toric-Lens-01_f950278e-e4f1-4fbe-9574-cd4288a265f9_1024x.jpg?v=1596562599",
-            "price2": "1190",
-            "quantity": "SKU: Toric Monthly Disposable Contact Lenses (3 Lenses/Box)"
-        },
-        {
-            "name": "Airvue",
-            "descrption": "Airvue Color Contact Lenses. Available in Zero Power only.",
-            "price": "590",
-            "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_26a8168f-703b-44ae-b11c-fc7d2b5ac57e_1024x.jpg?v=1609760846",
-            "price2": "990",
-            "quantity": "SKU: Color Contact Lenses - Monthly Disposable - Pack of 2 (ZERO POWER)"
-        },
-        {
-            "name": "Airvue",
-            "descrption": "Airvue Monthly Disposable Contact Lenses - PACK OF 2. FREE COMPLEMENTARY CONTACT LENS SOLUTION. Submit power post placing the order.",
-            "price": "1190",
-            "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Packof2_1024x.jpg?v=1606731910",
-            "price2": "1980",
-            "quantity": "SKU: MONTHLY DISPOSABLE CONTACT LENSES - PACK OF 2 (6 Lenses/Box)"
-        },
-        {
-            "name": "Airvue",
-            "descrption": "Airvue Monthly Disposable Contact Lenses - Pack of 4. FREE COMPLEMENTARY CONTACT LENS SOLUTION (2 bottles). Submit power post placing the order.",
-            "price": "2190",
-            "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Packof4_1024x.jpg?v=1606733330",
-            "price2": "3960",
-            "quantity": "SKU: MONTHLY DISPOSABLE CONTACT LENSES - PACK OF 4 (6 Lenses/Box)."
-        }
-    ];
+    //  var obj=[
+    //     {
+    //         "name": "Airvue",
+    //         "descrption": "Airvue Monthly Disposable Contact Lenses. Submit power post placing the order.",
+    //         "price": "590",
+    //         "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Regular-Lens-01_9793998e-dc77-447e-a227-e510031daab1_1024x.jpg?v=1596562606",
+    //         "price2": "990",
+    //         "quantity": "SKU: Monthly Disposable Contact Lenses (6 Lenses/Box)"
+    //     },
+    //     {
+    //         "name": "Airvue",
+    //         "descrption": "Airvue TORIC Monthly Disposable Contact Lenses. Submit power post placing the order.",
+    //         "price": "990",
+    //         "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Toric-Lens-01_f950278e-e4f1-4fbe-9574-cd4288a265f9_1024x.jpg?v=1596562599",
+    //         "price2": "1190",
+    //         "quantity": "SKU: Toric Monthly Disposable Contact Lenses (3 Lenses/Box)"
+    //     },
+    //     {
+    //         "name": "Airvue",
+    //         "descrption": "Airvue Color Contact Lenses. Available in Zero Power only.",
+    //         "price": "590",
+    //         "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_26a8168f-703b-44ae-b11c-fc7d2b5ac57e_1024x.jpg?v=1609760846",
+    //         "price2": "990",
+    //         "quantity": "SKU: Color Contact Lenses - Monthly Disposable - Pack of 2 (ZERO POWER)"
+    //     },
+    //     {
+    //         "name": "Airvue",
+    //         "descrption": "Airvue Monthly Disposable Contact Lenses - PACK OF 2. FREE COMPLEMENTARY CONTACT LENS SOLUTION. Submit power post placing the order.",
+    //         "price": "1190",
+    //         "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Packof2_1024x.jpg?v=1606731910",
+    //         "price2": "1980",
+    //         "quantity": "SKU: MONTHLY DISPOSABLE CONTACT LENSES - PACK OF 2 (6 Lenses/Box)"
+    //     },
+    //     {
+    //         "name": "Airvue",
+    //         "descrption": "Airvue Monthly Disposable Contact Lenses - Pack of 4. FREE COMPLEMENTARY CONTACT LENS SOLUTION (2 bottles). Submit power post placing the order.",
+    //         "price": "2190",
+    //         "image": "https://cdn.shopify.com/s/files/1/0015/2879/1092/products/Packof4_1024x.jpg?v=1606733330",
+    //         "price2": "3960",
+    //         "quantity": "SKU: MONTHLY DISPOSABLE CONTACT LENSES - PACK OF 4 (6 Lenses/Box)."
+    //     }
+    // ];
        </script>
        
