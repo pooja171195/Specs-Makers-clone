@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
+    <title>Account – Specsmakers Opticians PVT. LTD.</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         #img{
-         padding:30px;
-         height: 40px;
+         padding:15px 0px;
+         border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+         cursor: pointer;
          /* text-decoration: underline; */
+        }
+        #loginmain{
+            width: 33%;
+            margin: auto;
+            margin-top: 100px;
         }
        
         #sign{
-            width:40%;
+            width:100%;
             margin: auto;
             text-align: center;
             margin-top: 30px;
         }
+        #sign>h1{
+            font-size: 24px;
+        }
         input{
             display: block;
-            height:50px;
-            width:80%;
+            border: 1px solid rgba(128, 128, 128, 0.589);
+            height:43px;
+            width:100%;
             margin: auto;
             margin-top: 20px;
             border-radius: 30px;
             font-size: 20px;
+            outline: transparent;
         }
         button{
             height:50px;
-            width:80%;
+            width:100%;
             margin: auto;
-            margin-top: 20px;
+            margin-top: 25px;
             border-radius: 30px;
+            border: transparent;
             font-size: 18px;
             background-color: black;
             color: white;
+            cursor: pointer;
         }
         div>hr{
-            width: 60%;
+            width: 90%;
         }
-        p{
-            font-size: 24px;
+        #forpass{
+            font-size: 17px;
+            margin: 40px 0px;
         }
         #media{
-            width:30%;
+            width: 100%;
             margin: auto;
             text-align: center;
             margin-top: 30px;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,49%);
+            grid-gap: 20px 2%;
             color:white;
             border:transparent;
             border-radius:5px;
@@ -76,7 +95,7 @@
             text-decoration: none;
         }
         #policy{
-            width:30%;
+            width:100%;
             margin: auto;
             text-align: center;
         }
@@ -85,7 +104,8 @@
         }
 
         #fb,#goo,#link,#ama{
-            height: 100%;
+            margin: -8px;
+            height: 32px;
             border: 0  5px 5px 0;
             border-left: 1px solid rgba(128, 128, 128, 0.637);
         }
@@ -94,11 +114,12 @@
             margin-right: 10px;
         }
         #media>a>div{
-            height: 50px;
-            width: 250px;
+            height: 35px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             border-radius: 5px; 
+            font-size: 13px;
         }
         #media>a>div>div{
             margin: 10px;
@@ -107,52 +128,7 @@
         #media>a{
             margin-bottom: 10px;
         }
-        @media only screen and (min-width:0px) and (max-width:375px){
-          
-          
-          #media{
-          width:90%;
-          margin: auto;
-          text-align: center;
-          margin-top: 30px;
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
-          color:white;
-         
-      }
-      #media>a>div{
-          height: 50px;
-          width:100%;
-          display: flex;
-          justify-content: space-between;
-          border-radius: 5px; 
-      }
-          #sign{
-              width:100%;
-              display: flex;
-              flex-wrap: wrap;
-             justify-content: center;
-          }
-
-          input{
-          display: block;
-          /* height:50px; */
-          width:80%;
-          margin: auto;
-          margin-top: 20px;
-          border-radius: 30px;
-          font-size: 20px;
-         
-      }
-      #policy{
-          width:90%;
-          margin: auto;
-          text-align: center;
-
-      }
      
-      }
-
       @media only screen and (min-width:376px)and(max-width:768px){
           #media{
           width:90%;
@@ -194,18 +170,77 @@
           text-align: center;
       }
       }
+      @media only screen and (min-width:767px) and (max-width:1028px){
+          #loginmain{
+              width: 50%;
+          }
+      }
+      @media only screen and (min-width:0px) and (max-width:767px){
+          #loginmain{
+              width: 95%;
+          }
+      }
+      @media only screen and (min-width:0px) and (max-width:375px){
+          
+          
+          #media{
+          width:100%;
+          margin: auto;
+          text-align: center;
+          margin-top: 30px;
+          display: grid;
+          grid-template-columns: repeat(1,90%);
+          grid-gap: 20px 10%;
+          color:white;
+         
+      }
+      #media>a>div{
+          height: 35px;
+          width:100%;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 5px; 
+      }
+          #sign{
+              width:100%;
+              display: flex;
+              flex-wrap: wrap;
+             justify-content: center;
+          }
+
+          input{
+          display: block;
+          /* height:50px; */
+          width:80%;
+          margin: auto;
+          margin-top: 20px;
+          border-radius: 30px;
+          font-size: 20px;
+         
+      }
+      #policy{
+          width:90%;
+          margin: auto;
+          text-align: center;
+
+      }
+     
+      }
+
     </style>
 
 </head>
 <body>
-    <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img">
-   <hr>
+    <a href="../index.html"><img  src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img"></a>
+
+    <div id="loginmain">
+     
     <div id="sign">
         <h1>Sign In</h1>
        <input type="text" placeholder="Email address" id="Log_email">
        <input type="password" placeholder="Password" id="Log_password">
        <button id="check"><b>Continue</b></button>
-       <p>Forget Password?</p>
+       <p id="forpass">Forget Password?</p>
        <hr>
        <p><a href="register.html">Continue as a new customer</a></p>
     </div>
@@ -237,30 +272,30 @@
     <div id="policy">
     <h4>By clicking any of the social login buttons you agree to the terms of privacy policy described <a href="https://oneclicksociallogin.devcloudsoftware.com/privacy/policy/">here</a></h4>
 </div>
+    </div>
 
 
 </body>
+</html>
 <script type="module">
 
-   var user_cred=JSON.parse(localStorage.getItem("User"));
-      
-   document.getElementById("check").addEventListener("click",check);
-   function check(){
-     let email=document.getElementById("Log_email").value;
-      let password=document.getElementById("Log_password").value;
-      
-      if((email=="adminn")&&(password=="admin")){
-
-      }
-    else{
-      for (var i in user_cred){
-          if((user_cred[i].email=email)&&(user_cred[i].password==password)){
-              alert("Login Successful");
-              window.location.href="./poducts/tryOn.html";
-          }
-      }
+    var user_cred=JSON.parse(localStorage.getItem("User"));
+       
+    document.getElementById("check").addEventListener("click",check);
+    function check(){
+      let email=document.getElementById("Log_email").value;
+       let password=document.getElementById("Log_password").value;
+       
+       if((email=="admin")&&(password=="admin")){
+           window.location.href="../components/admin.html"
+       }
+     else{
+       for (var i in user_cred){
+           if((user_cred[i].email=email)&&(user_cred[i].password==password)){
+               alert("Login Successful");
+               window.location.href="../index.html";
+           }
+       }
+     }
     }
-   }
-    
-</script>
-</html>
+ </script>
