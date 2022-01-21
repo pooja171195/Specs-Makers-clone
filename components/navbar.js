@@ -1,5 +1,5 @@
 function navbar (){
-    return ` <div class=" fixed width100 top0 left0">
+    return ` <div class="fixed width100 top0 left0">
     <div id="menu2" class="width100 height63p colwhite bl1  ">
         <div class="width90 flex marauto jusspacebet">
             <a href="../index.html"><div class="mar7p point"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
@@ -10,7 +10,7 @@ function navbar (){
                 </div>
                 <div class="mar23p10 flex point" onclick="open_search()">SEARCH <div id="magnifying-glass"></div></div>
                 <div class="mar23p10 flex point" id="myaccount" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
-                <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+                <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i id="bag" class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
             </div>
         </div>
     </div>

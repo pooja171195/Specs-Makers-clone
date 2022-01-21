@@ -6,37 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
-    <title>Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | – Specsmakers Opticians PVT. LTD.</title>
+    <title>Buy Sunglasses | Latest Sunglasses collection| Stylish Sunglasses | Specsmakers Specsmakers Opticians PVT. LTD.</title>
     <script type="module">
       import navbar from '/components/navbar.js'
       document.getElementById("this_nav").innerHTML=navbar();
  
       import footbar from '/components/footbar.js'
       document.getElementById('foot').innerHTML=footbar();
- </script>
- <script src="/components/navbar-2.js"></script>
+    </script>
+    <script src="/components/navbar-2.js"></script> 
     <link rel="stylesheet" href="/components/navbar.css">
     <link rel="stylesheet" href="/components/footbar.css">
     <link rel="stylesheet" href="../components/products.css">
 </head>
 <body>
   <div id="this_nav"></div>
-  <div id="top-img"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/computer-glasses-min_3000x.jpg?v=16410189023000w" alt=""></div>
-  <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1641018947-Mega---BluZero.jpg" alt=""></div>
+  <div id="botnav" class="flex jusspacebet">
+    <div onclick="showleft()">⇵ FEATURED</div>
+    <div id="midline">|</div>
+    <div onclick="showsort()"> ⇌ REFINE BY</div>
+  </div>
+  <div id="top-img"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/Sunglasses_men_collection_banner_3000x.jpg?v=16410189973000w" alt=""></div>
+  <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1641019023-Mega---sunglass.jpg" alt=""></div>
 
   <div id="body">
-      <div id="p1"><a href="../index.html">Home </a> / Buy 1 Get1 Free. Use: BZBOGO</div>
+      <div id="p1" class="flex"><a href="../index.html">Home / </a> <p>Buy 1 Get1 Free. Use: BZBOGO</p></div>
       <div id="products">
         <div id="left">
-            <div id="showfilters"></div>
+            <div id="showfilters">
+                <div id="frame">
+                  <div>
+                    <div>Frame Type</div>
+                    <div><i class="fas fa-caret-down"></i></div>
+                  </div>
+                 <div>
+                  <div onclick="fullframes()">
+                    <div id="fullframe"></div>
+                    <div><img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png" alt=""></div>
+                  </div>
+                  <div onclick="halfFrame()">
+                    <div id="Halfframe"></div>
+                    <div><img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png" alt=""></div>
+                  </div>
+                  <div onclick="rimLess()">
+                    <div id="Rimless"></div>
+                    <div> <img id="rimimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png" alt=""></div>
+                  </div>
+                 </div>
+                </div>
+                <div id="frameshape">
+                  <div>
+                    <div>Frame Shape</div>
+                    <div><i class="fas fa-caret-down"></i></div>
+                  </div>
+                  <div>
+                    <div onclick="rectangle()">
+                      <div id="rec"></div>
+                      <div><img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rectangle.png" alt="img"></div>
+                    </div>
+                    <div onclick="rounds()">
+                      <div id="round"></div>
+                      <div><img id="roundimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png" alt=""></div>
+                    </div>
+                    <div onclick="ovals()">
+                      <div id="oval"></div>
+                      <div><img id="ovalimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Oval.png" alt=""></div>
+                    </div>
+                    <div onclick="pilots()">
+                      <div id="pilot"></div>
+                      <div><img id="pilotimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png" alt=""></div>
+                    </div>
+                    <div onclick="cates()">
+                      <div id="cate"></div>
+                      <div> <img id="pilotimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png" alt=""></div>
+                    </div>
+                    <div onclick="hexas()">
+                      <div id="hexa"></div>
+                      <div> <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Geometric.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="glasscolor">
+                  <div>
+                    <div>Color</div>
+                    <div><i class="fas fa-caret-down"></i></div>
+                  </div>
+                  <div>
+                    <div onclick="blacks()">
+                      <div>
+                        <div></div>
+                        <div id="black"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="browns()">
+                      <div>
+                        <div></div>
+                        <div id="brown"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="blues()">
+                      <div>
+                        <div></div>
+                        <div id="blue"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="greys()">
+                      <div>
+                        <div></div>
+                        <div id="grey"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="gunmetals()">
+                      <div>
+                        <div></div>
+                        <div id="gunmetal"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="goldens()">
+                      <div>
+                        <div></div>
+                        <div id="golden"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="silvers()">
+                      <div>
+                        <div></div>
+                        <div id="silver"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="transparents()">
+                      <div>
+                        <div></div>
+                        <div id="transparent"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="greens()">
+                      <div>
+                        <div></div>
+                        <div id="green"></div>
+                      </div>
+                     
+                    </div>
+                    <div onclick="tortoises()">
+                      <div>
+                        <div></div>
+                        <div id="tortoise"></div>
+                      </div>
+                    
+                    </div>
+                    <div onclick="pinks()">
+                      <div>
+                        <div></div>
+                        <div id="pink"></div>
+                      </div>
+                     
+                    </div>
+                    <div onclick="reds()">
+                      <div>
+                        <div></div>
+                        <div id="red"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="golds()">
+                      <div>
+                        <div></div>
+                        <div id="gold"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="purples()">
+                      <div >
+                        <div></div>
+                        <div id="purple"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="maroons()">
+                      <div>
+                        <div></div>
+                        <div id="maroon"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="yellows()">
+                      <div>
+                        <div></div>
+                        <div id="yellow"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="rosegolds()">
+                      <div>
+                        <div></div>
+                        <div id="rosegold"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="oranges()">
+                      <div>
+                        <div></div>
+                        <div id="orange"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="whites()">
+                      <div>
+                        <div></div>
+                        <div id="white"></div>
+                      </div>
+                      
+                    </div>
+                    <div onclick="coppers()">
+                      <div>
+                        <div></div>
+                        <div id="copper"></div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div id="framesize">
+                  <div >
+                    <div>Frame Size</div>
+                    <div><i class="fas fa-caret-down"></i></div>
+                  </div>
+                  <div >
+                    <div onclick="largs()">
+                      <div><div id="large"></div></div>
+                    </div>
+                    <div onclick="mediums()">
+                      <div><div id="medium"></div></div>
+                    </div>
+                    <div onclick="smalls()">
+                      <div><div id="small"></div></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
         <div id="right">
           <div id="rnav">
-            <div>BUY 1 GET 1 FREE. USE:BZBOGO</div>
+            <div id="buy1">BUY 1 GET 1 FREE. USE:BZBOGO</div>
             <div id="totalprod"></div>
-            <div>
+            <div  onclick="dissort()" id="sortby">
               <div>SORT BY</div>
-              <div>Featured <div id="chevron"></div></div>
+              <div class="flex"> <div>Featured</div><div id="chevron">
+              </div></div>
+            </div>
+          </div>
+          <div id="hidsort">
+            <div id="hidsortcontent">
+              <div onclick="LtH()">Price, low to high</div>
+              <div onclick="HtL()">Price, high to low</div>
             </div>
           </div>
           <div id="dispro"></div>
@@ -46,6 +276,7 @@
   <div id="foot"></div>
 </body>
 </html>
+
 
 
 <script src="../api/sunglass.js">

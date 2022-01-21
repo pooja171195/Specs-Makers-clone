@@ -53691,6 +53691,20 @@ function HtL(){
     document.getElementById("dispro").innerHTML="";
     display(com_pro);
 }
+function showleft(){
+    if(document.getElementById("left").style.display==="none"){
+        document.getElementById("left").style.display="block"
+    } else{
+        document.getElementById("left").style.display="none"
+    }
+}
+function showsort(){
+    if(document.getElementById("hidsortcontent").style.display==="none"){
+        document.getElementById("hidsortcontent").style.display="block"
+    } else{
+        document.getElementById("hidsortcontent").style.display="none"
+    }
+}
   function display(com_pro){
      com_pro.forEach(function(elements){
         document.getElementById("totalprod").innerText=` Total ${com_pro.length} Products`
@@ -53749,10 +53763,17 @@ function HtL(){
 
          mainDiv.append(img, div2, div3, div4);
          document.getElementById("dispro").append(mainDiv)
-        mainDiv.addEventListener("click", function(){
+        img.addEventListener("click", function(){
             localStorage.setItem("glass", JSON.stringify(elements));
             window.location.href="../collections/purchase.html";
         })
+        img.addEventListener("mouseover", function(){
+            img.src=elements.hover_image_url;
+        })
+        img.addEventListener("mouseout", function(){
+            img.src=elements.image_url;
+        })
+
 
      })
   }

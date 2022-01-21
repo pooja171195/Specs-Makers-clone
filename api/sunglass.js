@@ -8034,10 +8034,517 @@ let obj =  {
 
    ]
 }
+let full_frame = 0;
+let half_frame=0;
+let rimless=0;
+var fullobj=[];
+var halfobj=[];
+var lessobj=[];
+let rec = 0;
+let recobj=[];
+
+let round = 0
+let roundobj = [];
+
+let oval = 0;
+let ovalobj = [];
+
+let pilot=0;
+let pilotobj = [];
+
+let cate = 0;
+let cateobj = [];
+
+let hexa=0;
+let hexaobj = [];
+
+let black = 0;
+let blackobj = [];
+
+let brown = 0;
+let brownobj = [];
+
+let blue = 0;
+let blueobj = [];
+
+let grey = 0;
+let greyobj= [];
+
+let gunmetal = 0;
+let gunmetalobj=[];
+
+let golden = 0;
+let goldenobj=[];
+
+let silver = 0;
+let silverobj = [];
+
+let transparent = 0;
+let transparentobj=[];
+
+let green = 0;
+let greenobj =[];
+
+let tortoise=0;
+let tortoiseobj=[];
+
+let pink = 0;
+let pinkobj = [];
+
+let red = 0;
+let redobj = [];
+
+let gold = 0;
+let goldobj = [];
+
+let purple = 0;
+let purpleobj = [];
+
+let maroon = 0;
+let maroonobj = [];
+
+let yellow = 0;
+let yellowobj = [];
+
+let rosegold=0;
+let rosegoldobj=[];
+
+let orange = 0;
+let orangeobj = [];
+
+let white = 0;
+let whiteobj = [];
+
+let copper = 0;
+let copperobj = [];
+
+let large =0;
+let largeobj = [];
+
+let medium = 0;
+let mediumobj = [];
+
+let small = 0;
+let smallobj = [];
+    for(let i = 0; i < obj.product_list.length; i++) {
+        if(obj.product_list[i].hashtagList[3].name=='Full Rim'){
+              full_frame++;
+              fullobj.push(obj.product_list[i]);
+         } else if(obj.product_list[i].hashtagList[3].name=='Half Rim'){
+            half_frame++;
+            halfobj.push(obj.product_list[i]);
+         } else{
+            rimless++;
+            lessobj.push(obj.product_list[i]);
+         }
+
+         if(obj.product_list[i].hashtagList[1].name=='Rectangle' ||obj.product_list[i].hashtagList[1].name=='Saquare'||obj.product_list[i].hashtagList[1].name=='Wayfarear'){
+            rec++;
+            recobj.push(obj.product_list[i]);
+
+         } else if(obj.product_list[i].hashtagList[1].name=='Round'){
+            round++;
+            roundobj.push(obj.product_list[i]);
+
+         } else if(obj.product_list[i].hashtagList[1].name=='Geometric'){
+            oval++;
+            ovalobj.push(obj.product_list[i]);
+
+         }
+         else if(obj.product_list[i].hashtagList[1].name=='Aviator'){
+            pilot++;
+            pilotobj.push(obj.product_list[i]);
+
+         }
+         else if(obj.product_list[i].hashtagList[1].name=='Cat Eye'){
+            cate++;
+            cateobj.push(obj.product_list[i]);
+
+         }
+         else if(obj.product_list[i].hashtagList[1].name=='Hexagonal'){
+            hexa++;
+            hexaobj.push(obj.product_list[i]);
+
+         }
+         if(obj.product_list[i].color=="#000000"){
+            black++;
+            blackobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#a52a2a"){
+            brown++;
+            brownobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#0000ff"){
+            blue++;
+            blueobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#0000ff"){
+            blue++;
+            blueobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#808080"){
+            grey++;
+            greyobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#b87332"){
+            gunmetal++;
+            gunmetalobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ffd700"){
+            golden++;
+            goldenobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#c0c0c0"){
+            silver++;
+            silverobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#f1f1f1"){
+            transparent++;
+            transparentobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#00ff00"){
+            green++;
+            greenobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ffc0cb"){
+            pink++;
+            pinkobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ff0000"){
+            red++;
+            redobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ffd700"){
+            gold++;
+            goldobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#800080"){
+            purple++;
+            purpleobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#800000"){
+            maroon++;
+            maroonobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ffff00"){
+            yellow++;
+            yellowobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#b76e79"){
+            rosegold++;
+            rosegoldobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#ee7600"){
+            orange++;
+            orangeobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#b87333"){
+            white++;
+            whiteobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].color=="#b87333"){
+            copper++;
+            copperobj.push(obj.product_list[i]);
+         }
+         else{
+            tortoise++;
+            tortoiseobj.push(obj.product_list[i]);
+         }
+         if(obj.product_list[i].hashtagList[0].name=='Extra Narrow' || obj.product_list[i].hashtagList[0].name=='Narrow'){
+            small++;
+            smallobj.push(obj.product_list[i]);
+         }
+         else if(obj.product_list[i].hashtagList[0].name=='Medium'){
+            medium++;
+            mediumobj.push(obj.product_list[i]);
+        }
+        else if(obj.product_list[i].hashtagList[0].name=='Extra Wide' || obj.product_list[i].hashtagList[0].name=='Wide'){
+            large++;
+            largeobj.push(obj.product_list[i]);
+        }
+         
+         
+    }
+document.getElementById("fullframe").innerText=`Full Frame (${full_frame})`
+document.getElementById("Halfframe").innerText=`Half Frame (${half_frame})`
+document.getElementById("Rimless").innerText=`Rimless (${rimless})`
+
+document.getElementById("rec").innerText=`Rectangle (${rec})`
+document.getElementById("round").innerText=`Round (${round})`
+document.getElementById("oval").innerText=`Oval (${oval})`
+document.getElementById("pilot").innerText=`Pilot (${pilot})`
+document.getElementById("cate").innerText=`Cateye (${cate})`
+document.getElementById("hexa").innerText=`Hexagon (${hexa})`
+
+document.getElementById("black").innerText=`Black (${black})`
+document.getElementById("brown").innerText=`Brown (${brown})`
+document.getElementById("blue").innerText=`Blue (${blue})`
+document.getElementById("grey").innerText=`Grey (${grey})`
+document.getElementById("gunmetal").innerText=`Gunmetal (${gunmetal})`
+document.getElementById("golden").innerText=`Golden (${golden})`
+document.getElementById("silver").innerText=`Silver (${silver})`
+document.getElementById("transparent").innerText=`Transparent (${transparent})`
+document.getElementById("green").innerText=`Green (${green})`
+document.getElementById("tortoise").innerText=`Tortoise (${tortoise})`
+document.getElementById("pink").innerText=`Pink (${pink})`
+document.getElementById("red").innerText=`Red (${red})`
+document.getElementById("gold").innerText=`Gold (${gold})`
+document.getElementById("purple").innerText=`Purple (${purple})`
+document.getElementById("maroon").innerText=`Maroon (${maroon})`
+document.getElementById("yellow").innerText=`Yellow (${yellow})`
+document.getElementById("rosegold").innerText=`Rosegold (${rosegold})`
+document.getElementById("orange").innerText=`Orange (${orange})`
+document.getElementById("white").innerText=`White (${white})`
+document.getElementById("copper").innerText=`Copper (${copper})`
+
+document.getElementById("small").innerText=`small (${small})`
+document.getElementById("medium").innerText=`Medium (${medium})`
+document.getElementById("large").innerText=`Large (${large})`
+
+var com_pro = obj.product_list;
+console.log(fullobj)
+function fullframes(){
+    document.getElementById("dispro").innerHTML=""
+
+document.getElementById("totalprod").innerHTML="";    com_pro = fullobj;
+      display(com_pro);
+}
+function halfFrame(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = halfobj;
+    display(com_pro)
+}
+function rimLess(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = lessobj;
+    display(com_pro)
+}
+function rectangle(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = recobj;
+    display(com_pro)
+}
+function rounds(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = roundobj;
+    display(com_pro)
+}
+function ovals(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = ovalobj;
+    display(com_pro)
+}
+function pilots(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = pilotobj;
+    display(com_pro)
+}
+function cates(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = cateobj;
+    display(com_pro)
+}
+function hexas(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = hexaobj;
+    display(com_pro)
+}
+function blacks(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = blackobj;
+    display(com_pro)
+}
+function browns(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = brownobj;
+    display(com_pro)
+}
+function blues(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = blueobj;
+    display(com_pro)
+}
+function greys(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = greyobj;
+    display(com_pro)
+}
+function gunmetals(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = gunmetalobj;
+    display(com_pro)
+}
+function goldens(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = goldenobj;
+    display(com_pro)
+}
+function silvers(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = silverobj;
+    display(com_pro)
+}
+function transparents(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = transparentobj;
+    display(com_pro)
+}
+function greens(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = greenobj;
+    display(com_pro)
+}
+function tortoises(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = tortoiseobj;
+    display(com_pro)
+}
+function pinks(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = pinkobj;
+    display(com_pro)
+}
+function reds(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = redobj;
+    display(com_pro)
+}
+function golds(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = goldobj;
+    display(com_pro)
+}
+function purples(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = purpleobj;
+    display(com_pro)
+}
+function maroons(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = maroonobj;
+    display(com_pro)
+}function yellows(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = yellowobj;
+    display(com_pro)
+}
+function rosegolds(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = rosegoldobj;
+    display(com_pro)
+}
+function oranges(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = orangeobj;
+    display(com_pro)
+}
+function whites(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = whiteobj;
+    display(com_pro)
+}
+function coppers(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = copperobj;
+    display(com_pro)
+}
+function largs(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = largeobj;
+    display(com_pro)
+}
+function mediums(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = mediumobj;
+    display(com_pro)
+}
+function smalls(){
+    document.getElementById("dispro").innerHTML="";
+    document.getElementById("totalprod").innerHTML="";
+    com_pro = smallobj;
+    display(com_pro)
+}
+function dissort(){
+    if(document.getElementById("hidsortcontent").style.display==="block"){
+        document.getElementById("hidsortcontent").style.display="none";
+    } else{
+        document.getElementById("hidsortcontent").style.display="block"
+    }
+}
 console.log(obj)
-let com_pro = obj.product_list;
+function LtH(){
+    for(let i = 0; i < com_pro.length-1; i++) {
+        for(let j = i+1; j < com_pro.length; j++){
+            if(com_pro[i].prices[0].price>com_pro[j].prices[0].price){
+                let temp = com_pro[i];
+                com_pro[i]=com_pro[j]
+                com_pro[j]=temp;
+            }
+        }
+    } 
+    document.getElementById("dispro").innerHTML="";
+    display(com_pro);
+}
+function HtL(){
+    for(let i = 0; i < com_pro.length-1; i++) {
+        for(let j = i+1; j < com_pro.length; j++){
+            if(com_pro[i].prices[0].price<com_pro[j].prices[0].price){
+                let temp = com_pro[i];
+                com_pro[i]=com_pro[j]
+                com_pro[j]=temp;
+            }
+        }
+    } 
+    document.getElementById("dispro").innerHTML="";
+    display(com_pro);
+}
+function showleft(){
+    if(document.getElementById("left").style.display==="none"){
+        document.getElementById("left").style.display="block"
+    } else{
+        document.getElementById("left").style.display="none"
+    }
+}
+function showsort(){
+    if(document.getElementById("hidsortcontent").style.display==="none"){
+        document.getElementById("hidsortcontent").style.display="block"
+    } else{
+        document.getElementById("hidsortcontent").style.display="none"
+    }
+}
   function display(com_pro){
      com_pro.forEach(function(elements){
+        document.getElementById("totalprod").innerText=` Total ${com_pro.length} Products`
         //  console.log(elements)
          let mainDiv=document.createElement("div");
          var img = document.createElement("img");
@@ -8093,6 +8600,18 @@ let com_pro = obj.product_list;
 
          mainDiv.append(img, div2, div3, div4);
          document.getElementById("dispro").append(mainDiv)
+        img.addEventListener("click", function(){
+            localStorage.setItem("glass", JSON.stringify(elements));
+            window.location.href="../collections/purchase.html";
+        })
+        img.addEventListener("mouseover", function(){
+            img.src=elements.hover_image_url;
+        })
+        img.addEventListener("mouseout", function(){
+            img.src=elements.image_url;
+        })
+
+
      })
   }
   display(com_pro)
