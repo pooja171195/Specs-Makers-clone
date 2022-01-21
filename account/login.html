@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
+    <title>Account – Specsmakers Opticians PVT. LTD.</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +13,7 @@
         #img{
          padding:15px 0px;
          border-bottom: 1px solid rgba(128, 128, 128, 0.514);
-
+         cursor: pointer;
          /* text-decoration: underline; */
         }
         #loginmain{
@@ -51,6 +52,7 @@
             font-size: 18px;
             background-color: black;
             color: white;
+            cursor: pointer;
         }
         div>hr{
             width: 90%;
@@ -229,7 +231,7 @@
 
 </head>
 <body>
-    <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img">
+    <a href="../index.html"><img  src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img"></a>
 
     <div id="loginmain">
      
@@ -274,27 +276,26 @@
 
 
 </body>
+</html>
 <script type="module">
 
-   var user_cred=JSON.parse(localStorage.getItem("User"));
-      
-   document.getElementById("check").addEventListener("click",check);
-   function check(){
-     let email=document.getElementById("Log_email").value;
-      let password=document.getElementById("Log_password").value;
-      
-      if((email=="adminn")&&(password=="admin")){
-
-      }
-    else{
-      for (var i in user_cred){
-          if((user_cred[i].email=email)&&(user_cred[i].password==password)){
-              alert("Login Successful");
-              window.location.href="./poducts/tryOn.html";
-          }
-      }
+    var user_cred=JSON.parse(localStorage.getItem("User"));
+       
+    document.getElementById("check").addEventListener("click",check);
+    function check(){
+      let email=document.getElementById("Log_email").value;
+       let password=document.getElementById("Log_password").value;
+       
+       if((email=="admin")&&(password=="admin")){
+           window.location.href="../components/admin.html"
+       }
+     else{
+       for (var i in user_cred){
+           if((user_cred[i].email=email)&&(user_cred[i].password==password)){
+               alert("Login Successful");
+               window.location.href="../index.html";
+           }
+       }
+     }
     }
-   }
-    
-</script>
-</html>
+ </script>

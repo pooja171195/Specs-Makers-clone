@@ -6,85 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <style>
-        #img{
-         padding:30px;
-         height: 40px;
-         /* text-decoration: underline; */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
-       
+        #img{
+         padding:15px 0px;
+         border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+         cursor: pointer;
+         /* text-decoration: underline; */
+        
+        }
+        #loginmain{
+            width: 33%;
+            margin: auto;
+            margin-top: 100px;
+        }
         #sign{
-            width:40%;
+            width:100%;
             margin: auto;
             text-align: center;
             margin-top: 30px;
         }
+        #sign>h1{
+            font-size: 24px;
+        }
         input{
             display: block;
-            height:50px;
-            width:80%;
+            border: 1px solid rgba(128, 128, 128, 0.589);
+            height:43px;
+            width:100%;
             margin: auto;
             margin-top: 20px;
             border-radius: 30px;
             font-size: 20px;
-           
+            outline: transparent;
         }
         button{
             height:50px;
-            width:80%;
+            width:100%;
             margin: auto;
-            margin-top: 20px;
+            margin-top: 25px;
             border-radius: 30px;
+            border: transparent;
             font-size: 18px;
             background-color: black;
             color: white;
+            cursor: pointer;
         }
         div>hr{
-            width: 60%;
+            width: 90%;
         }
         p{
-            font-size: 24px;
+            font-size: 17px;
+            margin: 40px 0px;
         }
         #media{
-            width:30%;
+            width: 100%;
             margin: auto;
             text-align: center;
             margin-top: 30px;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,49%);
+            grid-gap: 20px 2%;
             color:white;
-           
+            border:transparent;
+            border-radius:5px;
+            font-size: 18px;
         }
         
-        #media>a>div{
+         #media>a>div{
           display:flex;
           color:white
-        }
-       
-        #fb,#goo,#link,#ama{
-            height: 100%;
-            border: 0  5px 5px 0;
-            border-left: 1px solid rgba(128, 128, 128, 0.637);
-        }
-        #media>a>div{
-            height: 50px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 5px; 
-        }
-        #media>a>div>div{
-            margin: 10px;
-
-        }
-        #media>a{
-            margin-bottom: 10px;
-            margin-right: 10px;
-        }
+        } 
         #facebook,#facebook+img{
             background-color:#3f51b5;
         }
         #google,#google+img{
-            background-color:#dd4b39;
+            background-color:#ee3d4a;
         }
         #linked,#linked+img{
             background-color: #0291e0;
@@ -95,8 +93,33 @@
         a{
             text-decoration: none;
         }
+        #fb,#goo,#link,#ama{
+            margin: -8px;
+            height: 32px;
+            border: 0  5px 5px 0;
+            border-left: 1px solid rgba(128, 128, 128, 0.637);
+        }
+        #media>a{
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        #media>a>div{
+            height: 35px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px; 
+            font-size: 13px;
+        }
+        #media>a>div>div{
+            margin: 10px;
+
+        }
+        #media>a{
+            margin-bottom: 10px;
+        }
         #policy{
-            width:30%;
+            width:100%;
             margin: auto;
             text-align: center;
         }
@@ -107,95 +130,109 @@
             color:blue;
         }
 
-        @media only screen and (min-width:0px) and (max-width:375px){
-          
-          
-            #media{
-            width:90%;
-            margin: auto;
-            text-align: center;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            color:white;
-           
-        }
-        #media>a>div{
-            height: 50px;
-            width:100%;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 5px; 
-        }
-            #sign{
-                width:100%;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            input{
-            display: block;
-            /* height:50px; */
-            width:80%;
-            margin: auto;
-            margin-top: 20px;
-            border-radius: 30px;
-            font-size: 20px;
-           
-        }
-        #policy{
-            width:90%;
-            margin: auto;
-            text-align: center;
-        }
-        }
-
         @media only screen and (min-width:376px)and(max-width:768px){
-            #media{
-            width:90%;
-            margin: auto;
-            text-align: center;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            color:white;
-           
-        }
-        #media>a>div{
-            height: 50px;
-            width:100%;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 5px; 
-        }
-            #sign{
-                width:100%;
-                display: flex;
-                flex-wrap: wrap;
-            }
+          #media{
+          width:90%;
+          margin: auto;
+          text-align: center;
+          margin-top: 30px;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          color:white;
+         
+      }
+      #media>a>div{
+          height: 50px;
+          width:100%;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 5px; 
+      }
+          #sign{
+              width:100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+          }
 
-            input{
-            display: block;
-            /* height:50px; */
-            width:90%;
-            margin: auto;
-            margin-top: 20px;
-            border-radius: 30px;
-            font-size: 20px;
-           
-        }
-        #policy{
-            width:90%;
-            margin: auto;
-            text-align: center;
-        }
-        }
+          input{
+          display: block;
+          /* height:50px; */
+          width:90%;
+          margin: auto;
+          margin-top: 20px;
+          border-radius: 30px;
+          font-size: 20px;
+         
+      }
+      #policy{
+          width:90%;
+          margin: auto;
+          text-align: center;
+      }
+      }
+      @media only screen and (min-width:767px) and (max-width:1028px){
+          #loginmain{
+              width: 50%;
+          }
+      }
+      @media only screen and (min-width:0px) and (max-width:767px){
+          #loginmain{
+              width: 95%;
+          }
+      }
+      @media only screen and (min-width:0px) and (max-width:375px){
+          
+          
+          #media{
+          width:100%;
+          margin: auto;
+          text-align: center;
+          margin-top: 30px;
+          display: grid;
+          grid-template-columns: repeat(1,90%);
+          grid-gap: 20px 10%;
+          color:white;
+         
+      }
+      #media>a>div{
+          height: 35px;
+          width:100%;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 5px; 
+      }
+          #sign{
+              width:100%;
+              display: flex;
+              flex-wrap: wrap;
+             justify-content: center;
+          }
+
+          input{
+          display: block;
+          /* height:50px; */
+          width:80%;
+          margin: auto;
+          margin-top: 20px;
+          border-radius: 30px;
+          font-size: 20px;
+         
+      }
+      #policy{
+          width:90%;
+          margin: auto;
+          text-align: center;
+
+      }
+     
+      }
     </style>
 
 </head>
 <body>
     <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img">
-   <hr>
+ <div id="loginmain">
     <div id="sign">
         <h1>Nice To Meet You</h1>
        <input type="text" placeholder="Full Name" id="name">
@@ -234,6 +271,7 @@
       <h3>I have an account,<a href="login.html">Sign in</a></h3>
  </div>
 
+ </div>
 
 </body>
 <script>
@@ -255,6 +293,7 @@
         user_cred.push(user_credientials);
         localStorage.setItem("User",JSON.stringify(user_cred));
         console.log(user_cred);
+        alert("Registration Successful")
           window.location.href="login.html";
         }
         else{
