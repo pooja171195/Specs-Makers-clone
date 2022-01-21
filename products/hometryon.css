@@ -420,6 +420,7 @@ transform: translate(-50%,-50%);
 -ms-transform: translate(-50%,-50%);
 }
 #sptext>div{
+   margin-top: 10%;
    font-size: 30px;
    display: inline;
    color: gray;
