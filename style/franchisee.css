@@ -1,0 +1,483 @@
+#main{
+    margin-top: 150px;
+}
+#text_div{
+    margin-top: 70px;
+    text-align: center;
+}
+#text_div h1{
+    line-height: 10px;
+}
+#text_div p{
+    line-height: 1.5;
+  font-size: 19px;
+  font-family: 'Neue Montreal';
+    color: #808080;
+}
+#images{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#images .img:nth-child(1) img{
+  height: 180px;
+  width: 180px;
+  margin-left: 100px;
+
+}
+#images .img:nth-child(2) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 150px;
+   
+  }
+  #images .img:nth-child(3) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 150px;
+    
+  }
+  #images .img:nth-child(4) img{
+    height: 180px;
+    width: 180px;
+    margin-left: 180px;
+  }
+  .img{
+      text-align: center;
+  }
+  .img h3{
+      margin-left: 80px;
+  }
+  #blue_box{
+    margin-top: 40px;
+      height: 650px;
+      width: 100%;
+      background-color: #D1ECF9;
+      text-align: center;
+  }
+  #blue_box h2{
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #blue_box img{
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  #text_div2{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .text{
+    display: flex;
+   margin-left: 250px;
+  }
+  .text p{
+    padding-left: 30px;
+  }
+  #blue_box2{
+    width: 100%;
+    height: 180vh;
+    background-color: #D1ECF9;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #icon{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  #icon div{
+    text-align: center;
+    margin-left: 80px;
+  }
+  #icon div img{
+    width: 130px;
+    height: 130px;
+  }
+  #icon div p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #threeimg{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  #threeimg img{
+    width: 450px;
+    height: 250px;
+    padding-left: 30px;
+    
+  }
+  #black_box{
+    margin-top: 80px;
+    margin-left: 160px;
+    height: 90px;
+    width: 80%;
+    background-color: #231F20;
+    text-align: center;
+    color: white;
+    line-height: 10px;
+   padding: 20px;
+  }
+  #input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  #input input {
+    width: 60%;
+    height: 45px;
+    border:grey solid 0.1px;
+    border-radius: 15px;
+    margin-left: 300px;
+    font-size:medium;
+    padding-left: 30px;
+    
+  }
+  #input p{
+    text-align:left;
+    margin-left: 310px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  #input button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+     font-size: large;
+     
+     margin-left: 680px;
+  }
+  #footer{
+   margin-top: -140px;
+  }
+  
+
+
+  @media only screen and (min-width:480px) and (max-width:767px){
+    #main{
+      margin-top:80px;
+  }
+  #text_div{
+      margin-top: 10px;
+      text-align: center;
+  }
+  #text_div h1{
+      line-height: 20px;
+      font-size: 20px;
+  }
+  #text_div p{
+    
+    font-size: 15px;
+    font-family: 'Neue Montreal';
+      color: #808080;
+  }
+  #images{
+     display: grid !important;
+     grid-template-columns: repeat(2,1fr) !important;
+      margin-left: -100px !important;
+     
+    
+  }
+  
+    .img{
+        text-align: center;
+        font-size: smaller;
+        
+    }
+    .img img{
+      height: 100px;
+      width: 100px;
+      margin-right: 40px;
+    }
+    .img:nth-child(1) img{
+      margin-right: 20px;
+    }
+    
+    #blue_box{
+      margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background-color: #D1ECF9;
+        text-align: center;
+    }
+    #blue_box h2{
+      padding-top: 10px;
+      font-size: 30px;
+    }
+    #blue_box img{
+      width: 95%;
+  margin-left: 5px;
+      margin-bottom: 50px;
+    }
+    #text_div2{
+      text-align: center;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+     margin-left: 0;
+    }
+    .text p{
+      padding-left: 0;
+    }
+    #blue_box2{
+      width: 100%;
+      height: 180vh;
+      background-color: #D1ECF9;
+      margin-top: 10px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    #icon{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-left: 0;
+      margin-top: 0;
+    }
+    #icon div{
+      text-align: center;
+      margin-left: 0;
+    }
+    #icon div img{
+      width: 100px;
+      height: 100px;
+    }
+    #icon div p{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #threeimg{
+      display: flex;
+      flex-direction: row;
+      margin-left: 40px;
+      margin-top: 20px;
+     gap: 10px;
+    }
+    #threeimg img{
+      width: 150px;
+      height: 100px;
+      padding-left: 30px;
+      
+    }
+    #black_box{
+      margin-top: 20px;
+      margin-left: 40px;
+      height: 90px;
+      width: 80%;
+      background-color: #231F20;
+      text-align: center;
+      color: white;
+     padding: 10px 20px 25px 20px ;
+     font-size: 10px;
+    }
+    #black_box h1{
+      font-size:20px ;
+      line-height: 20px;
+    }
+    #input{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    #input input {
+      width: 80%;
+      height: 45px;
+      border:grey solid 0.1px;
+      border-radius: 15px;
+      margin-left: 50px;
+      font-size:medium;
+      padding-left: 30px;
+      
+    }
+    #input p{
+      text-align:left;
+      margin-left: 50px;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    #input button{
+      width: 200px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 15px;
+      border: none;
+       font-size: large;
+       
+       margin-left: 200px;
+    }
+    #footer{
+     margin-top: -200px;
+    
+  }
+
+  }
+  
+  @media only screen and (min-width:0px) and (max-width:390px){
+    #main{
+      margin-top:60px;
+  }
+  #text_div{
+      margin-top: 10px;
+      text-align: center;
+  }
+  #text_div h1{
+      line-height: 20px;
+      font-size: 20px;
+  }
+  #text_div p{
+    
+    font-size: 15px;
+    font-family: 'Neue Montreal';
+      color: #808080;
+  }
+  #images{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+      margin-left: -100px;
+  }
+  
+    .img{
+        text-align: center;
+        font-size: smaller;
+        
+    }
+    .img img{
+      height: 100px;
+      width: 100px;
+      margin-right: 40px;
+    }
+    .img:nth-child(1) img{
+      margin-right: 20px;
+    }
+    
+    #blue_box{
+      margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background-color: #D1ECF9;
+        text-align: center;
+    }
+    #blue_box h2{
+      padding-top: 10px;
+      font-size: 30px;
+    }
+    #blue_box img{
+      width: 95%;
+  margin-left: 5px;
+      margin-bottom: 50px;
+    }
+    #text_div2{
+      text-align: center;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+     margin-left: 0;
+    }
+    .text p{
+      padding-left: 0;
+    }
+    #blue_box2{
+      width: 100%;
+      height: 245vh;
+      background-color: #D1ECF9;
+      margin-top: 10px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    #icon{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-left: 0;
+      margin-top: 0;
+    }
+    #icon div{
+      text-align: center;
+      margin-left: 0;
+    }
+    #icon div img{
+      width: 100px;
+      height: 100px;
+    }
+    #icon div p{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #threeimg{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 20px;
+     gap: 10px;
+    }
+    #threeimg img{
+      width: 250px;
+      height: 150px;
+      padding-left: 30px;
+      
+    }
+    #black_box{
+      margin-top: 20px;
+      margin-left: 0;
+      height: 90px;
+      width: 80%;
+      background-color: #231F20;
+      text-align: center;
+      color: white;
+     padding: 10px 20px 25px 20px ;
+     font-size: 10px;
+    }
+    #black_box h1{
+      font-size:20px ;
+      line-height: 20px;
+    }
+    #input{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    #input input {
+      width: 60%;
+      height: 45px;
+      border:grey solid 0.1px;
+      border-radius: 15px;
+      margin-left: 50px;
+      font-size:medium;
+      padding-left: 30px;
+      
+    }
+    #input p{
+      text-align:left;
+      margin-left: 50px;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    #input button{
+      width: 200px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 15px;
+      border: none;
+       font-size: large;
+       
+       margin-left: 50px;
+    }
+    #footer{
+     margin-top: -200px;
+    
+  }
+  }
+  

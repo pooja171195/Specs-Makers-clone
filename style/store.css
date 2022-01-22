@@ -1,0 +1,135 @@
+#main{
+    margin-top: 120px;
+}
+#main h1{
+    font-size: 35px;
+    margin-left: 10px;
+    color:rgb(121,120,116);
+}
+#address_box{
+    height: 350px;
+    width: 100%;
+    border: grey solid 0.3px;
+}
+.address_box{
+    margin-left: 30px;
+}
+
+#input input {
+    height: 30px;
+    width: 75%;
+    border: grey solid 0.3px;
+    padding-left: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#input button{
+    height: 35px;
+   width: 20%;
+border: none;
+   background-color: #6C78EB;
+   color: white;
+   font-size: 15px;
+   border-radius: 5px;
+   margin-left: 20px;
+   font-weight: bold;
+}
+#input select{
+    height: 35px;
+    width: 99%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+hr{
+    margin-top: 20px;
+    width: 98%;
+}
+#search{
+    height: 35px;
+    width: 20%;
+ border: none;
+    background-color: #6C78EB;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#mainmap_div{
+display: flex;
+gap: 2%;
+margin-top: 3%;
+}
+#add_div{
+    height: 500px;
+    width: 30%;
+    border: grey solid 0.3px;
+}
+#map_div{
+    height: 500px;
+    width: 75%;
+    border: grey solid 0.3px;
+    background-color: #E5E3DF;
+}
+.address{
+    line-height: 110%;
+    
+}
+.address h4,p{
+    font-size: 80%;
+     margin-left: 3%;
+     
+}
+.address h4{
+    line-height: 5%;
+}
+#results{
+    text-align: center;
+}
+ #footer{
+   margin-top: -5%;
+}
+
+
+@media only screen and (min-width:0px) and (max-width:390px){
+
+  #input button{
+  
+      font-size: 13px;
+      width: 150px;
+      margin: 2% 0 0 0;
+  }
+#search{
+    font-size: 13px;
+      width: 150px;
+      margin: 2% 0 0 0;
+}
+#add_div{
+display: none;
+    
+}
+#map_div{
+    width: 100%;
+}
+#footer{
+    margin-top: -60%;
+ }
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+    #add_div{
+        display: none;
+        
+    }
+    #map_div{
+        width: 100%;
+    }
+    #input button{
+  
+        font-size: 13px;
+        width: 150px;
+        margin: 2% 0 0 0;
+    }
+    #footer{
+        margin-top: -30%;
+     }
+}
