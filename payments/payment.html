@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        #main{
+            display:flex;
+            width:60%;
+            margin: auto;
+            border: solid red 1px;
+            height:900px;
+        }
+        #main>#icon{
+           
+            width:40%;
+            border : blue solid 1px;
+        }
+        #icon>div{
+            margin:30px;
+            display:flex;
+            justify-content: space-between;
+
+        }
+        #img{
+            display:flex;
+        }
+        #img>img{
+            height:30px;
+            width:20px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        #payment{
+            width:60%;
+            border:1px solid black;
+            margin-left: 30px;
+
+        }
+        #payment>div>a{
+            display:flex;
+            justify-content: space-between;
+         }
+        #payment>div>a>div{
+            display: flex;
+        }
+        #payment>div>a>div>img{
+            height:30px;
+            width:30px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        #payment>a>div>div>img+h4{
+            font-size: 18px;
+        } 
+        a{
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="icon">
+    <div>
+        <div id="img">
+           <img src="https://img.icons8.com/ios-filled/2x/long-arrow-left.png" alt="">
+           <h4>Back</h4>
+        </div>
+        <div>
+            <p>Specsmakers</p>
+        </div>
+    </div>
+    <div>
+            <h1>Choose a payment option </h1>
+    </div>
+    <div>
+         <h4>Total payable Amount</h4>
+         <h4>2999</h4>
+    </div>
+    </div>
+    <div id="payment">
+      <h3>PAYMENTS</h3>
+      <div >
+          <a href="./cards.html">
+          <div>
+              <img src="https://img.icons8.com/glyph-neue/2x/bank-cards.png" alt="">
+              <h4>Cards(Credit/Debit)</h4>
+          </div>
+          <div>
+              <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <hr>
+      <div >
+          <a href="EMI.html">
+        <div>
+            <img src="https://api.payu.in/public/assets/images/cardless.svg" alt="">
+            <h4>EMI</h4>
+        </div>
+        <div>
+            <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+        </div>
+    </a>
+    </div>
+    <hr>
+    <div >
+        <a href="netbanking.html">
+        <div>
+            <img src="https://api.payu.in/public/assets/images/net-banking-icon.svg" alt="">
+            <h4>Net  Banking</h4>
+        </div>
+        <div>
+            <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+        </div>
+    </a>
+    </div>
+    <hr>
+    <div >
+        <a href="wallet.html">
+        <div>
+            <img src="https://api.payu.in/public/assets/images/wallet-icon.svg" alt="">
+            <h4>Wallet</h4>
+        </div>
+        <div>
+            <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+        </div>
+    </a>
+    </div>
+    <hr>
+    <div >
+        <a href="upi.html">
+        <div>
+            <img src="https://api.payu.in/public/assets/images/upi-icon.svg" alt="">
+            <h4>UPI</h4>
+        </div>
+        <div>
+            <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+        </div>   
+    </a>
+    </div>
+    <hr>
+    <div>
+        <h3>Cash on Delivery</h3>
+    </div>
+    
+    </div>
+ </div>
+</body>
+</html>

@@ -6,10 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/60c93948be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
-    <title>Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | – Specsmakers Opticians PVT. LTD.</title>
-    <link rel="stylesheet" href="./style/index.css">
+    <title>Computer Glasses | Buy Blue Zero Computer Glasses at great prices | Specsmakers – Specsmakers Opticians PVT. LTD.</title>
+  
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footbar.css">
+    <link rel="stylesheet" href="../components/products.css">
 </head>
 <body>
-    
+  <div id="this_nav"></div>
+  <div id="botnav" class="flex jusspacebet">
+    <div onclick="showleft()">⇵ FEATURED</div>
+    <div id="midline">|</div>
+    <div onclick="showsort()"> ⇌ REFINE BY</div>
+  </div>
+  <div id="top-img"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/accessories-min_3000x.jpg?v=16123715183000w" alt=""></div>
+  <div id="restop-img"><img src="https://metafields-manager-by-hulkapps.s3-accelerate.amazonaws.com/uploads/specsmakerspartner.myshopify.com/1612371541-Accessories_homepage_Mobile.jpg" alt=""></div>
+
+  <div id="body">
+      <div id="p1" class="flex"><a href="../index.html">Home / </a> <p>Accesories</p></div>
+      <div id="products">
+        <div id="left">
+        </div>
+        <div id="right">
+          <div id="rnav">
+            <div id="buy1">ACCESORIES</div>
+            <div id="totalprod"></div>
+            <div  onclick="dissort()" id="sortby">
+              <div>SORT BY</div>
+              <div class="flex"> <div>Featured</div><div id="chevron">
+              </div></div>
+            </div>
+          </div>
+          <div id="hidsort">
+            <div id="hidsortcontent">
+              <div onclick="LtH()">Price, low to high</div>
+              <div onclick="HtL()">Price, high to low</div>
+            </div>
+          </div>
+          <div id="dispro"></div>
+        </div>
+      </div>
+  </div>
+  <div id="foot"></div>
 </body>
 </html>
+<script type="module">
+  import navbar from '../components/navbar.js'
+  document.getElementById("this_nav").innerHTML=navbar();
+
+  import footbar from '../components/footbar.js'
+  document.getElementById('foot').innerHTML=footbar();
+</script>
+<script src="../components/navbar-2.js"></script> 
+
+
+<script src="../api/accesories.js">
+
+</script>
+       

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mySlides {display: none;}
+        img {
+            
+            vertical-align: middle;
+        }
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            /* margin: auto; */
+        }
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/SM_Website_Refresh_banner_1_3000x.jpg?v=16410198083000w" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Clip-on_1500x.jpg?v=1641017925" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Mega-Blue-zero_1500x.jpg?v=1641018037" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/BOGO_1500x.jpg?v=1641018069" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/BluPro_faf7e763-b2fd-45ab-b164-efc1eb88f7da_1500x.jpg?v=1641018111" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Home-Eye-Check-up-Main-page-Website-banner-DEC-2021-min_1500x.jpg?v=1640161076" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Lensmakers_Main_page_Website_banner-min_1500x.jpg?v=1634975096" alt="">
+        </div>
+   </div>
+</body>
+</html>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+   
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+   
+    slides[slideIndex-1].style.display = "block";  
+   
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>

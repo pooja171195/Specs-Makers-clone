@@ -1,0 +1,316 @@
+#eyedisplayflex{
+    border: 1px solid transparent;
+    width: 86%;
+    margin: auto;
+    display: flex;
+}
+#eyeleftdiv{
+    border: 1px solid;
+    width: 20%;
+    height: 600px;
+    overflow: auto;
+    color: rgb(245, 240, 240);
+}
+#eyeleftdiv::-webkit-scrollbar {
+      width: 7px;
+ }
+ #eyeleftdiv::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+#eyedropdown1{
+    border: 1px solid;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#eyedropdown1 button{
+    padding: 14px;
+}
+#dropoptions button{
+    border: 0;
+    background-color: transparent;
+    
+}
+#dropoptions>div{
+   
+    margin: auto;
+    margin-top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#rimimg{
+    margin-left: 24px;
+}
+#roundimg{
+    margin-left: 26px;
+}
+#ovalimg{
+    margin-left: 38px;
+}
+#pilotimg{
+    margin-left: 38px;
+}
+#cateyeimg{
+    margin-left: 14px;
+
+}
+#hexagonimg{
+    margin-left: 13px;
+}
+#dropbtn{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#eyerightdiv{
+    border: 1px solid yellow;
+    width: 78%;
+}
+#icondropdown{
+    margin-left: 70px;   
+}
+#eyedropdown2{
+    border: 1px solid;
+    width: 95%;
+    margin-top: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions1 button{
+    border: 0;
+    background-color: transparent;
+    padding: 14px;
+}
+#dropoptions1{
+    margin-top: 10px;
+    height: 160px;
+    overflow : auto;
+}
+#dropoptions1 div{
+    
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions1::-webkit-scrollbar {
+      width: 5px;
+ }
+ #dropoptions1::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+#dropbtn1{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#icondropdown1{
+    margin-left: 70px;   
+}
+#eyedropdown3{
+    border: 1px solid;
+    width: 95%;
+    margin-top: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions3 button{
+    border: 0;
+    background-color: transparent;
+    padding: 14px;
+}
+#dropoptions3{
+    margin-top: 10px;
+    height: 200px;
+    overflow : auto;
+}
+#dropoptions3 div{
+    
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions3::-webkit-scrollbar {
+      width: 5px;
+ }
+ #dropoptions3::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+#dropbtn3{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#icondropdown3{
+    margin-left: 120px;   
+}
+#dropoptions3 >div{
+    display: flex;
+}
+#ptagradius1{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius2{
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius3{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius4{
+    width: 20px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius5{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius6{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius7{
+    width: 20px;
+    height: 20px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius8{
+    width: 20px;
+    height: 20px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius9{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius10{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius11{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#ptagradius12{
+    width: 20px;
+    height: 20px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#eyedropdown4{
+    border: 1px solid;
+    width: 95%;
+    margin-top: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions4 button{
+    border: 0;
+    background-color: transparent;
+    padding: 14px;
+}
+#dropoptions4{
+    margin-top: 10px;
+    height: 160px;
+    overflow : auto;
+}
+#dropoptions4 div{
+    
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions4::-webkit-scrollbar {
+      width: 5px;
+ }
+ #dropoptions4::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+#dropbtn4{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#icondropdown4{
+    margin-left: 58px;   
+}
+
+#eyedropdown5{
+    border: 1px solid;
+    width: 95%;
+    margin-top: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions5 button{
+    border: 0;
+    background-color: transparent;
+    padding: 14px;
+}
+#dropoptions5{
+    margin-top: 10px;
+    height: 160px;
+    overflow : auto;
+}
+#dropoptions5 div{
+    
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#dropoptions5::-webkit-scrollbar {
+      width: 5px;
+ }
+ #dropoptions5::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+#dropbtn5{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#icondropdown5{
+    margin-left: 58px;   
+}
+#homeeyeglassesPtag{
+    margin-left: 7%;
+}
+
+
+
+
+
+
+
+.show {
+    display: block;
+}

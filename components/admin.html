@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+   <div>
+    <input type="text"id="name"placeholder="enter no">
+    <input type="text"id="quantity"placeholder="enter no of qunatity">
+    <input type="text"id="description"placeholder="enter description">
+    <input type="number"id="price"placeholder="enter price">
+    <input type="text"id="image"placeholder="enter image">
+    <input type="number"id="price2"placeholder="enter price without discount">
+
+    <button onclick="submit()">submit</button>
+</div>
+<hr>
+<div>
+<input type="text"id="name"placeholder="enter no">
+<input type="number"id="price"placeholder="enter price">
+<input type="number"id="price2"placeholder="enter price without discount">
+<input type="text"id="image"placeholder="enter image">
+<input type="text"id="description"placeholder="enter description">
+<button onclick="submitting()">submit</button>
+</div>
+</body>
+</html>
+<script>
+    var product=JSON.parse(localStorage.getItem("shop"))||[];
+    function submit(){
+        let object={
+            name:document.getElementById("name").value,
+            descrption:document.getElementById("description").value,
+            price:document.getElementById("price").value,
+            image:document.getElementById("image").value,
+            price2:document.getElementById("price2").value,
+            quantity:document.getElementById("quantity").value,
+
+        }
+        console.log(object)
+        product.push(object)
+        localStorage.setItem("shop",JSON.stringify(product));
+        console.log(product);
+ }
+ var product2=JSON.parse(localStorage.getItem("shop2"))||[];
+    function submitting(){
+        let object={
+            name:document.getElementById("name").value,
+            descrption:document.getElementById("description").value,
+            price:document.getElementById("price").value,
+            image:document.getElementById("image").value,
+            price2:document.getElementById("price2").value,
+        }
+        console.log(object)
+        product.push(object)
+        localStorage.setItem("shop2",JSON.stringify(product2));
+        console.log(product2);
+ }
+    
+
+</script>

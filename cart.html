@@ -4,9 +4,762 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/footbar.css">
+    <style>
+        #total{
+            margin-top: 130px;
+            margin-left: 90px;
+        }
+        #clear{
+            margin-left: 90px;
+            border:solid black 1px;
+            display: inline;
+            padding:10px;
+            margin-bottom: 20px;
+            color:white;
+            background-color: black;
+        }
+        #main{
+          
+            width:90%;
+            margin: auto;
+            /* border: solid red 1px; */
+            display:flex;
+            margin-top: 20px;
+        }
+        #main>#items{
+            width:65%;
+            /* border: solid blue 1px; */
+            height: 100%;
+           
+          
+        }
+        #items>div{
+            width:100%;
+            display : flex;
+            border: solid grey 1px;
+            border-radius:5px ;
+            margin-bottom: 10px;
+        }
+        #items>div>div{
+            width:50%;
+               
+        }
+        #items>div>div>div{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        #items>div>div>div>div{
+            display: flex;
+            height:20px;
+           
+            justify-content: space-between;
+            /* border: solid grey 1px; */
+            
+        }
+        #items>div>div>div>div>p{
+            padding: 10px 10px 20px 10px;
+           
+            border: grey 2px solid;
+        }
+        #items>div>div>img{
+            width:100%;
+        }
+        #items>div>div>h2{
+            margin-right: 30px;
+        }
+        
+        
+        #main>#sug{
+            margin-left: 50px;
+            width:35%;
+            /* border: solid black 5px; */
+            height: 750px;
+            
+        }
+        #sug>div>h1{
+           text-align: center;
+        }
+        #sug>div>div{
+            display:flex;
+            width:100%;
+            /* border:solid red 1px; */
+            height:150px;
+            margin-bottom: 30px;
+        }
+        #sug>div>div>div{
+            width:30%;
+            /* border:solid grey 1px; */
+        }
+        #sug>div>div>div>img{
+            width:100%;
+            height: 100%;
+            border:solid grey 1px;
+        }
+        #sug>div>div>div+div{
+            width:70%;
+            /* border:solid blue 1px; */
+            margin-left: 30px; 
+        }
+        #gift{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          
+        }
+        #gift>h3{
+            color:grey;
+        }
+        #gift>button{
+            height:50px;
+            font-size: 18px;
+            padding : 10px 60px;
+            background-color: transparent;
+            
+        }
+        #gift>img{
+            height:50px;
+        }
+        hr{
+            width:90%;
+            margin: auto;
+            margin-bottom: 20px;
+           
+        }
+        #pincode{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #pincode>input{
+         width:35%;
+         height:40px;
+         border-radius: 5px;
+         border: solid 1px grey;
+         margin-right: 30px;
+         font-size: 20px;
+        }
+        #pincode>button{
+            padding:10px 40px;
+            background-color: black;
+            font-size: 18px;
+            color: white;
+        }
+        #check{
+            width:90%;
+            display: flex;
+            margin: auto;
+        }
+        #check>#img{
+         width:65%;
+         /* border:solid red 1px; */
+        }
+       #check>#img>img{
+            width:100%
+        }
+        #check>#checkout{
+            width:35%;
+            /* border:solid blue 1px; */
+        }
+        #check>#checkout>div{
+            display:flex;
+            margin-bottom: 10px;
+        }
+        #check>#checkout>div>img{
+            width:20px;
+            height: 20px;
+            margin-top: 20px;
+        }
+        #check>#checkout>div{
+          justify-content: space-between;
+        }
+        #check_input{
+            justify-content: center;
+        }
+        #check_input>input{
+            width:70%;
+          height:40px;
+          font-size: 18px;
+        }
+        #check_input>button{
+            width:27%;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+        }
+        #checkout_button>button{
+            width:100%;
+            height:60px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+        #suggestion>div{
+            text-align: center;
+            margin-top: 50px;
+        }
+        #suggestion>#suggest{
+          
+            width:90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 3%;
+            margin-top:30px;
+        }
+        #suggest>div>img{
+            width:100%;
+            height: 400px;
+        }
+        #suggest>div{
+            text-align: center;
+        }
+        #suggest>div>div{
+            display: flex;
+            justify-content: center;
+        }
+        #suggest>div>div>h2{
+            margin-left: 40px;
+        }
+        #suggest>div>div>h2+h2{
+            text-decoration: line-through;
+        }
+       @media (min-width:376px) and (max-width:768px){
+        #main{
+          
+          width:90%;
+          margin: auto;
+          /* border: solid red 1px; */
+           display:grid;
+           grid-template-columns: repeat(1,1fr);
+          margin-top: 20px;
+      }
+      #total{
+            text-align: center;
+        }
+        #main>#items{
+            width:100%;
+            /* border: solid blue 1px; */
+            height: 100%;
+           
+          
+        }
+        #items>div{
+            width:100%;
+            display: block;
+            border: solid grey 1px;
+            border-radius:5px ;
+            margin-bottom: 10px;
+        }
+        #items>div>div{
+            width:100%;
+        }
+        #main>#sug{
+           
+            width:90%; 
+            margin: auto;
+            justify-content: center;
+          
+        }
+        #sug>div>div{
+            display:block;
+            width:100%;
+            border:solid red 1px;
+            height: 220px;
+            /* height:150px; */
+            /* margin-bottom: 30px; */
+        }
+        #sug>div>div>div+div{
+            width:100%;
+            /* text-align: center; */
+            /* margin-bottom: 30px; */
+            /* margin-left: 30px;  */
+        }
+     
+        #sug>div>div>div>img{
+            width:100%;
+            height:100px;
+            border:solid grey 1px;
+            align-self: center;
+           
+        }
+        #sug>div{
+            justify-content:center ;
+        }
+
+        #sug>div>div>div{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        #gift{
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 50px;
+          
+        }
+        #check{
+            width:90%;
+            display: block;
+            margin: auto;
+        }
+        #check>#img{
+         width:100%;
+         /* border:solid red 1px; */
+        }
+       #check>#img>img{
+            width:100%
+        }
+        #check>#checkout{
+            width:100%;
+            /* border:solid blue 1px; */
+        }
+        #suggestion>div{
+            text-align: center;
+            margin-top: 50px;
+        }
+        #suggestion>#suggest{
+          
+            width:90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 3%;
+            margin-top:30px;
+        }        
+    }
+    @media (min-width:0px) and (max-width:375px){
+        #main{
+          
+          width:90%;
+          margin: auto;
+          /* border: solid red 1px; */
+           display:grid;
+           grid-template-columns: repeat(1,1fr);
+          margin-top: 20px;
+      }
+      #clear{
+             margin-left: 20px; 
+            border:solid black 1px;
+            display: inline;
+            padding:10px;
+            margin-bottom: 20px;
+            color:white;
+            background-color: black;
+        }
+      #total{
+            margin-top: 80px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        #main>#items{
+            width:100%;
+            /* border: solid blue 1px; */
+            height: 100%;
+           
+          
+        }
+        #items>div{
+            width:100%;
+            display: block;
+            border: solid grey 1px;
+            border-radius:5px ;
+            margin-bottom: 10px;
+        }
+        #items>div>div{
+            width:100%;
+        }
+        #main>#sug{
+            /* margin-left: 50px;*/
+            width:90%; 
+            margin: auto;
+            /* border: solid black 5px; */
+              /* height:900px;    */
+        }
+        #sug>div>div{
+            display:block;
+            width:100%;
+            height:300px;
+            margin-bottom: 50px;
+            /* border:solid red 1px; */
+            /* height:150px; */
+            /* margin-bottom: 30px; */
+        }
+        #sug>div>div>div+div{
+            width:100%;
+            /* border:solid blue 1px; */
+            /* margin-left: 30px;  */
+        }
+        #sug>div>div>div>img{
+            width:100%;
+            height:100px;
+            border:solid grey 1px;
+            text-align: center;
+        }
+        #sug>div>div>div{
+            justify-content: center;
+        }
+        #check{
+            width:90%;
+            display: block;
+            margin: auto;
+        }
+        #check>#img{
+         width:100%;
+         /* border:solid red 1px; */
+        }
+       #check>#img>img{
+            width:100%
+        }
+        #check>#checkout{
+            width:100%;
+            /* border:solid blue 1px; */
+        }
+        #suggestion>div{
+            text-align: center;
+            margin-top: 50px;
+        }
+        #suggestion>#suggest{
+          
+            width:90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 3%;
+            margin-top:30px;
+        }  
+        
+    }
+         
+    </style>
 </head>
-<body>
+<body id="body">
+    <div id="this_nav"></div>
+    <h2  id="total"></h2>
+    <hr>
+    <h4 id="clear">CLEAR CART</h4>
+    <div id="main">
+        <div id="items">
+        
+        </div>
+    <div id="sug">
+            <div><h1>You might also like :</h1></div>
+        <div id="sug_img">
+           
+        </div>
+         
+        </div>
+    </div>
     
+    <div id="gift">
+        <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/2x/external-gift-thanksgiving-justicon-lineal-color-justicon.png" alt="">
+        <h3>GET YOUR 2ND PAIR FREE. BUY 1 GET 1 FREE ON ALL COLLECTIONS</h3>
+        <button id="gift_button"><b>ADD YOUR 2nd PAIR</b></button>
+    </div>
+     <hr>
+     <div id="pincode">
+        <h1>CHECK ESTIMATED DELIVERY DATE</h1>
+        <input type="text" placeholder="Enter Your Pincode" id="pin">
+        <button id="pincode_button">CHECK</button>
+     </div>
+    <hr>
+    <div id="check">
+        <div id="img">
+        <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/cart_specsmakers.png?v=1607675107" alt="">
+       </div>
+        <div id="checkout">
+          <div>
+          <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/2x/external-select-checkmark-symbol-to-choose-true-answer-basic-filled-tal-revivo.png" alt="">
+          <h4>Buy 1 Get 1 FREE. For Eyeglasses, BluPro & DigiPro, Use Code: 'SMBOGO'. For Sunglasses & BlueZero, Use Code: 'BZBOGO'</h4>
+          </div>
+         
+          <div>
+            <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/2x/external-select-checkmark-symbol-to-choose-true-answer-basic-filled-tal-revivo.png" alt="">
+            <h4>Free standard shipping above ₹500 and free returns. Include frame case, lens cloths and lens cleaner.</h4>
+          </div>
+          <div>
+              <div>Shipping
+            </div>
+              <div>Standard: Free</div>
+          </div>
+          <div>
+            <div>Subtotal
+            </div>
+            <div id="money"></div>
+          </div>
+          <div id="check_input">
+              <input type="text" placeholder="Discount Code" id="discount">
+              <button id="coupon">APPLY</button>
+
+          </div>
+          <div id="checkout_button">
+              <button id="Check_option">Check Out</button>
+          </div>
+        </div>
+    </div>
+    <div id="suggestion">
+      <div><h1>May we also suggest</h1></div>
+      <div id="suggest"></div>
+    </div>
+    <div id="foot"></div>
 </body>
 </html>
+<script type="module">
+     import navbar from './components/navbar.js'
+     document.getElementById("this_nav").innerHTML=navbar();
+
+     import footbar from './components/footbar.js'
+     document.getElementById('foot').innerHTML=footbar();
+
+     var object=[
+         {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+     {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+     {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+     {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+     {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+     {
+         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
+         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
+         desc:"SSFWTMGY57STR1007",
+         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
+         price:"990",
+
+     },
+    ]
+
+  
+
+    var suggest= [
+        {
+            image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/2_63b00747-85ae-4536-af86-67d1ba35c917_1024x.png?v=1625640965",
+            name:"Safety Goggles Polycarbonate Reuseable Anti-Fog Specs Shield",
+            price2:"990",
+            price:"490",
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/anti-fogTileimage_1024x.jpg?v=1603272069",
+            name:"Specsmakers Anti-Fog Cloth",
+            price2:"2590",
+            price:"749",
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_8dcc7420-37eb-4d77-99f7-29bd809b4ddc_1024x.png?v=1625103736",
+            name:"Eyewear Cleaning Kit (Anti-Fog Cloth 1pc, Cleaning Solution 2pcs, Selvyt Cloth 2pcs)",
+            price2:"990",
+            price:"490",
+        },
+    ];
+
+    console.log(suggest);
+     var totalmoney=0;
+var s = "₹"
+
+
+display(object);
+// console.log(productquantity);
+function display(object){
+    
+    object.map(function(elem){
+         elem.productquantity = 1; 
+     let items=document.getElementById("items")
+      var imgdiv=document.createElement("div");
+      var textdiv=document.createElement("div");
+      let div=document.createElement("div");
+     let img = document.createElement("img");
+     img.src=elem.image;
+     let h1=document.createElement("h2");
+     h1.textContent=elem.name;
+    console.log(img)
+     let h4=document.createElement("h4");
+     h4.textContent=elem.desc;
+    
+     let h3 = document.createElement("h3");
+     h3.textContent=elem.external;
+    
+     let price=document.createElement("h2");
+     price.textContent=`${s}`+elem.price;
+     let quantitydiv = document.createElement("div");
+      let quantity = document.createElement("h4");
+      quantity.textContent="Quantity"
+      let element = document.createElement("div");
+      let decrease = document.createElement("p");
+      decrease.textContent="-";
+      
+      decrease.addEventListener("click",function(){
+          console.log("here")
+
+          if( elem.productquantity!=1){
+            elem.productquantity=elem.productquantity-1;
+          
+            quan.textContent=elem.productquantity;
+            var total = document.getElementById("total");
+            prices(object)
+var money = document.getElementById("money");
+money.textContent= `${s}`+totalmoney;
+          }    
+      })
+      let increase = document.createElement("p");
+      increase.textContent="+";
+      increase.addEventListener("click",function(){
+          console.log("here")
+            elem.productquantity=elem.productquantity+1;
+            console.log(elem.productquantity);
+            quan.textContent=elem.productquantity;
+            var total = document.getElementById("total");
+            prices(object);
+
+       var money = document.getElementById("money");
+        money.textContent= `${s}`+totalmoney;
+      })
+      let quan = document.createElement("p");
+      quan.textContent=elem.productquantity;
+      console.log(typeof(productquantity));
+      element.append(decrease,quan,increase);
+      quantitydiv.append(quantity,element,price);
+    //   totalmoney+= Number(elem.productquantity)*Number(elem.price);
+    
+    imgdiv.append(img);
+    textdiv.append(h1,h4,h3,quantitydiv);
+    // console.log(imgdiv,textdiv);
+
+    div.append(imgdiv,textdiv);
+    items.append(div);
+    console.log(div);
+   
+
+})
+}
+var total = document.getElementById("total");
+total.textContent=`Your Cart :  ${s}`+totalmoney;
+var money = document.getElementById("money");
+money.textContent= `${s}`+totalmoney;
+console.log(totalmoney);
+
+
+
+var sugg=document.getElementById("suggest");
+appended(suggest);
+   
+  function appended(suggestion){
+      suggestion.map(function(elem){
+          let div=document.createElement("div");
+          let pricediv=document.createElement("div");
+          let img = document.createElement("img");
+          img.src=elem.image;
+          let name = document.createElement("h3");
+          name.textContent=elem.name;
+          let price1=document.createElement("h2");
+          price1.textContent=`${s}`+elem.price;
+          let price2 = document.createElement("h2");
+          price2.textContent=`${s}`+elem.price2;
+          pricediv.append(price1,price2);
+           div.append(img,name,pricediv);
+           div.addEventListener("click",function(){
+               localStorage.setItem("Gotocart",JSON.stringify(elem));
+               window.location.href="cart.html";
+           })
+           sugg.append(div);
+      })
+  }
+
+  displayflex(suggest);
+    
+    function displayflex(suggest){
+        suggest.map(function(elem){
+            var main= document.getElementById("sug_img");
+         let div= document.createElement("div");
+         let imgdiv=document.createElement("div");
+         let textdiv=document.createElement("div");
+         let img = document.createElement("img");
+         img.src=elem.image;
+         let h2 = document.createElement("h2");
+         h2.textContent=elem.name;
+         let price = document.createElement("h2");
+         price.textContent=`${s}`+elem.price;
+         imgdiv.append(img);
+         textdiv.append(h2,price);
+         div.append(imgdiv,textdiv);
+         main.append(div);
+        })
+    }
+document.getElementById("clear").addEventListener("click",function(){
+    let body = document.getElementById("body");
+    body.innerHTML="";
+})
+
+function prices(object){
+    totalmoney=0;
+    object.map(function(elem){
+  totalmoney+=Number(elem.productquantity)*Number(elem.price);
+    })
+    total.textContent=`Your Cart :  ${s}`+totalmoney;
+    var money = document.getElementById("money");
+        money.textContent= `${s}`+totalmoney;
+    
+}
+prices(object);
+total.textContent=`Your Cart :  ${s}`+totalmoney;
+
+
+
+document.getElementById("gift_button").addEventListener("click",function(){
+    window.location.href="../index.html"
+})
+document.getElementById("checkout_button").addEventListener("click",function(){
+    window.location.href="../payments/address.html"
+})
+document.getElementById("pincode_button").addEventListener("click",function(){
+    window.location.href="../payments/address.html"
+})
+document.getElementById("coupon").addEventListener("click",function(){
+    // window.location.href="../inde.html";
+    var disc = document.getElementById("discount").value;
+    console.log("here")
+    if(disc=="MASAI"){
+      alert("Succefully You Get 30% Off")
+        let discount = ((totalmoney)/100)*30;
+         totalmoney=totalmoney-discount;
+        total.textContent=`Your Cart :  ${s}`+totalmoney;
+      var money = document.getElementById("money");
+        money.textContent= `${s}`+totalmoney;
+    }
+})
+</script>

@@ -15,10 +15,34 @@
   <div id="this_nav"></div>
 
   <!-- @media min-width 767px -->
-  <!-- <div id="firstimg"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/2-pairs_1900x.jpg?v=1641017857" alt=""></div> -->
+  <div id="firstimg">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/collections/SM_Website_Refresh_banner_1_3000x.jpg?v=16410198083000w" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Clip-on_1500x.jpg?v=1641017925" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Mega-Blue-zero_1500x.jpg?v=1641018037" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/BOGO_1500x.jpg?v=1641018069" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/BluPro_faf7e763-b2fd-45ab-b164-efc1eb88f7da_1500x.jpg?v=1641018111" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Home-Eye-Check-up-Main-page-Website-banner-DEC-2021-min_1500x.jpg?v=1640161076" alt="">
+      </div>
+      <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Lensmakers_Main_page_Website_banner-min_1500x.jpg?v=1634975096" alt="">
+      </div>
+ </div>
+  </div>
 
    <!-- @media min-width 0px and max-width 767px  -->
-   <!-- <div id="firstimage"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Mega---BOGO_1000x.jpg?v=1641018076" alt=""></div> -->
+   <div id="firstimage"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Mega---BOGO_1000x.jpg?v=1641018076" alt=""></div>
   <div id="box">
     <div id="box1">
       <div>
@@ -317,3 +341,27 @@
      document.getElementById('foot').innerHTML=footbar();
 </script>
 <script src="./components/navbar-2.js"></script>
+<script type="module">
+  
+  import obj from './api/eyeglass.js'
+     console.log(obj);
+</script>
+<script>
+   var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+   
+    var slides = document.getElementsByClassName("mySlides");
+   
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+   
+    slides[slideIndex-1].style.display = "block";  
+   
+    setTimeout(showSlides, 3000); 
+    }
+</script>

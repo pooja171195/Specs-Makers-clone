@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        input,select{
+            display: block;
+            height:50px;
+            width:80%;
+            margin-top:20px;
+            
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #main{
+            width:80%;
+            margin: auto;
+            margin-top: 50px;
+            display:flex;
+
+        }
+      
+        #main>div{
+          width:50%;
+          
+        }
+        button{
+            height: 60px;
+            width:30%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+        #details{
+            border-right: solid 1px grey;
+            height:1000px;
+           
+        }
+        #cart{
+         
+           width:50%;
+           margin-top: 50px;
+           margin-left: 50px;
+           text-align: center;
+           border:1px solid red;
+         
+        }
+        #item{
+            display:flex;
+           
+            border:1px solid red;
+            width:90%;
+           margin: auto;
+        }
+       #item>div>img{
+
+        border:1px solid grey;
+           height:40px;
+           width:40px;
+           border-radius: 5px;
+           padding: 20px;
+       }
+       #content{
+           width:70%;
+           margin-left: 20px;
+           border:1px solid red;
+           display: flex;
+           overflow:visible ;
+           height:auto;
+       }
+       #promo{
+           display:flex;
+           width:90%;
+           margin: auto;
+       }
+     
+       #promo>button{
+           margin-top: 20px;
+          
+           background-color:black;
+           border-radius: 5px;
+          
+       }
+       #subtotal{
+           display: flex;
+           justify-content: space-between;
+           width:90%;
+           margin: auto;
+       }
+       #total{
+        display: flex;
+           justify-content: space-between; 
+           width:90%;
+           margin: auto;
+       }
+       #cart>hr{
+           width:90%;
+           margin: auto;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="details">
+            
+                <h1>Contact Information</h1>
+            
+           
+            <h1>Shipping address</h1>
+             
+                  <!-- India states -->
+<select id="country-state" name="country-state">
+    <option value="AN">Andaman and Nicobar Islands</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CH">Chandigarh</option>
+    <option value="CT">Chhattisgarh</option>
+    <option value="DN">Dadra and Nagar Haveli</option>
+    <option value="DD">Daman and Diu</option>
+    <option value="DL">Delhi</option>
+    <option value="GA">Goa</option>
+    <option value="GJ">Gujarat</option>
+    <option value="HR">Haryana</option>
+    <option value="HP">Himachal Pradesh</option>
+    <option value="JK">Jammu and Kashmir</option>
+    <option value="JH">Jharkhand</option>
+    <option value="KA">Karnataka</option>
+    <option value="KL">Kerala</option>
+    <option value="LA">Ladakh</option>
+    <option value="LD">Lakshadweep</option>
+    <option value="MP">Madhya Pradesh</option>
+    <option value="MH">Maharashtra</option>
+    <option value="MN">Manipur</option>
+    <option value="ML">Meghalaya</option>
+    <option value="MZ">Mizoram</option>
+    <option value="NL">Nagaland</option>
+    <option value="OR">Odisha</option>
+    <option value="PY">Puducherry</option>
+    <option value="PB">Punjab</option>
+    <option value="RJ">Rajasthan</option>
+    <option value="SK">Sikkim</option>
+    <option value="TN">Tamil Nadu</option>
+    <option value="TG">Telangana</option>
+    <option value="TR">Tripura</option>
+    <option value="UP">Uttar Pradesh</option>
+    <option value="UT">Uttarakhand</option>
+    <option value="WB">West Bengal</option>
+</select>
+<input type="text" placeholder="Enter Name"  id="name">
+<input type="text" placeholder="Address" id="address">
+<input type="text" placeholder="Apartment,suit,etc.(option)">
+<input type="text" placeholder="City">
+<input type="text" placeholder="State">
+<input type="pincode" placeholder="PIN code">
+<input type="number" placeholder="Phone">
+<button><a href="payment.html">Continue to Shipping</a></button>
+  <a href="../cart.html"><h3>Return to cart</h3></a>
+
+  <hr>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">Refund Policy</a>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">PrivacyPolicy</a>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE"> Terms and Conditons</a>
+ </div>
+
+ <div  id="cart">
+     <div>
+        <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/logo_large_22c05d89-15fc-4d28-993f-4e8553946941.png?34533" alt="">
+     </div>
+      <div id="item">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_7b292574-329a-40bc-be5f-1609dba918df_480x.jpg?v=1636614638" alt="">
+          </div>
+          
+            <div  id="content"> 
+                 <h3>sudeepbd</h3>
+            </div>
+            <div >
+                <h3>2990</h3>
+            </div>
+         
+      </div>
+      <hr>
+      <div id="promo">
+          <input type="text" placeholder="Discount code">
+          <button>Apply</button>
+      </div>
+      <hr>
+      <div id="subtotal">
+          <h2>Subtotal</h2>
+          <h2>2990</h2>
+      </div>
+      <hr>
+      <div id="total">
+          <h2>Total</h2>
+          <h2>2990</h2>
+      </div>
+ </div>
+    </div>
+</body>
+</html>

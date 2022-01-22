@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./eye.css">
+    <title>Eyeglasses</title>
+</head>
+<body>
+    <div></div>
+    <div id="eyemain">
+        <div id="eyedisplayflex">
+            <div id="eyeleftdiv">
+               <div id="eyedropdown1">
+                    <div><button id="dropbtn" onclick="dropdownFun1()">Frame Type <i id="icondropdown" class="fa fa-caret-down"></i></button></div>
+                    <div id="dropoptions">                       
+                        <div>
+                            <button id="fullframebtn">Full Frame (363)</button>
+                            
+                        </div>                       
+                        <div>
+                            <button id="halfframebtn">Half Frame (116)</button>
+                            <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png" alt="">
+                         </div>
+                        <div>
+                            <button id="rimlessbtn">Rimless (84)</button>
+                            <img id="rimimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png" alt="">
+                        </div>                       
+                    </div>
+               </div>
+                <div id="eyedropdown2">
+                    <div> <button id="dropbtn1" onclick="dropdownFun2()">Frame Shape <i id="icondropdown1" class="fa fa-caret-down"></i></button></div>
+                    <br>
+                    <div id="dropoptions1">
+                        <div>
+                            <button id="rectanglebtn">Rectangle (252)</button>
+                            <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rectangle.png" alt="img">
+                        </div>
+                        <div>
+                            <button id="roundbtn">Round (51)</button>
+                            <img id="roundimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Round.png" alt="">
+                        </div>
+                        <div>
+                            <button id="ovalbtn">Oval (44)</button>
+                            <img id="ovalimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Oval.png" alt="">
+                        </div>
+                        <div>
+                            <button id="pilotbtn">Pilot (31)</button>
+                            <img id="pilotimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png" alt="">
+                        </div>
+                        <div>
+                            <button id="cateyebtn">Cateye (134)</button>
+                           <img id="pilotimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Aviator.png" alt="">
+                        </div>
+                        <div>
+                            <button id="hexagonbtn">Hexagon (10)</button>
+                            <img id="hexagonimg" src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Geometric.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="eyedropdown3">
+                    <div> <button id="dropbtn3" onclick="dropdownFun3()">Colour <i id="icondropdown3" class="fa fa-caret-down"></i></button></div>
+                    <br>
+                    <div id="dropoptions3">
+                        <div>
+                            <p id="ptagradius1"></p>
+                            <button id="redbtn">Red (2)</button></div>
+                        <div>
+                            <p id="ptagradius2"></p>
+                            <button id="purple">Purple (35)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius3"></p>
+                            <button id="blackbtn">Black (285)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius4"></p>
+                            <button id="silverbtn">Silver (37)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius5"></p>
+                            <button id="graybtn">Gray (42)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius6"></p>
+                            <button id="yellowbtn">Yellow (8)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius7"></p>
+                            <button id="lightgreenbtn">Lightgreen (1)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius8"></p>
+                            <button id="lightgoldbtn">Light-Gold (1)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius9"></p>
+                            <button id="greenbtn">Green (1)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius10"></p>
+                            <button id="bluebtn">Blue (194)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius11"></p>
+                            <button id="brownbtn">Brown (103)</button>
+                        </div>
+                        <div>
+                            <p id="ptagradius12"></p>
+                            <button id="pinkbtn">Pink (24)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="eyedropdown4">
+                    <div> <button id="dropbtn4" onclick="dropdownFun4()">Frame Material <i id="icondropdown4" class="fa fa-caret-down"></i></button></div>
+                    <br>
+                    <div id="dropoptions4">
+                        <div><button id="metalbtn">Metal (221)</button></div>
+                        <div><button id="richacetatebtn">Rich Acetate (104)</button></div>
+                        <div><button id="tr90btn">TR 90 (124)</button></div>
+                        <div><button id="ultembtn">Ultem (35)</button></div>
+                    </div>
+                </div>
+
+                <div id="eyedropdown5">
+                    <div> <button id="dropbtn5" onclick="dropdownFun5()">Frame Size <i id="icondropdown5" class="fa fa-caret-down"></i></button></div>
+                    <br>
+                    <div id="dropoptions5">
+                        <div><button id="largebtn">Large (160)</button></div>
+                        <div><button id="mediumbtn">Medium (276)</button></div>
+                        <div><button id="smallbtn">Small (95)</button></div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- </div>
+    </div> -->
+</body>
+</html>
+<script>
+    function dropdownFun(){
+        document.getElementById("dropoptions").classList.toggle("show")
+    }
+</script>

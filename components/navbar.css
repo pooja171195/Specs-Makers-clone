@@ -5,6 +5,9 @@ a{
 .fixed{
     position: fixed;
 }
+.sticky{
+    position: sticky;
+}
 .allignitcen{
     align-items: center;
 }
@@ -461,6 +464,10 @@ justify-content: center;
      margin: 15px 0px;
      justify-content: space-between;
 }
+#truelog{
+    padding: 1px;
+}
+
 #menupro>div>div{
     margin: 35px;
     cursor: pointer;
@@ -469,16 +476,21 @@ justify-content: center;
     margin-top: -20px;
     height: 70px;
 }
-#logsign>div{
-    padding: 0px 10px;
-
-}
-#logsign>div:nth-child(1){
-    /* margin-right: 10px; */
-    border-right: 2px solid black;
-}
 #black{
     color: black;
+}
+#formar{
+    margin: 25px 0;
+}
+#formar>div{
+    padding: 10px;
+}
+#formar>div:nth-child(1){
+    border-right: 1px solid black;
+}
+#formar2{
+    margin:35px 0px;
+    
 }
 @media only screen and (min-width:1025px) and (max-width:1230px) {
 #menucol3 button{
@@ -500,6 +512,12 @@ div a{
 }
 #magnifying-glass{
    border: 2px solid black;
+}
+#truelog{
+    display: flex;
+}
+#nolog{
+    display: flex;
 }
 }
 @media only screen and (min-width:767px) and (max-width:1024px){
@@ -530,7 +548,23 @@ div a{
 }
 }
 .width95{
-width: 95%;
+   width: 95%;
+}
+#userimage2{
+    width: 180px;
+    margin: auto;
+}
+#username{
+    font-size: 40px;
+    font-weight: 600;
+}
+#logoutbtn{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: cyan;
+}
+#truelog{
+    display: flex;
 }
 @media only screen and (min-width:480px) and (max-width:767px){
 #menu3{
@@ -554,6 +588,15 @@ width: 95%;
 #magnifying-glass{
    border: 2px solid black;
 }
+#bag{
+    color: white;
+}
+#truelog{
+    display: flex;
+}
+#nolog{
+    display: flex;
+}
 }
 @media only screen and (min-width:412px) and (max-width:480px){
 #menu3{
@@ -576,6 +619,9 @@ width: 95%;
 }
 #magnifying-glass{
    border: 2px solid black;
+}
+#nolog{
+    display: flex;
 }
 }
 @media only screen and (min-width:390px) and (max-width:412px){
@@ -607,6 +653,9 @@ width: 95%;
 #menupro>div>div{
     font-size: 13px;
 }
+#nolog{
+    display: flex;
+}
 }
 @media only screen and (min-width:360px) and (max-width:390px){
 #menu3{
@@ -636,6 +685,9 @@ width: 95%;
 }
 #menupro>div>div{
     font-size: 12px;
+}
+#nolog{
+    display: flex;
 }
 }
 @media only screen and (min-width:0px) and (max-width:360px){
@@ -670,5 +722,8 @@ width: 95%;
 }
 #menupro>div>div{
     font-size: 9px;
+}
+#nolog{
+    display: flex;
 }
 }

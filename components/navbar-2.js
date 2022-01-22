@@ -21,10 +21,36 @@ function compGlass(){
         }
     }
 }
-
 function myAccount(){
-     let account = document.getElementById("main_account");
+    let user = JSON.parse(localStorage.getItem("cur_user"));
+    console.log(user)
+    let logoutbtn = document.getElementById("logoutbtn");
+    logoutbtn.addEventListener("click", function(){
+      let logout = null;
+      localStorage.setItem("cur_user", JSON.stringify(logout));
+      window.location.href="../index.html"
+      alert("logout successfully");
+    })
+    let account = document.getElementById("main_account");
      account.style.display="block";
+    if(user!=null){
+         let acc = document.getElementById("nologin");
+         acc.style.display="none";
+         
+         let acc2 = document.getElementById("logintrue");
+         acc2.style.display="block";
+         if(user!="admin"){
+            let username = document.getElementById("username");
+            username.innerText=user.name;
+         }
+        
+    } else{
+        let acc = document.getElementById("nologin");
+        acc.style.display="block";
+        let acc2 = document.getElementById("logintrue");
+        acc2.style.display="none";
+    }
+     
      window.onclick=function(){
          if(event.target==account){
              account.style.display="none";
@@ -32,12 +58,26 @@ function myAccount(){
      }
 }
 function loginPage(){
-    let mail = document.getElementById("email").value;
-    let phone = document.getElementById("password").value;
-    if(mail=="" || password==""){
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    var user_cred=JSON.parse(localStorage.getItem("User"));
+    if(email=="" || password==""){
         alert("email and password should not empty!")
     } else{
-
+        if((email=="admin")&&(password=="admin")){
+            let user_cred="admin";
+            localStorage.setItem("cur_user", JSON.stringify(user_cred));
+            window.location.href="../components/admin.html"
+        }
+      else{
+        for (var i in user_cred){
+            if((user_cred[i].email=email)&&(user_cred[i].password==password)){
+                localStorage.setItem("cur_user", JSON.stringify(user_cred[i]));
+                window.location.href="../index.html";
+                alert("Login Successful");
+            }
+        }
+      }
     }
 }
 function open_search(){
@@ -55,10 +95,33 @@ function revmenu(){
     span.onclick=function(){
         X.style.transform="translate(-100%, 0)"
     }
+    function createlogin(){
+        let user = JSON.parse(localStorage.getItem("cur_user"));
+let logouttrue = document.getElementById("logouttrue");
+logouttrue.addEventListener("click", function(){
+    let logout = null;
+    localStorage.setItem("cur_user", JSON.stringify(logout));
+    window.location.href="../index.html"
+    alert("logout successfully");
+  })
+if(user!=null){
+    document.getElementById("nolog").style.display="none";
+    document.getElementById("truelog").style.display="block";
+    if(user!="admin"){
+        let usernam = document.getElementById("usernam");
+    usernam.innerText=user.name;
+    }
+    
+} else{
+    document.getElementById("nolog").style.display="block";
+    document.getElementById("truelog").style.display="none";
+}
+    }
+    createlogin();
 }
 function eye(){
-    window.location.href="./collections/eyeglasses.html"
+    window.location.href="../collections/eyeglasses.html"
 }
 function com_glass(){
-    window.location.href="./collections/computer_glasses.html"
+    window.location.href="../collections/computer_glasses.html"
 }
