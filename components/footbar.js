@@ -50,7 +50,7 @@ function footbar(){
         <div><i class="fas fa-envelope-open-text"></i></div>
         <div><i class="fab fa-whatsapp"></i></div>
       </div>
-      <div>Folllow Us</div>
+      <div>Follow Us</div>
       <div id="sptext"> 
         <div><i class="fab fa-facebook"></i></div>
         <div><i class="fab fa-twitter-square"></i></div>
