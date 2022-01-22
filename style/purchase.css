@@ -10,7 +10,7 @@
     grid-template-columns: repeat(2,48%);
     grid-gap: 10px 4%;
     margin-top: 5%;
-    border: solid 1px red;
+   
     
 }
 #gridmaindiv>div{
@@ -43,7 +43,7 @@
         grid-template-columns: repeat(1,98%);
         grid-gap: 0px 2%;
         margin-top: 2%;
-        border: solid 1px red;
+        
         
     }
     #sizechartflex{
@@ -190,108 +190,33 @@
         
     }
 }
-
-#downpurchasepage{
-    width: 74%;
-    margin: auto;
-}
-#downpurchasepage img{
-    width: 99%;
-}
-#downpurchasepage p{
-    color: rgb(58, 56, 56);
-}
-#prodesh1tag{
-    text-align: center;
-}
-#prodesh4tag{
-    text-align: center;
-}
-#prodesh4tag+div{
-    text-align: center;
-}
-#h4tagmargin{
-    margin-top: 4%;
-}
-#h3tagmargin{
-    margin-top: 4%;
-}
-#margintopimg{
-    margin-top: 5%;
-}
-#griddivimg{
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    grid-gap: 10px 4%;
-}
-#griddivimg+div{
-    margin-top: 4%;
-}
-
-@media only screen and (min-width:0px) and (max-width:480px){
-    #downpurchasepage{
-        width: 98%;
-        margin: auto;
-    }
-}
-
-#gridratingdiv{
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    grid-gap:10px 4%;
-}
-#reviewsdiv{text-align: center; font-size: 20px; margin-top: 8%;margin-bottom: 1%;}
-#gridratingdiv img{
-    width: 5%;
-    height: 20px;
-    margin-top: 13px;
-}
-#gridratingdiv>div>div{
-    display: flex;
-}
-#gridratingdiv>div>div img{
-    margin-top: 13px;
-}
-#yellowlinebar{
-    width: 45%;
-    height: 5px;
-    margin-top: 20px;
-    background-color: yellow;
-}
-
 #gridlastimgdiv{
-    
     display: grid;
-    grid-template-columns: 60% 35%;
+    grid-template-columns: 60% 30%;
     grid-gap: 10px 4%;
+    background-color: rgb(248,248,248);
+}
+#eyeglassimg{
+    width: 99%;
+    margin: 50px;
+}
+#imgdiv{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 20px 4%;
 }
 #imgdiv img{
-    width: 100%;
-    
+    width: 60%;
 }
-#imgdiv+div{
-    margin-top: 75%;
-    margin-left: 15%;
-}
-#imgdiv+div>div{
-    display: flex;
-    
-}
-#imgdiv+div>div>div{
-    margin: 5%;
-}
-#imgdiv+div>div>div h4,p{
+#imgdiv>div{
     text-align: center;
 }
-
+#h1center{text-align: center; margin-top: 30%;}
 @media only screen and (min-width:0px) and (max-width:480px){
     #gridlastimgdiv{
         display: grid;
         grid-template-columns: repeat(1,98%);
         grid-gap: 0px 2%;
     }
-    #imgdiv+div{
-        margin-top: 5%;
-        margin-left: 0px;
-    }
+   
 }

@@ -1,5 +1,8 @@
  
     let arr=JSON.parse(localStorage.getItem("glass"));
+    
+    // console.log("arr",arr[0])
+    // console.log("cart",cartitems)
     displayglass(arr);
     function displayglass(arr){
       let pic = document.createElement("img")
@@ -112,8 +115,30 @@
       let btncart = document.createElement("button");
       btncart.textContent="ADD TO CART"
       btncart.setAttribute("id","btnpurchase");
+
       btncart.addEventListener("click",function(){
-        cartpage(arr);
+        let cartitems = JSON.parse(localStorage.getItem("cartpage")) || [];
+        //cartitems.push(arr[0]);
+
+        var count1=0;
+        if(cartitems.length != 0){
+          for(let i=0;i<cartitems.length;i++){
+            if(arr[0].id == cartitems[i].id){
+              cartitems[i].count++;
+              count1++;
+            }
+            
+          }
+          if(count1 == 0){
+            arr[0].count=1;
+            cartitems.push(arr[0]);
+          }
+        }
+        else{
+          arr[0].count=1;
+          cartitems.push(arr[0]);
+        }
+        localStorage.setItem("cartpage", JSON.stringify(cartitems))
       });
 
 
@@ -138,10 +163,6 @@
       document.getElementById("framesizediv").append(framesiz);
   
     }
-  function cartpage(arr){
-    localStorage.setItem("cartpage",JSON.stringify(arr));
-    window.location.href="cartpage.html";
-  }
-    
+ 
   
   
