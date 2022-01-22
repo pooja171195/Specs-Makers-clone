@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/60c93948be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747"
+      type="image/png"
+    />
+    <title>
+      Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | –
+      Specsmakers Opticians PVT. LTD.
+    </title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./components/navbar.css" />
+    <link rel="stylesheet" href="./components/footbar.css" />
+    <link rel="stylesheet" href="./style/store.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="main">
+      <h1>Find Our Stores</h1>
+      <div id="address_box">
+        <div class="address_box">
+          <div class="Current">
+            <p>Current Location</p>
+            <div id="input">
+              <input
+                type="text"
+                placeholder="Enter a Location"
+                id="Current_Location"
+              />
+              <button id="find" onclick="find()">FIND MY LOCATION</button>
+            </div>
+          </div>
+          <div class="Current">
+            <p>Search Radius</p>
+            <div id="input">
+              <select id="number">
+                <option value="">--Please choose an option--</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+              </select>
+            </div>
+          </div>
+          <div class="Current">
+            <p>Search Radius Measurement</p>
+            <div id="input">
+              <select id="distnace">
+                <option value="kilemeter">Kelometer</option>
+                <option value="mile">Mile</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <button id="search">SEARCH</button>
+        </div>
+      </div>
+      <div id="mainmap_div">
+        <div id="add_div">
+          <div id="text_add">
+                <div class="address">
+                 <h4>  Arakkonam     </h4>
+                 <p>
+                  No.5, Gandhi Road, Stuartpet <br>
+                  Near to Poorvika Mobiles <br>
+                  Arakkonam Tamil Nadu 631001 India <br>
+                  Ph: 7708665163 <br>
+                  Email: arakonam@specsmakers.in  <br>
+                  Schedule: Open from 10 AM - 9 PM (Monday To Sunday)
+                </p> 
+
+                </div>
+       
+              <hr>
+            
+              <div class="address">
+                <h4>   Kirloskar Road    </h4>
+                 <p>
+                 
+                  1750/1, Kirloskar Road <br>
+                  Next to Poorvika & Bata Showroom <br>
+                  Belgaum Karnataka 590001 India <br>
+                  Ph: 0831-4202467 <br>
+                  Email: kirloskar@specsmakers.in <br>
+                  Schedule: Open from 10 AM - 9 PM (Monday To Sunday) <br>
+          
+                 </p> 
+
+         
+               </div>
+          
+               <hr>
+           
+               <div class="address">
+                <h4>     Banashankari    </h4>
+                <p>
+             
+                  No. 81, 21st Main Rd, Banashankari 3rd Stage, Siddanna Layout, 2nd Stage, Banashankari <br>
+                  Next to Polar Bear store <br>
+                  Bengaluru Karnataka 560070 India <br>
+                  Ph: 080-48542695 <br>
+                  Email: banashankari4@specsmakers.in <br>
+                  Schedule: Open from 10 AM - 9 PM (Monday To Sunday) <br>
+                 
+                </p> 
+               </div>
+
+
+
+          </div>
+        </div>
+        <div id="map_div"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+  import navbar from "./components/navbar.js";
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbar();
+
+  import footbar from "./components/footbar.js";
+  let foot = document.getElementById("footer");
+  foot.innerHTML = footbar();
+</script>
+<script src="./components/navbar-2.js"></script>
+<script src="./store.js"></script>
+
