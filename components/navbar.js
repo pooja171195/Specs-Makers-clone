@@ -9,7 +9,7 @@ function navbar (){
                     <div><input type="text" placeholder="search here"></div>
                 </div>
                 <div class="mar23p10 flex point" onclick="open_search()">SEARCH <div id="magnifying-glass"></div></div>
-                <div class="mar23p10 flex point" id="myaccount" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
+                <div class="mar23p10 flex point" id=" cr4" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
                 <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i id="bag" class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
             </div>
         </div>
@@ -64,12 +64,23 @@ function navbar (){
         </div>
     </div>
     <div id="menupro">
-        <div>
-            <div id="logsign" class="flex">
+        <div  id="nolog" class="flex jusspacebet">
+            <div class="flex jusspacebet">
+                <div id="formar" class="flex">
                 <div><a id="black" href="./account/login.html">LOGIN</a></div>
                 <div><a id="black" href="./account/login.html">REGISTER</a></div>
+                </div>
+                <div id="formar2"><a id="black" href="./account/login.html"><i class="far marl5p fa-user-circle"></i></a></div>
             </div>
-            <div><a id="black" href="./account/login.html"><i class="far marl5p fa-user-circle"></i></a></div>
+        </div>
+        <div id="truelog">
+            <div class="flex jusspacebet" >
+                <div  class="flex">
+                <div id="userimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/768px-Microsoft_Account.svg.png" ></div>
+                <div id="usernam"></div>
+            </div>
+            <div id="logouttrue">Logout</div>
+        </div>
         </div>
         <div>
             <div class="flex">
@@ -125,13 +136,20 @@ function navbar (){
         </div>
         <div id="acc-wrap2" class="textal">
             <div id="acc2">
-                <div id="log1">Login to my account</div>
-                <div><input id="email" type="email" placeholder="Email"></div>
-                <div><input id="password" type="password" placeholder="*****"></div>
-                <div><button onclick="loginPage()">Login</button></div>
-                <div id="log2">
-                    <div>New Customer? <a href="./account/login.html">CREATE YOUR ACCOUNT</a></div>
-                    <div>Lost password? <a href="./account/login.html">RECOVER PASSWORD</a></div>
+                <div id="nologin">
+                    <div id="log1">Login to my account</div>
+                    <div><input id="email" type="email" placeholder="Email"></div>
+                    <div><input id="password" type="password" placeholder="*****"></div>
+                    <div><button onclick="loginPage()">Login</button></div>
+                    <div id="log2">
+                        <div>New Customer? <a href="./account/login.html">CREATE YOUR ACCOUNT</a></div>
+                        <div>Lost password? <a href="./account/login.html">RECOVER PASSWORD</a></div>
+                    </div>
+                </div>
+                <div id="logintrue">
+                    <div id="userimage2"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/768px-Microsoft_Account.svg.png" width="180px"></div>
+                    <div id="username"> </div>
+                    <button id="logoutbtn"> Logout </button>
                 </div>
             </div>
         </div>

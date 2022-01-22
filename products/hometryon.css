@@ -365,24 +365,29 @@ margin-left: 27%;
 #footer{
    margin-top: 4%;
 width: 100%;
-   height: 300px;
-   border: red 1px solid;
+   height: 350px;
+  
    display: flex;
    text-align: center;
+   
   
 } 
 #footer>#foot-logo{
 width: 50%;
    height: 300px;
-   border: red 1px solid;
+  
+  
    display: inline;
    text-align: center;
   
 } 
+#footer>#foot-logo>img{
+   margin-top: 20%;
+}
 #footer>#foot-detail{
 width: 50%;
    height: 300px;
-   border: red 1px solid;
+   
    display: inline;
    text-align: center;
   
@@ -413,6 +418,35 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color:white;
 transform: translate(-50%,-50%);
 -ms-transform: translate(-50%,-50%);
+}
+#sptext>div{
+   margin-top: 10%;
+   font-size: 30px;
+   display: inline;
+   color: gray;
+  
+}
+
+.fas{
+   font-size: 45px;
+}
+.fab{
+  padding: 8px 20px; 
+  
+  margin-top: 25%;
+}
+#resfoot{
+   display: none;
+}
+#Address{
+   margin-top: 5%;
+   
+}
+#Address>p{
+   color: gray;
+   font-size: medium;
+   text-align: right;
+   margin-right: 26%;
 }
 @media(max-width: 990px){
    .menu {
@@ -691,15 +725,15 @@ transform: translate(-50%,-50%);
       margin-top: 4%;
    width: 100%;
       height: 300px;
-      border: red 1px solid;
+    
       display: grid;
       text-align: center;
      
    } 
    #footer>#foot-logo{
       width: 100%;
-         height: 300px;
-         border: red 1px solid;
+         height: 50px;
+       
          display: inline;
          text-align: center;
         
@@ -707,11 +741,16 @@ transform: translate(-50%,-50%);
       #footer>#foot-detail{
       width: 100%;
          height: 300px;
-         border: red 1px solid;
-         display: inline;
-         text-align: center;
+       
+         display: block;
+         text-align: right;
         
       } 
+      #footer>#foot-detail>#Address>p{
+         text-align: right;
+         margin-right: 0px;
+      }
+     
 }
 
 @media(max-width: 400px){
@@ -929,30 +968,36 @@ transform: translate(-50%,-50%);
      align-items: center;
   }
   #footer{
-     margin-top: 4%;
-  width: 100%;
-     height: 300px;
-     border: red 1px solid;
-     display: grid;
-     text-align: center;
+   margin-top: 4%;
+width: 100%;
+   height: 300px;
+ 
+   display: grid;
+   text-align: center;
+  
+} 
+#footer>#foot-logo{
+   width: 100%;
+      height: 50px;
     
-  } 
-  #footer>#foot-logo{
-     width: 100%;
-        height: 300px;
-        border: red 1px solid;
-        display: inline;
-        text-align: center;
-       
-     } 
-     #footer>#foot-detail{
-     width: 100%;
-        height: 300px;
-        border: red 1px solid;
-        display: inline;
-        text-align: center;
-       
-     } 
+      display: inline;
+      text-align: center;
+     
+   } 
+   #footer>#foot-detail{
+   width: 100%;
+      height: 300px;
+    
+      display: block;
+      text-align: right;
+     
+   } 
+   #footer>#foot-detail>#Address>p{
+      text-align: right;
+      margin-right: 0px;
+   }
+  
 }
+
 
 
