@@ -53706,7 +53706,7 @@ function showsort(){
     }
 }
   function display(com_pro){
-     com_pro.forEach(function(elements){
+     com_pro.forEach(function(elements, index){
         document.getElementById("totalprod").innerText=` Total ${com_pro.length} Products`
         //  console.log(elements)
          let mainDiv=document.createElement("div");
@@ -53764,7 +53764,12 @@ function showsort(){
          mainDiv.append(img, div2, div3, div4);
          document.getElementById("dispro").append(mainDiv)
         img.addEventListener("click", function(){
-            localStorage.setItem("glass", JSON.stringify(elements));
+            let proarr = [];
+            proarr.push(com_pro[index]);
+            proarr.push(com_pro[index+1]);
+            proarr.push(com_pro[index+2]);
+            proarr.push(com_pro[index+3]);
+            localStorage.setItem("glass", JSON.stringify(proarr));
             window.location.href="../collections/purchase.html";
         })
         img.addEventListener("mouseover", function(){
