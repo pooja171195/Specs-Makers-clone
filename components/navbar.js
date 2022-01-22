@@ -6,7 +6,7 @@ function navbar (){
             <div class="flex fon15">
                 <div id="dsearch" class="mar23p10 flex point">
                     <i class="fas fa-search"></i>
-                    <div><input type="text" placeholder="search here"></div>
+                    <div><input id="showsearch" type="text" placeholder="search here"></div>
                 </div>
                 <div class="mar23p10 flex point" onclick="open_search()">SEARCH <div id="magnifying-glass"></div></div>
                 <div class="mar23p10 flex point" id=" cr4" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
@@ -39,12 +39,16 @@ function navbar (){
                 <div id="line"></div>
                 <div id="line"></div>
             </div>
-            <a href="./index.html"><div id="div767"><img id="img767" class="mart3" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
-            <a href="./cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+            <a href="../index.html"><div id="div767"><img id="img767" class="mart3" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
+            <a href="../cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
         </div>
     </div>
 </div>
-
+<div id="searchblock">
+     <div id="searchbl">
+   
+    </div>
+</div>
 <div id="resmenu">
     <div id="resmenu_content">
         <div>

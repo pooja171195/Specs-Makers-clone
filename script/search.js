@@ -58007,7 +58007,8 @@ var obj =  {
         "arModelMsiteAndDesktopUrl": "",
         "arModelOriginalUrl": "https://3d-asset-lookr.s3-ap-southeast-1.amazonaws.com/frameassets/144417/orignal/sku_144417.glb",
         "qty": 12
-    }
+    },
+    
     
     ]
 }
