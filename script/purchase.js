@@ -127,7 +127,6 @@
               cartitems[i].count++;
               count1++;
             }
-            
           }
           if(count1 == 0){
             arr[0].count=1;
