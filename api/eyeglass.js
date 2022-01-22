@@ -58585,7 +58585,7 @@ function showsort(){
             proarr.push(com_pro[index]);
             proarr.push(com_pro[index+1]);
             proarr.push(com_pro[index+2]);
-            proarr.push(com_pro[index+3])
+            proarr.push(com_pro[index+3]);
             localStorage.setItem("glass", JSON.stringify(proarr));
             window.location.href="../collections/purchase.html";
         })
