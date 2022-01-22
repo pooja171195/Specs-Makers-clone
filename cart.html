@@ -508,64 +508,14 @@
 </body>
 </html>
 <script type="module">
+
      import navbar from './components/navbar.js'
      document.getElementById("this_nav").innerHTML=navbar();
 
      import footbar from './components/footbar.js'
      document.getElementById('foot').innerHTML=footbar();
 
-     var object=[
-         {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-     {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-     {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-     {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-     {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-     {
-         image:"https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_601c3e8b-25bc-4822-9c37-af1816593496_1000x.jpg?v=1615215646",
-         name:"Specsmakers Streak Unisex Sunglasses Full_frame Square Oversized 57 Plastic SM STR1007",
-         desc:"SSFWTMGY57STR1007",
-         external:"Matte_White_with_Grey_Mirror / Plastic / Unisex",
-         price:"990",
-
-     },
-    ]
-
-  
+var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
 
     var suggest= [
         {
@@ -588,34 +538,30 @@
         },
     ];
 
-    console.log(suggest);
-     var totalmoney=0;
-var s = "₹"
-
-
-display(object);
-// console.log(productquantity);
-function display(object){
+   
+    var totalmoney=0;
+     var s = "₹"
+     
+   
+    // if(arr.length==0){
+    //     window.location.href="";
+    // }
     
-    object.map(function(elem){
-         elem.productquantity = 1; 
-     let items=document.getElementById("items")
+  let items=document.getElementById("items")
+display(cartitems);
+function display(cartitems){
+    
+    cartitems.map(function(elem,index){
+       
       var imgdiv=document.createElement("div");
       var textdiv=document.createElement("div");
       let div=document.createElement("div");
      let img = document.createElement("img");
-     img.src=elem.image;
+     img.src=elem.image_url;
      let h1=document.createElement("h2");
-     h1.textContent=elem.name;
-    console.log(img)
-     let h4=document.createElement("h4");
-     h4.textContent=elem.desc;
-    
-     let h3 = document.createElement("h3");
-     h3.textContent=elem.external;
-    
+     h1.textContent=`SpecsmakersFD11E HAPPSTER Unisex Eyeglasses ${elem.hashtagList[1].name} Hexagon ${elem.size} ${elem.totalNoOfRatings} Ultem ${elem.model_name}`;
      let price=document.createElement("h2");
-     price.textContent=`${s}`+elem.price;
+     price.textContent=`${s}`+elem.prices[0].price;
      let quantitydiv = document.createElement("div");
       let quantity = document.createElement("h4");
       quantity.textContent="Quantity"
@@ -626,54 +572,65 @@ function display(object){
       decrease.addEventListener("click",function(){
           console.log("here")
 
-          if( elem.productquantity!=1){
-            elem.productquantity=elem.productquantity-1;
-          
-            quan.textContent=elem.productquantity;
+          if(elem.count==1){
+             deletes(index);
+          }
+
+          else{
+              elem.count=elem.count-1;
+              localStorage.setItem("cartpage",JSON.stringify(cartitems));
+         
+            quan.textContent=elem.count;
             var total = document.getElementById("total");
-            prices(object)
-var money = document.getElementById("money");
-money.textContent= `${s}`+totalmoney;
+            prices(cartitems);
+       
           }    
       })
       let increase = document.createElement("p");
       increase.textContent="+";
       increase.addEventListener("click",function(){
           console.log("here")
-            elem.productquantity=elem.productquantity+1;
-            console.log(elem.productquantity);
-            quan.textContent=elem.productquantity;
+            elem.count=elem.count+1;
+            console.log(elem.count);
+            quan.textContent=elem.count;
             var total = document.getElementById("total");
-            prices(object);
-
-       var money = document.getElementById("money");
-        money.textContent= `${s}`+totalmoney;
+            prices(cartitems);
+            localStorage.setItem("cartpage",JSON.stringify(cartitems));
       })
       let quan = document.createElement("p");
-      quan.textContent=elem.productquantity;
-      console.log(typeof(productquantity));
+      quan.textContent=elem.count;
+    
       element.append(decrease,quan,increase);
-      quantitydiv.append(quantity,element,price);
-    //   totalmoney+= Number(elem.productquantity)*Number(elem.price);
+      let del = document.createElement("h4");
+      del.textContent="Remove";
+      del.addEventListener("click",function(){
+           deletes(index);
+          console.log("here");
+      })
+      quantitydiv.append(quantity,element,del,price);
+   
     
     imgdiv.append(img);
-    textdiv.append(h1,h4,h3,quantitydiv);
-    // console.log(imgdiv,textdiv);
-
+    textdiv.append(h1,quantitydiv);
     div.append(imgdiv,textdiv);
     items.append(div);
-    console.log(div);
    
-
+    var total = document.getElementById("total");
+   total.textContent=`Your Cart :  ${s}`+totalmoney;
+   var money = document.getElementById("money");
+    money.textContent= `${s}`+totalmoney;
 })
 }
-var total = document.getElementById("total");
-total.textContent=`Your Cart :  ${s}`+totalmoney;
-var money = document.getElementById("money");
-money.textContent= `${s}`+totalmoney;
-console.log(totalmoney);
 
 
+function deletes(index){  
+    cartitems.splice(index,1);
+    localStorage.setItem("cartpage",JSON.stringify(cartitems));
+  
+    items.innerHTML="";
+    display(cartitems);
+    prices(cartitems);
+}
 
 var sugg=document.getElementById("suggest");
 appended(suggest);
@@ -725,17 +682,17 @@ document.getElementById("clear").addEventListener("click",function(){
     body.innerHTML="";
 })
 
-function prices(object){
+function prices(cartitems){
     totalmoney=0;
-    object.map(function(elem){
-  totalmoney+=Number(elem.productquantity)*Number(elem.price);
+    cartitems.map(function(elem){
+  totalmoney+=Number(elem.count)*Number(elem.prices[0].price);
     })
     total.textContent=`Your Cart :  ${s}`+totalmoney;
     var money = document.getElementById("money");
         money.textContent= `${s}`+totalmoney;
     
 }
-prices(object);
+prices(cartitems);
 total.textContent=`Your Cart :  ${s}`+totalmoney;
 
 
@@ -750,7 +707,6 @@ document.getElementById("pincode_button").addEventListener("click",function(){
     window.location.href="../payments/address.html"
 })
 document.getElementById("coupon").addEventListener("click",function(){
-    // window.location.href="../inde.html";
     var disc = document.getElementById("discount").value;
     console.log("here")
     if(disc=="MASAI"){

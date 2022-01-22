@@ -6,30 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
     <style>
-        input,select{
-            display: block;
-            height:50px;
-            width:80%;
-            margin-top:20px;
-            
-            border-radius: 5px;
-            font-size: 20px;
-        }
+       #dis{
+           display:none;
+       }
         #main{
-            width:80%;
+            width:100%;
             margin: auto;
             margin-top: 50px;
-            display:flex;
-
+            display: flex;
         }
       
         #main>div{
           width:50%;
+          margin: auto;
           
         }
         button{
             height: 60px;
-            width:30%;
+            width:60%;
             margin-top: 20px;
             font-size: 20px;
             background-color: black;
@@ -40,6 +34,15 @@
             height:1000px;
            
         }
+        input,select{
+            display: block;
+            height:50px;
+            width:80%;
+            margin-top:20px;
+            
+            border-radius: 5px;
+            font-size: 20px;
+        }
         #cart{
          
            width:50%;
@@ -49,29 +52,37 @@
            border:1px solid red;
          
         }
-        #item{
+        #item>div{
             display:flex;
            
             border:1px solid red;
             width:90%;
            margin: auto;
         }
-       #item>div>img{
+       #item>div>div>img{
 
         border:1px solid grey;
            height:40px;
            width:40px;
+           margin-top: 10px;
            border-radius: 5px;
            padding: 20px;
+         
        }
-       #content{
-           width:70%;
+       #item>div>div>p{
+           
+           width:90%;
            margin-left: 20px;
            border:1px solid red;
            display: flex;
            overflow:visible ;
            height:auto;
        }
+       #item>div>div>h4{
+           margin-right: 10px;
+           margin-left: 10px;
+       }
+
        #promo{
            display:flex;
            width:90%;
@@ -101,10 +112,98 @@
            width:90%;
            margin: auto;
        }
+       #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+       @media (min-width:376px) and (max-width:768px){
+           #dis{
+               display: block;
+           }
+       #cart{
+           display:none;
+       }
+       #main{
+           width:100%;
+           display:block;
+           margin-top: 20px;
+       }
+       #main>div{
+           width:100%;
+       }
+      #details{
+          width:90%;
+          display:block;
+          border-right: solid 0px grey;
+          
+      }
+       hr{
+           display: none;
+       }
+       #details>input,select{
+            display: block;
+            height:50px;
+            width:90%;
+            margin-top:20px; 
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            width:60%;
+            color: white;
+        }
+       }
+       @media (min-width:0px) and (max-width:375px){
+           #dis{
+               display: block;
+           }
+       #cart{
+           display:none;
+       }
+       #main{
+           width:100%;
+           display:block;
+           margin-top: 20px;
+       }
+       #main>div{
+           width:100%;
+       }
+      #details{
+          width:90%;
+          display:block;
+          border-right: solid 0px grey;
+          
+      }
+       hr{
+           display: none;
+       }
+       #details>input,select{
+            display: block;
+            height:50px;
+            width:90%;
+            margin-top:20px; 
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            width:80%;
+            color: white;
+        }
+       }
     </style>
 </head>
 <body>
+    <img id="dis" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/logo_large_22c05d89-15fc-4d28-993f-4e8553946941.png?34533" alt="">
     <div id="main">
+    
         <div id="details">
             
                 <h1>Contact Information</h1>
@@ -113,6 +212,11 @@
             <h1>Shipping address</h1>
              
                   <!-- India states -->
+<input type="text" placeholder="country India"  id="india" value="India">
+<input type="text" placeholder="Enter Name"  id="name">
+<input type="text" placeholder="Address" id="address">
+<input type="text" placeholder="Apartment,suit,etc.(option)">
+<input type="text" placeholder="City">
 <select id="country-state" name="country-state">
     <option value="AN">Andaman and Nicobar Islands</option>
     <option value="AP">Andhra Pradesh</option>
@@ -152,37 +256,23 @@
     <option value="UT">Uttarakhand</option>
     <option value="WB">West Bengal</option>
 </select>
-<input type="text" placeholder="Enter Name"  id="name">
-<input type="text" placeholder="Address" id="address">
-<input type="text" placeholder="Apartment,suit,etc.(option)">
-<input type="text" placeholder="City">
-<input type="text" placeholder="State">
 <input type="pincode" placeholder="PIN code">
 <input type="number" placeholder="Phone">
 <button><a href="payment.html">Continue to Shipping</a></button>
   <a href="../cart.html"><h3>Return to cart</h3></a>
 
-  <hr>
+  <!-- <hr>
   <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">Refund Policy</a>
   <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">PrivacyPolicy</a>
-  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE"> Terms and Conditons</a>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE"> Terms and Conditons</a> -->
  </div>
 
- <div  id="cart">
+  <div  id="cart"> 
      <div>
         <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/logo_large_22c05d89-15fc-4d28-993f-4e8553946941.png?34533" alt="">
      </div>
       <div id="item">
-          <div>
-            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/products/1_7b292574-329a-40bc-be5f-1609dba918df_480x.jpg?v=1636614638" alt="">
-          </div>
-          
-            <div  id="content"> 
-                 <h3>sudeepbd</h3>
-            </div>
-            <div >
-                <h3>2990</h3>
-            </div>
+         
          
       </div>
       <hr>
@@ -193,14 +283,48 @@
       <hr>
       <div id="subtotal">
           <h2>Subtotal</h2>
-          <h2>2990</h2>
+          <h2 id="sub">2990</h2>
       </div>
       <hr>
       <div id="total">
           <h2>Total</h2>
-          <h2>2990</h2>
+          <h2 id="totalm">2990</h2>
       </div>
- </div>
+ </div> 
     </div>
 </body>
 </html>
+<script>
+    var s ="₹";
+     var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
+var totalmoney=0;
+display(arr);
+     function display(arr){
+         arr.map(function(elem){
+         let items=document.getElementById("item");
+         let main = document.createElement("div");
+         let imgdiv = document.createElement("div");
+         let contentdiv=document.createElement("div");
+         let moneydiv=document.createElement("div");
+         let img = document.createElement("img");
+         img.src=elem.image;
+         let cont = document.createElement("p");
+         cont.textContent=elem.name;
+         let money = document.createElement("h4");
+         money.textContent=`${s}`+elem.price;
+          totalmoney+=Number(elem.price);
+          imgdiv.append(img);
+          contentdiv.append(cont);
+          moneydiv.append(money)
+          console.log(moneydiv);
+           main.append(imgdiv,contentdiv,moneydiv)
+           items.append(main);
+           console.log(items);
+        })
+     }
+     console.log(totalmoney)
+     var total = document.getElementById("totalm");
+     total.textContent=`${s}`+totalmoney;
+       var sub = document.getElementById("sub");
+       sub.textContent=`${s}`+totalmoney;
+</script>
