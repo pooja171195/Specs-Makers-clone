@@ -13,10 +13,10 @@
             border: solid red 1px;
             height:900px;
         }
-        #main>#icon{
-           
+        #icon{
             width:40%;
-            border : blue solid 1px;
+            /* border : blue solid 1px; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         #icon>div{
             margin:30px;
@@ -36,8 +36,9 @@
         #payment{
             width:60%;
             border:1px solid black;
-            margin-left: 30px;
-
+           padding: 10px;
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+         
         }
         #payment>div>a{
             display:flex;
@@ -59,6 +60,50 @@
             text-decoration: none;
             color:black;
         }
+        @media (min-width:376px) and (max-width:768px){
+            #main{
+                display:block;
+                width: 100%;
+                height:auto;
+            }
+            #icon{
+               width:100%;
+               height:auto;
+               text-align: center;
+               box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            #payment{
+                width:100%;
+                height:auto;
+            }
+            #icon>div{
+            margin:30px;
+            display:block;
+            /* justify-content: space-between; */
+        }
+        }
+        @media (min-width:0px) and (max-width:375px){
+            #main{
+                display:block;
+                width: 100%;
+                height:auto;
+            }
+            #main>#icon{
+               width:100%;
+               height:auto;
+               justify-content: center;
+               box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            #payment{
+                width:100%;
+                height:auto;
+            }
+            #icon>div{
+            margin:30px;
+            display:block;
+            /* justify-content: space-between; */
+        }
+        }
     </style>
 </head>
 <body>
@@ -78,7 +123,7 @@
     </div>
     <div>
          <h4>Total payable Amount</h4>
-         <h4>2999</h4>
+         <h4 id="amount"></h4>
     </div>
     </div>
     <div id="payment">
@@ -144,10 +189,34 @@
     </div>
     <hr>
     <div>
-        <h3>Cash on Delivery</h3>
+        <a href="../placed.html">
+            <div>
+                <img style="height:20px;width:20px" src="https://cdn-icons-png.flaticon.com/128/808/808569.png" alt="">
+                <h3>Cash On Delivery</h3>
+            </div>
+            <div>
+                <img src="https://api.payu.in/public/assets/images/accordian-arrw.svg" alt="">
+            </div>   
+        </a>
     </div>
     
     </div>
  </div>
 </body>
+<script>
+     var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
+var totalmoney=0;
+var s ="₹";
+display(cartitems)
+     function display(cartitems){
+         cartitems.map(function(elem){
+            totalmoney+=Number(elem.count)*Number(elem.prices[0].price); 
+         })
+     }
+     var money = document.getElementById("amount");
+     money.textContent=`${s}`+totalmoney;
+    
+
+    
+</script>
 </html>

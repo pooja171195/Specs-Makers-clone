@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placed</title>
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/footbar.css">
+    <style>
+        #items{
+            width:50%;
+            margin: auto;
+            margin-top: 120px;
+        }
+     #items>div>div>div{
+         display:flex;
+          justify-content: space-between; 
+     }
+     img{
+         width:100%;
+     }
+     #items>div>div>div>div{
+         display: flex;
+        height:20px;
+        justify-content: space-between;
+     }
+     #items>div>div>div>div>p{
+        padding: 10px 10px 20px 10px;
+   
+     border: grey 2px solid; 
+     }
+     button{
+         width:40%;
+         height:40px;
+         background-color: black;
+         border-radius: 5px;
+         color: white;
+         justify-content: center;
+         margin: auto;
+     }
+    #placeddiv{
+        width:50%;
+        margin: auto;
+    }
+     #placeddiv>div{
+         display:flex;
+         justify-content: space-between;
+         margin-right: 20px;
+     }
+    
+     @media (min-width:376px) and (max-width:768px){
+                #items{
+                    width:100%;
+                }
+                #placeddiv{
+                    width:100%;
+                }
+     }
+     @media (min-width:0px) and (max-width:375px){
+         #items{
+             width:100%;   
+         }
+         #placeddiv{
+                    width:100%;
+         }
+         button{
+             width:80%;
+             margin: auto;
+         }
+     }
+
+    </style>
+</head>
+<body>
+    <div id="this_nav"></div>
+    
+    <div id=items>
+      
+    </div>
+    <div id="placeddiv">
+        <div>
+            <h3>Total</h3>
+            <h3 id="money"></h3>
+        </div>
+        <hr>
+        <div id="butt">
+            <button id="place">CONFIRM ORDER</button>
+        </div>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>
+<script type="module">
+
+    import navbar from './components/navbar.js'
+    document.getElementById("this_nav").innerHTML=navbar();
+
+    import footbar from './components/footbar.js'
+    document.getElementById('foot').innerHTML=footbar();
+    
+    var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
+    var totalmoney=0;
+ var s = "₹"
+ let items=document.getElementById("items")
+display(cartitems);
+function display(cartitems){
+
+cartitems.map(function(elem,index){
+   console.log(elem);
+  var imgdiv=document.createElement("div");
+  var textdiv=document.createElement("div");
+  let div=document.createElement("div");
+ let img = document.createElement("img");
+ img.src=elem.image_url;
+ let h1=document.createElement("h2");
+ h1.textContent=`SpecsmakersFD11E HAPPSTER Unisex Eyeglasses ${elem.hashtagList[1].name} Hexagon ${elem.size} ${elem.totalNoOfRatings} Ultem ${elem.model_name}`;
+ let price=document.createElement("h2");
+ price.textContent=`${s}`+elem.prices[0].price;
+ let quantitydiv = document.createElement("div");
+  let quantity = document.createElement("h4");
+  quantity.textContent="Quantity"
+  let element = document.createElement("div");
+  let decrease = document.createElement("p");
+  decrease.textContent="-";
+  
+  decrease.addEventListener("click",function(){
+      console.log("here")
+
+      if(elem.count==1){
+         deletes(index);
+      }
+
+      else{
+          elem.count=elem.count-1;
+          localStorage.setItem("cartpage",JSON.stringify(cartitems));
+     
+        quan.textContent=elem.count;
+        var total = document.getElementById("total");
+        prices(cartitems);
+   
+      }    
+  })
+  let increase = document.createElement("p");
+  increase.textContent="+";
+  increase.addEventListener("click",function(){
+      console.log("here")
+        elem.count=elem.count+1;
+        console.log(elem.count);
+        quan.textContent=elem.count;
+        var total = document.getElementById("total");
+        prices(cartitems);
+        localStorage.setItem("cartpage",JSON.stringify(cartitems));
+  })
+  let quan = document.createElement("p");
+  quan.textContent=elem.count;
+
+  element.append(decrease,quan,increase);
+  let del = document.createElement("h4");
+  del.textContent="Remove";
+  del.addEventListener("click",function(){
+       deletes(index);
+      console.log("here");
+  })
+  quantitydiv.append(quantity,element,del,price);
+
+
+imgdiv.append(img);
+textdiv.append(h1,quantitydiv);
+div.append(imgdiv,textdiv);
+let hr=document.createElement("hr")
+items.append(div,hr);
+
+// var total = document.getElementById("total");
+// total.textContent=`Your Cart :  ${s}`+totalmoney;
+// var money = document.getElementById("money");
+// money.textContent= `${s}`+totalmoney;
+})
+}
+function deletes(index){  
+cartitems.splice(index,1);
+localStorage.setItem("cartpage",JSON.stringify(cartitems));
+
+items.innerHTML="";
+display(cartitems);
+prices(cartitems);
+}
+
+
+function prices(cartitems){
+totalmoney=0;
+cartitems.map(function(elem){
+totalmoney+=Number(elem.count)*Number(elem.prices[0].price);
+})
+// total.textContent=`Your Cart :  ${s}`+totalmoney;
+var money = document.getElementById("money");
+    money.textContent= `${s}`+totalmoney;
+
+}
+prices(cartitems);
+// total.textContent=`Your Cart :  ${s}`+totalmoney;
+
+document.getElementById("place").addEventListener("click",function(){
+    alert("Thanks For Purchasing");
+    alert("Your Order SuccessFully Placed");
+    alert("Continue To Shop");
+    window.location.href="../index.html";
+})
+    
+ </script>

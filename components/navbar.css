@@ -499,6 +499,7 @@ justify-content: center;
     color: white;
 }
 #searchblock{
+    
    width: 95%;
    margin: auto;
    display: flex;

@@ -10,7 +10,7 @@ function navbar (){
                 </div>
                 <div class="mar23p10 flex point" onclick="open_search()">SEARCH <div id="magnifying-glass"></div></div>
                 <div class="mar23p10 flex point" id=" cr4" onmouseover="myAccount()" ><div>ACCOUNT</div> <i class="far marl5p fa-user-circle"></i></div>
-                <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i id="bag" class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+                <a href="../cart.html"><div class="mar23p10 flex point colwhite"><div>CART</div> <i id="bag" class="fab marl5p fa-shopify"></i></div></a>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@ function navbar (){
                 <div id="line"></div>
             </div>
             <a href="../index.html"><div id="div767"><img id="img767" class="mart3" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
-            <a href="../cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+            <a href="../cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i></div></a>
         </div>
     </div>
 </div>

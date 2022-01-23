@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/footbar.css">
+    <style>
+        #text{
+            text-align: center;
+            width:100%;
+            margin: auto;
+            margin-top: 150px;
+        }
+        a{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="this_nav"></div>
+    
+       <div id="text">
+           <h1>Your Shopping Cart</h1>
+           <h3>Your cart is currently empty.</h3>
+           <h3>Continue browsing <a href="../index.html">here.</a></h3>
+       </div>
+    <div id="foot"></div>
+</body>
+</html>
+<script type="module">
+
+    import navbar from './components/navbar.js'
+    document.getElementById("this_nav").innerHTML=navbar();
+
+    import footbar from './components/footbar.js'
+    document.getElementById('foot').innerHTML=footbar();
+
+</script>
