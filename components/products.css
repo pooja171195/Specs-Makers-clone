@@ -14,7 +14,16 @@
     margin-top: 10px;
 }
 
-
+#searchbl>div{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 10px 4%;
+    height: 80px;
+    cursor: pointer;
+}
+#searchbl img{
+    height: 50%;
+}
 
 @media only screen and (min-width:767px){
     #botnav{
@@ -272,7 +281,9 @@
     #p1>a, #p1>p{
         margin: 17px 0 0 10px;
     }
+
     #buy1{
+        display: block;
         text-align: center;
         font-size: 24px;
         font-weight: 500;
@@ -344,6 +355,13 @@
     #totalprod, #sortby{
         display: none;
     }
+    #buy1{
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 30px;
+    }
     body{
         background-color: #e9e9e9;
     }
@@ -411,7 +429,7 @@
 } 
 
 @media only screen and (min-width:0px) and (max-width:767px){
-    #top-img, #buy1{
+    #top-img{
         display: none;
     }
     #left{

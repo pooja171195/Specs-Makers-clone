@@ -58011,7 +58011,6 @@ var obj =  {
     
     ]
 }
-
 // export default obj;
 
 let full_frame = 0;
@@ -58282,7 +58281,7 @@ document.getElementById("medium").innerText=`Medium (${medium})`
 document.getElementById("large").innerText=`Large (${large})`
 
 var com_pro = obj.product_list;
-console.log(fullobj)
+// console.log(fullobj)
 function fullframes(){
     document.getElementById("dispro").innerHTML=""
 
@@ -58481,7 +58480,7 @@ function dissort(){
         document.getElementById("hidsortcontent").style.display="block"
     }
 }
-console.log(obj)
+// console.log(obj)
 function LtH(){
     for(let i = 0; i < com_pro.length-1; i++) {
         for(let j = i+1; j < com_pro.length; j++){
@@ -58600,3 +58599,7 @@ function showsort(){
      })
   }
   display(com_pro)
+
+
+ 
+ 
