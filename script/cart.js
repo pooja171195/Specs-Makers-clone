@@ -114,7 +114,7 @@ money.textContent= `${s}`+totalmoney;
 function deletes(index){  
 cartitems.splice(index,1);
 localStorage.setItem("cartpage",JSON.stringify(cartitems));
-
+length.textContent=cartitems.length;
 items.innerHTML="";
 display(cartitems);
 prices(cartitems);
@@ -169,6 +169,7 @@ document.getElementById("clear").addEventListener("click",function(){
   console.log("here");
   cartitems.splice(0,cartitems.length)
   localStorage.setItem("cartpage",JSON.stringify(cartitems));
+  length.textContent=cartitems.length;
 
 })
 
