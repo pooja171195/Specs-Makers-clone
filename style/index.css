@@ -1,3 +1,20 @@
+#cartlist{
+    position: fixed;
+    margin-left:92%;
+    display: flex;
+    justify-content: right;
+    /* background-color:red; */
+}
+#cartdone{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    
+    text-align: center;
+}
+
 @media only screen and (min-width:767px){
     .mySlides {display: none;}
     img {
