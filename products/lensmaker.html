@@ -13,9 +13,18 @@
     <link rel="stylesheet" href="../products/lensmaker.css">
 <body>
     <div id="this_nav"></div>
-    <div id="product">
-
-    </div>
+    <div id="uptextdiv">Home / Lensmakers: Replace old lenses in your frame.</div>
+    <div id="gridmaindiv">
+        <div>
+          <div id="oneimgdiv"></div>
+    
+          <div id="threeimgdiv"></div>
+        </div>
+    
+        <div id="alltextdiv">
+        </div>
+      </div>
+     
     <div id="eye">
       <div>
           <h2>Replace old lenses in your existing frames from your doorstep</h2>
@@ -36,7 +45,8 @@
         </div>
         </div>
         <div id="img2"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/Specsy_3-01.jpg?v=1619788184" alt=""></div>
-     
+      
+        <div id="relatedprod"></div>
     <div id="foot"></div>
   </body>
   </html>
@@ -45,7 +55,68 @@
        import navbar from '../components/navbar.js'
        document.getElementById("this_nav").innerHTML=navbar();
   
+
+       import obj from '../script/search.js'
+  // console.log(obj);
+ let search = document.getElementById("showsearch");
+ search.addEventListener("input",function(){
+  //  console.log(obj.product_list.length);
+   document.getElementById("searchbl").innerHTML="";
+   for (let i = 0; i < obj.product_list.length; i++){
+let arr  = obj.product_list[i].sku;
+let news="";
+let index = 0;
+let sear = search.value;
+
+     findsub(arr, index, sear)
+     function findsub(arr, index, sear){
+       let news="";
+         if(index==arr.length){
+           return;
+         }
+         let match = "";
+         if(match == sear){
+             return;
+         }
+         for(let j = index; j < arr.length; j++) {
+           news+=arr[j];
+           if(news==sear){
+             let showdata = obj.product_list[i];
+            //  console.log(showdata);
+            //  console.log(obj.product_list[i])
+             let Div = document.createElement("div");
+             let image=document.createElement("img");
+             image.src=showdata.image_url;
+             image.style.height="70px"
+             let div1 = document.createElement("div");
+             div1.innerText=showdata.sku;
+             Div.append(image, div1);
+             Div.addEventListener("click", function(){
+               let proarr = [];
+              //  console.log(showdata)
+               proarr.push(showdata);
+               proarr.push(obj.product_list[j+1]);
+               proarr.push(obj.product_list[j+2]);
+               proarr.push(obj.product_list[j+3]);
+              //  console.log(proarr);
+               localStorage.setItem("glass", JSON.stringify(proarr));
+               window.location.href="../collections/purchase.html";
+             })
+             document.getElementById("searchbl").append(Div);
+             match=sear;
+             return;
+           }
+         }
+         
+         findsub(arr, index+1, sear);
+     }
+     
+     }
+ })
+
+
        import footbar from '../components/footbar.js'
        document.getElementById('foot').innerHTML=footbar();
   </script>
   <script src="../components/navbar-2.js"></script>
+  <script src="../products/lensmaker.js"></script>
