@@ -137,7 +137,8 @@
           arr[0].count=1;
           cartitems.push(arr[0]);
         }
-        localStorage.setItem("cartpage", JSON.stringify(cartitems))
+        localStorage.setItem("cartpage", JSON.stringify(cartitems));
+        window.location.href="../cart.html"
       });
 
 

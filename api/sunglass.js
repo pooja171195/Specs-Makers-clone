@@ -8034,6 +8034,7 @@ let obj =  {
 
    ]
 }
+
 let full_frame = 0;
 let half_frame=0;
 let rimless=0;

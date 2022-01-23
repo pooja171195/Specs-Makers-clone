@@ -124,4 +124,4 @@ function eye(){
 }
 function com_glass(){
     window.location.href="../collections/computer_glasses.html"
-}
+} 

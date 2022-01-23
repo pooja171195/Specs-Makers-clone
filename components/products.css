@@ -14,7 +14,16 @@
     margin-top: 10px;
 }
 
-
+#searchbl>div{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 10px 4%;
+    height: 80px;
+    cursor: pointer;
+}
+#searchbl img{
+    height: 50%;
+}
 
 @media only screen and (min-width:767px){
     #botnav{
