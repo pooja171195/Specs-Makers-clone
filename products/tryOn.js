@@ -72,11 +72,12 @@
       interestdiv2.setAttribute("id","threeinterest");
       let interestprice2=Math.floor((100/300)*arr[0].prices[0].price);
       let interest1 = document.createElement("p")
-      interest1.innerHTML = `or Or pay later with `
+      interest1.innerHTML = ` Or pay later with `
+     interest1.style.marginTop='20px'
       let interestimg1 = document.createElement("img")
       interestimg1.src="https://assets.zestmoney.in/assets/widget/zest-logo-name-info.svg";
-      interestimg1.style.height='60px'
-      interestimg1.style.width='95px'
+      interestimg1.style.height='50px'
+      interestimg1.style.width='85px'
       interestdiv2.append(interest1,interestimg1);
   
       
