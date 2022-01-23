@@ -45,6 +45,66 @@
        import navbar from '../components/navbar.js'
        document.getElementById("this_nav").innerHTML=navbar();
   
+
+       import obj from '../script/search.js'
+  // console.log(obj);
+ let search = document.getElementById("showsearch");
+ search.addEventListener("input",function(){
+  //  console.log(obj.product_list.length);
+   document.getElementById("searchbl").innerHTML="";
+   for (let i = 0; i < obj.product_list.length; i++){
+let arr  = obj.product_list[i].sku;
+let news="";
+let index = 0;
+let sear = search.value;
+
+     findsub(arr, index, sear)
+     function findsub(arr, index, sear){
+       let news="";
+         if(index==arr.length){
+           return;
+         }
+         let match = "";
+         if(match == sear){
+             return;
+         }
+         for(let j = index; j < arr.length; j++) {
+           news+=arr[j];
+           if(news==sear){
+             let showdata = obj.product_list[i];
+            //  console.log(showdata);
+            //  console.log(obj.product_list[i])
+             let Div = document.createElement("div");
+             let image=document.createElement("img");
+             image.src=showdata.image_url;
+             image.style.height="70px"
+             let div1 = document.createElement("div");
+             div1.innerText=showdata.sku;
+             Div.append(image, div1);
+             Div.addEventListener("click", function(){
+               let proarr = [];
+              //  console.log(showdata)
+               proarr.push(showdata);
+               proarr.push(obj.product_list[j+1]);
+               proarr.push(obj.product_list[j+2]);
+               proarr.push(obj.product_list[j+3]);
+              //  console.log(proarr);
+               localStorage.setItem("glass", JSON.stringify(proarr));
+               window.location.href="../collections/purchase.html";
+             })
+             document.getElementById("searchbl").append(Div);
+             match=sear;
+             return;
+           }
+         }
+         
+         findsub(arr, index+1, sear);
+     }
+     
+     }
+ })
+
+
        import footbar from '../components/footbar.js'
        document.getElementById('foot').innerHTML=footbar();
   </script>
