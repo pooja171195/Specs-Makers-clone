@@ -62,6 +62,7 @@ cartitems.map(function(elem,index){
 
       if(elem.count==1){
          deletes(index);
+         
       }
 
       else{
