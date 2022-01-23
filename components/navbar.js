@@ -40,7 +40,7 @@ function navbar (){
                 <div id="line"></div>
             </div>
             <a href="../index.html"><div id="div767"><img id="img767" class="mart3" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
-            <a href="../cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal">0</div></div></a>
+            <a href="../cart.html"><div id="cart" class="mar23p10 flex point"><i class="fab marl5p fa-shopify"></i><div id="cartitem" class="textal"><div id="cartitem">0</div></div></a>
         </div>
     </div>
 </div>

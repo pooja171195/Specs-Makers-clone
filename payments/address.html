@@ -46,16 +46,15 @@
         #cart{
          
            width:50%;
-           margin-top: 50px;
+           /* margin-top: 50px; */
            margin-left: 50px;
-           text-align: center;
-           border:1px solid red;
+           /* border:1px solid red; */
          
         }
         #item>div{
             display:flex;
            
-            border:1px solid red;
+            /* border:1px solid red; */
             width:90%;
            margin: auto;
         }
@@ -73,9 +72,9 @@
            
            width:90%;
            margin-left: 20px;
-           border:1px solid red;
+           /* border:1px solid red; */
            display: flex;
-           overflow:visible ;
+           /* overflow:visible ; */
            height:auto;
        }
        #item>div>div>h4{
@@ -215,8 +214,8 @@
 <input type="text" placeholder="country India"  id="india" value="India">
 <input type="text" placeholder="Enter Name"  id="name">
 <input type="text" placeholder="Address" id="address">
-<input type="text" placeholder="Apartment,suit,etc.(option)">
-<input type="text" placeholder="City">
+<input type="text" placeholder="Apartment,suit,etc.(option)" id="apart">
+<input type="text" placeholder="City" id="city">
 <select id="country-state" name="country-state">
     <option value="AN">Andaman and Nicobar Islands</option>
     <option value="AP">Andhra Pradesh</option>
@@ -256,9 +255,9 @@
     <option value="UT">Uttarakhand</option>
     <option value="WB">West Bengal</option>
 </select>
-<input type="pincode" placeholder="PIN code">
-<input type="number" placeholder="Phone">
-<button><a href="payment.html">Continue to Shipping</a></button>
+<input type="pincode" placeholder="PIN code" id="pin">
+<input type="number" placeholder="Phone" id="phone">
+<button onclick="check()"><a href="payment.html">Continue to Shipping</a></button>
   <a href="../cart.html"><h3>Return to cart</h3></a>
 
   <!-- <hr>
@@ -297,22 +296,24 @@
 <script>
     var s ="₹";
      var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
+    //  console.log(cartitems);
 var totalmoney=0;
-display(arr);
-     function display(arr){
-         arr.map(function(elem){
+var arr = [];
+display(cartitems);
+     function display(cartitems){
+         cartitems.map(function(elem){
          let items=document.getElementById("item");
          let main = document.createElement("div");
          let imgdiv = document.createElement("div");
          let contentdiv=document.createElement("div");
          let moneydiv=document.createElement("div");
          let img = document.createElement("img");
-         img.src=elem.image;
+         img.src=elem.image_url;
          let cont = document.createElement("p");
-         cont.textContent=elem.name;
+         cont.textContent=`SpecsmakersFD11E HAPPSTER Unisex Eyeglasses ${elem.hashtagList[1].name} Hexagon ${elem.size} ${elem.totalNoOfRatings} Ultem ${elem.model_name}`
          let money = document.createElement("h4");
-         money.textContent=`${s}`+elem.price;
-          totalmoney+=Number(elem.price);
+         money.textContent=`${s}`+elem.prices[0].price;
+          totalmoney+=Number(elem.count)*Number(elem.prices[0].price);
           imgdiv.append(img);
           contentdiv.append(cont);
           moneydiv.append(money)
@@ -327,4 +328,31 @@ display(arr);
      total.textContent=`${s}`+totalmoney;
        var sub = document.getElementById("sub");
        sub.textContent=`${s}`+totalmoney;
+
+
+       function check(){
+           var address={
+             country:document.getElementById("india").value, 
+             name:document.getElementById("name").value,
+             add:document.getElementById("address").value,
+             apart:document.getElementById("apart").value,
+             city:document.getElementById("city").value,
+             state:document.getElementById("country-state").value,
+             pincode:document.getElementById("pin").value,
+             Number:document.getElementById("phone").value, 
+           }
+           var count=0;
+           for (var i in address){
+              if(address[i]==""){
+                  count++;
+              } 
+           }
+           if(count>0){
+               alert("INVALID CREDIENTIALS");
+           }
+           else{
+              arr.push(address);
+              window.location.href="payment.html";
+           }
+       }
 </script>
