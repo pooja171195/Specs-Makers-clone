@@ -1,8 +1,8 @@
 
 var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
 
-// var length=document.getElementById("sudeep");
-//      length.textContent=cartitems.length;
+ var length=document.getElementById("cartdone");
+      length.textContent=cartitems.length;
 
 var suggest= [
     {
