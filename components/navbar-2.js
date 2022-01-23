@@ -125,3 +125,9 @@ function eye(){
 function com_glass(){
     window.location.href="../collections/computer_glasses.html"
 } 
+let cartarr = JSON.parse(localStorage.getItem("cartpage"));
+let count = 0;
+for (let i = 0; i < cartarr.length; i++) {
+    count+=cartarr[i].count;
+}
+document.getElementById("cartdone").innerHTML=count;
